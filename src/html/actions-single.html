@@ -1,0 +1,1649 @@
+@@include('modules/html-head.html',{ "bodyClass": "support_body", "pageTitle": "Inflot Actions" })
+@@include('modules/header-white.html',{
+"headerClass": "" })
+
+<main class="actions-single">
+
+    <!--  company name -->
+
+    <section class="company-name-wrapper">
+        <div class="company-name-wrapper__info">
+            <p class="company-name-wrapper__info_text">Акция</p>
+            <h1 class="company-name-wrapper__info_title">Из Барселоны в Рим</h1>
+        </div>
+        <div class="company-name-wrapper__logo"><img src="./assets/img/company-logo/MSC-blue.png" alt="logo"></div>
+    </section>
+
+    <!-- tab -->
+
+    <div class="tab-container">
+    
+        <ul class="tab-container__tab">
+            <li class="tab-container__tab_filter single-tab">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.03196 3.03819L7.5016 10.6885V15.8334C7.5016 16.1491 7.67993 16.4376 7.96226 16.5788L11.2956 18.2454C11.8497 18.5225 12.5016 18.1196 12.5016 17.5001V10.6885L18.9712 3.03819C19.4293 2.49654 19.0443 1.66675 18.3349 1.66675H1.66827C0.958911 1.66675 0.57391 2.49654 1.03196 3.03819ZM3.46435 3.33341H16.5388L11.032 9.84531C10.9047 9.99575 10.8349 10.1864 10.8349 10.3834V16.1517L9.16827 15.3184V10.3834C9.16827 10.1864 9.09846 9.99575 8.97124 9.84531L3.46435 3.33341Z"
+                        fill="#2281d6" />
+                </svg>
+            </li>
+            <li class="tab-container__select_option tab-container__select_option-saved like-id-click single-tab">
+                <svg class="like" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="like-clicked" fill-rule="evenodd" clip-rule="evenodd" d="M19.321 7.30115C18.7883 6.69734 18.0134 6.35458 17.2016 6.36364L12.9136 6.36359V3.63633C12.9136 1.62804 11.2617 0 9.22401 0C8.85949 0 8.52916 0.211574 8.38111 0.539869L4.93496 8.18175H2.7672C1.23892 8.18175 0 9.40278 0 10.909V17.2726C0 18.7788 1.23892 19.9998 2.7672 19.9998H5.53441H15.9391C17.3085 20.0151 18.489 19.0262 18.6959 17.6816L19.9686 9.50134C20.0906 8.70888 19.8538 7.90496 19.321 7.30115ZM5.53441 19.9998C6.04384 19.9998 6.45681 19.5928 6.45681 19.0907V9.09083C6.45681 8.58876 6.04384 8.18175 5.53441 8.18175H4.93496L4.69151 8.72162C4.63909 8.83785 4.61201 8.96363 4.61201 9.09083V19.0907C4.61201 19.5928 5.02498 19.9998 5.53441 19.9998Z"
+                        fill="transparent" stroke="#2281D6" stroke-width="2px"></path>
+                </svg>
+            </li>
+            <li class="single-tab">
+                <ul class="tab-container__select">
+                    <li class="tab-container__select_currency">
+                        <select class="main-dropdown main-dropdown__currency">
+                            <option selected disabled value="1">€</option>
+                            <option value="2">€</option>
+                            <option value="3">$</option>
+                            <option value="4">₴</option>
+                        </select>
+                    </li>
+                </ul>
+            </li>
+            <li class="tab-container__tab-item tab-link single-tab" data-tab="tab-2">
+                <span>Маршрут</span>
+            </li>
+            <li class="tab-container__tab-item tab-link selected-item single-tab" data-tab="tab-1">
+                <span>Обзор</span>
+            </li>
+            <li class="tab-container__tab-item tab-link single-tab" data-tab="tab-3">
+                <span>Лайнер</span>
+            </li>
+            <li class="tab-container__tab-item tab-link single-tab" data-tab="tab-4">
+                <span>Каюты</span>
+            </li>
+        </ul>
+        <div class="tab-container__select mobile-display-none">
+            <div class="tab-container__select_option tab-container__select_option-saved like-id-click">
+                Сохранено
+                <svg class="like" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="like-clicked" fill-rule="evenodd" clip-rule="evenodd" d="M19.321 7.30115C18.7883 6.69734 18.0134 6.35458 17.2016 6.36364L12.9136 6.36359V3.63633C12.9136 1.62804 11.2617 0 9.22401 0C8.85949 0 8.52916 0.211574 8.38111 0.539869L4.93496 8.18175H2.7672C1.23892 8.18175 0 9.40278 0 10.909V17.2726C0 18.7788 1.23892 19.9998 2.7672 19.9998H5.53441H15.9391C17.3085 20.0151 18.489 19.0262 18.6959 17.6816L19.9686 9.50134C20.0906 8.70888 19.8538 7.90496 19.321 7.30115ZM5.53441 19.9998C6.04384 19.9998 6.45681 19.5928 6.45681 19.0907V9.09083C6.45681 8.58876 6.04384 8.18175 5.53441 8.18175H4.93496L4.69151 8.72162C4.63909 8.83785 4.61201 8.96363 4.61201 9.09083V19.0907C4.61201 19.5928 5.02498 19.9998 5.53441 19.9998Z"
+                        fill="transparent" stroke="#2281D6" stroke-width="2px"></path>
+                </svg>
+            </div>
+            <div class="tab-container__select_option tab-container__select_option-saved like-id-click tablet-block">
+                <svg class="like" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="like-clicked" fill-rule="evenodd" clip-rule="evenodd" d="M19.321 7.30115C18.7883 6.69734 18.0134 6.35458 17.2016 6.36364L12.9136 6.36359V3.63633C12.9136 1.62804 11.2617 0 9.22401 0C8.85949 0 8.52916 0.211574 8.38111 0.539869L4.93496 8.18175H2.7672C1.23892 8.18175 0 9.40278 0 10.909V17.2726C0 18.7788 1.23892 19.9998 2.7672 19.9998H5.53441H15.9391C17.3085 20.0151 18.489 19.0262 18.6959 17.6816L19.9686 9.50134C20.0906 8.70888 19.8538 7.90496 19.321 7.30115ZM5.53441 19.9998C6.04384 19.9998 6.45681 19.5928 6.45681 19.0907V9.09083C6.45681 8.58876 6.04384 8.18175 5.53441 8.18175H4.93496L4.69151 8.72162C4.63909 8.83785 4.61201 8.96363 4.61201 9.09083V19.0907C4.61201 19.5928 5.02498 19.9998 5.53441 19.9998Z"
+                        fill="transparent" stroke="#2281D6" stroke-width="2px"></path>
+                </svg>
+            </div>
+            <div class="tab-container__select_option">
+                Сменить валюту
+            </div>
+            <div class="tab-container__select_currency">
+                <div class="">
+                    <select class="main-dropdown main-dropdown__currency">
+                        <option selected disabled value="1">€</option>
+                        <option value="2">€</option>
+                        <option value="3">$</option>
+                        <option value="4">₴</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- vertical slider -->
+
+    <!-- tab 1 -->
+    <div class="wrapper-vertical-slider tab-content tab-content-remove selected-item" id="tab-1">
+        <div class="wrapper-vertical-slider__top-content">
+            <div class="wrapper-vertical-slider__left-side">
+                <div class="vertical-slider">
+                    <div class="slider-for">
+                        <div class="item">
+                            <img src="./assets/img/actions/vietnam.png" alt="royal-caribian" draggable="false" />
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-10%</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/actions/actions1.png" alt="royal-caribian" draggable="false" />
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-25%</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/actions/actions3.png" alt="royal-caribian" draggable="false" />
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-40%</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/actions/actions4.png" alt="royal-caribian" draggable="false" />
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-30%</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/actions/actions5.png" alt="royal-caribian" draggable="false" />
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-15%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-nav">
+                        <div class="item">
+                            <img src="./assets/img/actions/vietnam.png" alt="royal-caribian" draggable="false" />
+                            <span class="slick-slide__view slick-current__view">View</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/actions/actions1.png" alt="royal-caribian" draggable="false" />
+                            <span class="slick-slide__view slick-current__view">View</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/actions/actions3.png" alt="royal-caribian" draggable="false" />
+                            <span class=" slick-slide__view slick-current__view">View</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/actions/actions4.png" alt="royal-caribian" draggable="false" />
+                            <span class=" slick-slide__view slick-current__view">View</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/actions/actions5.png" alt="royal-caribian" draggable="false" />
+                            <span class="slick-slide__view slick-current__view">View</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="wrapper-vertical-slider__subtitle">
+                    <div class="wrapper-vertical-slider__subtitle_class">
+                        <p>Класс:</p>
+                        <p>Стандарт</p>
+                    </div>
+                    <div class="wrapper-vertical-slider__subtitle_direction">
+                        <p>Маршрут круиза:</p>
+                        <p>Палермо (о. Сицилия), Италия; Кальяри, Италия; Пальма (о. Майорка), Испания; Валенсия,
+                            Испания; Марсель, Франция; Генуя, Италия; Чивитавеккья (Рим), Италия; Палермо (о. Сицилия),
+                            Италия
+                        </p>
+                    </div>
+                    <div class="wrapper-vertical-slider__subtitle_direction">
+                        <p>Лайнер:</p>
+                        <p>Celebrity <br> Equinox
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper-vertical-slider__right-side">
+                <div class="header__wrapper-slider">
+                    <div class="actions-single__slider">
+                        <div>
+                            <p class="actions-single__slider_price">Цены:</p>
+                        </div>
+                        <div class="actions-single__slider_wrapper">
+                            <p class="actions-single__slider_cost">619<span>€</span></p>
+                            <p class="actions-single__slider_description">Внутренняя каюта</p>
+                        </div>
+                        <div class="actions-single__slider_wrapper">
+                            <p class="actions-single__slider_cost">739<span>€</span></p>
+                            <p class="actions-single__slider_description">Каюта с окном</p>
+                        </div>
+                        <div class="actions-single__slider_wrapper">
+                            <p class="actions-single__slider_cost">869<span>€</span></p>
+                            <p class="actions-single__slider_description">Каюта с балконом</p>
+                        </div>
+                        <div class="actions-single__slider_wrapper">
+                            <p class="actions-single__slider_cost">3566<span>€</span></p>
+                            <p class="actions-single__slider_description">Сьют</p>
+                        </div>
+                    </div>
+                    <div class="actions-single__slider">
+                        <div>
+                            <p class="actions-single__slider_price">Цены:</p>
+                        </div>
+                        <div class="actions-single__slider_wrapper">
+                            <p class="actions-single__slider_cost">619<span>€</span></p>
+                            <p class="actions-single__slider_description">Внутренняя каюта</p>
+                        </div>
+                        <div class="actions-single__slider_wrapper">
+                            <p class="actions-single__slider_cost">739<span>€</span></p>
+                            <p class="actions-single__slider_description">Каюта с окном</p>
+                        </div>
+                        <div class="actions-single__slider_wrapper">
+                            <p class="actions-single__slider_cost">869<span>€</span></p>
+                            <p class="actions-single__slider_description">Каюта с балконом</p>
+                        </div>
+                        <div class="actions-single__slider_wrapper">
+                            <p class="actions-single__slider_cost">3566<span>€</span></p>
+                            <p class="actions-single__slider_description">Сьют</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-vertical-slider__right-side_bottom">
+                    <div class="wrapper-vertical-slider__right-side_btn">
+                        <a href="#" target="_blank" class="titles-block__btn">Подобрать круиз</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tab 2 -->
+    <div class="wrapper-vertical-slider tab-content tab-content-remove" id="tab-2">
+        <div class="wrapper-vertical-slider__map">
+            <img src="./assets/img/actions/map.png" alt="map" />
+        </div>
+        <div class="wrapper-information-block">
+            <div class="wrapper-information-block__list wrapper-information-block__list-route">
+                <div class="flex">
+                    <div class="wrapper-information-block__svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.833252 9.99992C0.833252 15.0625 4.93731 19.1666 9.99992 19.1666C15.0625 19.1666 19.1666 15.0625 19.1666 9.99992C19.1666 4.93731 15.0625 0.833252 9.99992 0.833252C4.93731 0.833252 0.833252 4.93731 0.833252 9.99992ZM17.4999 9.99992C17.4999 14.1421 14.1421 17.4999 9.99992 17.4999C5.85778 17.4999 2.49992 14.1421 2.49992 9.99992C2.49992 5.85778 5.85778 2.49992 9.99992 2.49992C14.1421 2.49992 17.4999 5.85778 17.4999 9.99992ZM9.16659 6.66658V9.99992C9.16659 10.4602 9.53968 10.8333 9.99992 10.8333C10.4602 10.8333 10.8333 10.4602 10.8333 9.99992V6.66658C10.8333 6.20635 10.4602 5.83325 9.99992 5.83325C9.53968 5.83325 9.16659 6.20635 9.16659 6.66658ZM10.5892 11.9107C10.9146 12.2361 10.9146 12.7637 10.5892 13.0892C10.2637 13.4146 9.7361 13.4146 9.41066 13.0892C9.08523 12.7637 9.08523 12.2361 9.41066 11.9107C9.7361 11.5852 10.2637 11.5852 10.5892 11.9107Z"
+                                fill="#2281D6" />
+                        </svg>
+                    </div>
+                    <div class="wrapper-information-block__title">
+                        <span>Информация</span>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="wrapper-information-block__title border-left">
+                        <span>Распечатать</span>
+                    </div>
+                    <a href="#" class="wrapper-information-block__svg wrapper-information-block__svg_print">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3H7V8H17V3ZM19 8V2C19 1.44772 18.5523 1 18 1H6C5.44772 1 5 1.44772 5 2V8H4C2.34315 8 1 9.34315 1 11V16C1 17.6569 2.34315 19 4 19H5V22C5 22.5523 5.44772 23 6 23H18C18.5523 23 19 22.5523 19 22V19H20C21.6569 19 23 17.6569 23 16V11C23 9.34315 21.6569 8 20 8H19ZM5 14V17H4C3.44772 17 3 16.5523 3 16V11C3 10.4477 3.44772 10 4 10H6H18H20C20.5523 10 21 10.4477 21 11V16C21 16.5523 20.5523 17 20 17H19V14C19 13.4477 18.5523 13 18 13H6C5.44772 13 5 13.4477 5 14ZM17 21H7V15H17V21Z"
+                                fill="#2281D6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="wrapper-information-block__trip-list">
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>День:</p>
+                    <p>01</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>Дата:</p>
+                    <p>07/03/19</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_location">
+                    <p>Порт:</p>
+                    <p>Перелет Киев - Тенерифе (Прямой рейс “МАУ”) заселение в отель</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Прибытие:</p>
+                    <p>18:30</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Отправление:</p>
+                    <p>23:05</p>
+                </div>
+            </div>
+            <div class="wrapper-information-block__trip-list">
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>День:</p>
+                    <p>02</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>Дата:</p>
+                    <p>07/03/19</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_location">
+                    <p>Порт:</p>
+                    <p>Отдых на побережье. Отель на базе завтраков.</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Прибытие:</p>
+                    <p>-</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Отправление:</p>
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="wrapper-information-block__trip-list">
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>День:</p>
+                    <p>03</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>Дата:</p>
+                    <p>10/03/19</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_location">
+                    <p>Порт:</p>
+                    <p>Отдых на побережье. Отель на базе завтраков.</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Прибытие:</p>
+                    <p>-</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Отправление:</p>
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="wrapper-information-block__trip-list">
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>День:</p>
+                    <p>04</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>Дата:</p>
+                    <p>10/03/19</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_location">
+                    <p>Порт:</p>
+                    <p>Трансфер в порт. Посадка на лайнер</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Прибытие:</p>
+                    <p>-</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Отправление:</p>
+                    <p>20:00</p>
+                </div>
+            </div>
+            <div class="wrapper-information-block__trip-list">
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>День:</p>
+                    <p>05</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>Дата:</p>
+                    <p>11/03/19</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_location">
+                    <p>Порт:</p>
+                    <p>о. Ла Пальма(Канарские острова), Испания</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Прибытие:</p>
+                    <p>09:00</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Отправление:</p>
+                    <p>17:00</p>
+                </div>
+            </div>
+            <div class="wrapper-information-block__trip-list">
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>День:</p>
+                    <p>06</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>Дата:</p>
+                    <p>12/03/19</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_location">
+                    <p>Порт:</p>
+                    <p>Фуншал (о.Майдера), Порткгалия</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Прибытие:</p>
+                    <p>13:00</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Отправление:</p>
+                    <p>22:00</p>
+                </div>
+            </div>
+            <div class="wrapper-information-block__trip-list">
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>День:</p>
+                    <p>07</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>Дата:</p>
+                    <p>13/03/19</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_location">
+                    <p>Порт:</p>
+                    <p>День в море</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Прибытие:</p>
+                    <p>-</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Отправление:</p>
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="wrapper-information-block__trip-list">
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>День:</p>
+                    <p>08</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>Дата:</p>
+                    <p>14/03/19</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_location">
+                    <p>Порт:</p>
+                    <p>Агадир (Марокко)</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Прибытие:</p>
+                    <p>07:00</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Отправление:</p>
+                    <p>19:00</p>
+                </div>
+            </div>
+            <div class="wrapper-information-block__trip-list">
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>День:</p>
+                    <p>09</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>Дата:</p>
+                    <p>15/03/19</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_location">
+                    <p>Порт:</p>
+                    <p>Лансороте (Канарские острова), Испания</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Прибытие:</p>
+                    <p>13:00</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Отправление:</p>
+                    <p>20:00</p>
+                </div>
+            </div>
+            <div class="wrapper-information-block__trip-list">
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>День:</p>
+                    <p>10</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>Дата:</p>
+                    <p>15/03/19</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_location">
+                    <p>Порт:</p>
+                    <p>Лансороте (Канарские острова), Испания</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Прибытие:</p>
+                    <p>11:00</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Отправление:</p>
+                    <p>23:00</p>
+                </div>
+            </div>
+            <div class="wrapper-information-block__trip-list">
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>День:</p>
+                    <p>11</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>Дата:</p>
+                    <p>16/03/19</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_location">
+                    <p>Порт:</p>
+                    <p>Лансороте (Канарские острова), Испания</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Прибытие:</p>
+                    <p>08:00</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Отправление:</p>
+                    <p>21:00</p>
+                </div>
+            </div>
+            <div class="wrapper-information-block__trip-list">
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>День:</p>
+                    <p>12</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_time">
+                    <p>Дата:</p>
+                    <p>17/03/19</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_location">
+                    <p>Порт:</p>
+                    <p>о. Тенерифе (Канарские острова), Испания-вход с лайнера
+                        Трансфер “порт - аэропорт” со свободным временем и экскурсией. Ужин. Перелет Тенерифе -Киев
+                        (Прямой рейс “МАУ”) </p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Прибытие:</p>
+                    <p>23:55</p>
+                </div>
+                <div class="wrapper-information-block__trip-list_date">
+                    <p>Отправление:</p>
+                    <p>08:15</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tab 3 -->
+    <div class="wrapper-vertical-slider tab-content tab-content-remove" id="tab-3">
+        <div class="wrapper-vertical-slider__top-content">
+            <div class="wrapper-vertical-slider__left-side">
+                <div class="vertical-slider">
+                    <div class="slider-for">
+                        <div class="item">
+                            <img src="./assets/img/liners/ship1.png" alt="royal-caribian" draggable="false" />
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-10%</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/liners/ship2.png" alt="royal-caribian" draggable="false" />
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-25%</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/liners/ship3.png" alt="royal-caribian" draggable="false" />
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-40%</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/liners/ship4.png" alt="royal-caribian" draggable="false" />
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-30%</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/liners/ship5.png" alt="royal-caribian" draggable="false" />
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-15%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-nav">
+                        <div class="item">
+                            <img src="./assets/img/liners/ship1.png" alt="royal-caribian" draggable="false" />
+                            <span class="slick-slide__view slick-current__view">View</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/liners/ship2.png" alt="royal-caribian" draggable="false" />
+                            <span class="slick-slide__view slick-current__view">View</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/liners/ship3.png" alt="royal-caribian" draggable="false" />
+                            <span class=" slick-slide__view slick-current__view">View</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/liners/ship4.png" alt="royal-caribian" draggable="false" />
+                            <span class=" slick-slide__view slick-current__view">View</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/img/liners/ship5.png" alt="royal-caribian" draggable="false" />
+                            <span class="slick-slide__view slick-current__view">View</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="wrapper-vertical-slider__subtitle space-around">
+                    <div class="wrapper-vertical-slider__subtitle_class">
+                        <p>Длина:</p>
+                        <p>315 м</p>
+                    </div>
+                    <div class="wrapper-vertical-slider__subtitle_direction">
+                        <p>Палубы:</p>
+                        <p>21</p>
+                    </div>
+                    <div class="wrapper-vertical-slider__subtitle_direction">
+                        <p>Водоизм.:</p>
+                        <p>21000</p>
+                    </div>
+                    <div class="wrapper-vertical-slider__subtitle_direction">
+                        <p>Пассаж.:</p>
+                        <p>2850</p>
+                    </div>
+                    <div class="wrapper-vertical-slider__subtitle_direction">
+                        <p>Экипаж.:</p>
+                        <p>3250</p>
+                    </div>
+                    <div class="wrapper-vertical-slider__subtitle_direction">
+                        <p>Создан:</p>
+                        <p>2009</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper-vertical-slider__right-side">
+                <div class="header__wrapper-slider">
+                    <div class="actions-single__slider">
+                        <div>
+                            <p class="actions-single__slider_price opacity-half">Описание</p>
+                        </div>
+                        <div class="actions-single__slider_liners">
+                            <p>Путешествуете ли Вы по Карибскому морю или по Средиземному – вам гарантированы
+                                незабываемые
+                                впечатления, комфорт и высокий сервис.</p>
+                            <p>Комфортабельные и оптимальным образом оборудованные – таковыми являются внешние,
+                                внутренние каюты и
+                                каюты с балконами на борту Celebrity Equinox.</p>
+                        </div>
+                    </div>
+                    <div class="actions-single__slider">
+                        <div>
+                            <p class="actions-single__slider_price">Цены:</p>
+                        </div>
+                        <div class="actions-single__slider_wrapper">
+                            <p class="actions-single__slider_cost">619<span>€</span></p>
+                            <p class="actions-single__slider_description">Внутренняя каюта</p>
+                        </div>
+                        <div class="actions-single__slider_wrapper">
+                            <p class="actions-single__slider_cost">739<span>€</span></p>
+                            <p class="actions-single__slider_description">Каюта с окном</p>
+                        </div>
+                        <div class="actions-single__slider_wrapper">
+                            <p class="actions-single__slider_cost">869<span>€</span></p>
+                            <p class="actions-single__slider_description">Каюта с балконом</p>
+                        </div>
+                        <div class="actions-single__slider_wrapper">
+                            <p class="actions-single__slider_cost">3566<span>€</span></p>
+                            <p class="actions-single__slider_description">Сьют</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-vertical-slider__right-side_bottom">
+                    <div class="wrapper-vertical-slider__right-side_btn">
+                        <a href="#" target="_blank" class="titles-block__btn">Подобрать круиз</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tab 4 -->
+    <div class="wrapper-vertical-slider tab-content tab-content-remove deck" id="tab-4">
+        <div class="deck__wrapper">
+            <div class="deck__wrapper-left">
+                <p>Планы палуб:</p>
+                <p>Круизный лайнер имеет 13 пассажирских палуб и 1637 кают на борту.
+                    Нажмите на значок с названием нужной вам палубы, чтобы увидеть схему расположения кают</p>
+            </div>
+            <div class="deck__wrapper-right">
+                <p class="deck__wrapper-right_title">Палуба:</p>
+                <select class="deck-dropdown" id="deck-drop">
+                    <option selected value="01" data-price="./assets/img/actions/deck.png">01</option>
+                    <option value="02" data-price="./assets/img/liners/ship1.png">02</option>
+                    <option value="03" data-price="./assets/img/liners/ship2.png">03</option>
+                    <option value="04" data-price="./assets/img/liners/ship3.png">04</option>
+                </select>
+                <img id="deck-img" class="deck__wrapper-right_img" src="./assets/img/actions/deck.png" alt="deck" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Included in the price -->
+    <div class="wrapper-information-block wrapper-information-block__included">
+        <ul class="wrapper-information-block__list">
+            <li class="wrapper-information-block__svg">
+                <img src="./assets/img/icons-logo/icon.svg" alt="check" />
+            </li>
+            <li class="wrapper-information-block__title wrapper-information-block__title-include">
+                <span>Включено в стоимость</span>
+            </li>
+        </ul>
+        <div class="wrapper-information-block__content">
+            <div class="wrapper-information-block__item">
+                <div class="wrapper-information-block__item_block">
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/cruise.svg" alt="check" />
+                    </div>
+                    <div class="wrapper-information-block__text">
+                        <p>Круиз:</p>
+                        <p>На Costa Favolosa Вы сможете выбрать различные типы кают. Мы предлагаем Вам внутренние и
+                            внешние
+                            каюты,
+                            номера с балконом и целый ряд сьютов. В сьютах Samsara есть собственные джакузи и веранда,
+                            где
+                            Вы
+                            сможете расслабиться в спокойной обстановке.</p>
+                    </div>
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/check.svg" alt="check" />
+                    </div>
+
+                </div>
+                <div class="wrapper-information-block__item_block">
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/swimming-pool.svg" alt="check" />
+                    </div>
+                    <div class="wrapper-information-block__text">
+                        <p>СПА:</p>
+                        <p>На Costa Favolosa Вы сможете выбрать различные типы кают. Мы предлагаем Вам внутренние и
+                            внешние каюты, номера с балконом и целый ряд сьютов. В сьютах Samsara есть собственные
+                            джакузи и веранда, где Вы сможете расслабиться в спокойной обстановке.</p>
+                    </div>
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/check.svg" alt="check" />
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-information-block__item">
+                <div class="wrapper-information-block__item_block">
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/Shape.svg" alt="check" />
+                    </div>
+                    <div class="wrapper-information-block__text">
+                        <p>Размещение:</p>
+                        <p>На Costa Favolosa Вы сможете выбрать различные типы кают. Мы предлагаем Вам внутренние и
+                            внешние
+                            каюты,
+                            номера с балконом и целый ряд сьютов. В сьютах Samsara есть собственные джакузи и веранда,
+                            где
+                            Вы
+                            сможете расслабиться в спокойной обстановке.</p>
+                    </div>
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/check.svg" alt="check" />
+                    </div>
+
+                </div>
+                <div class="wrapper-information-block__item_block">
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/shopping-bag.svg" alt="check" />
+                    </div>
+                    <div class="wrapper-information-block__text">
+                        <p>Багаж:</p>
+                        <p>На Costa Favolosa Вы сможете выбрать различные типы кают. Мы предлагаем Вам внутренние и
+                            внешние
+                            каюты, номера с балконом и целый ряд сьютов. В сьютах Samsara есть собственные джакузи и
+                            веранда, где Вы сможете расслабиться в спокойной обстановке.</p>
+                    </div>
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/check.svg" alt="check" />
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-information-block__item">
+                <div class="wrapper-information-block__item_block">
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/restaurant.svg" alt="check" />
+                    </div>
+                    <div class="wrapper-information-block__text">
+                        <p>Питание:</p>
+                        <p>На Costa Favolosa Вы сможете выбрать различные типы кают. Мы предлагаем Вам внутренние и
+                            внешние
+                            каюты,
+                            номера с балконом и целый ряд сьютов. В сьютах Samsara есть собственные джакузи и веранда,
+                            где
+                            Вы
+                            сможете расслабиться в спокойной обстановке.</p>
+                    </div>
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/check.svg" alt="check" />
+                    </div>
+
+                </div>
+                <div class="wrapper-information-block__item_block">
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/thumb-up.svg" alt="check" />
+                    </div>
+                    <div class="wrapper-information-block__text">
+                        <p>Сервис:</p>
+                        <p>На Costa Favolosa Вы сможете выбрать различные типы кают. Мы предлагаем Вам внутренние и
+                            внешние
+                            каюты, номера с балконом и целый ряд сьютов. В сьютах Samsara есть собственные джакузи и
+                            веранда, где Вы сможете расслабиться в спокойной обстановке.</p>
+                    </div>
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/check.svg" alt="check" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Not included in the price -->
+    <div class="wrapper-information-block wrapper-information-block__included">
+        <ul class="wrapper-information-block__list">
+            <li class="wrapper-information-block__svg">
+                <img src="./assets/img/icons-logo/icon.svg" alt="check" />
+            </li>
+            <li class="wrapper-information-block__title wrapper-information-block__title-include">
+                <span>Не включено в стоимость</span>
+            </li>
+        </ul>
+        <div class="wrapper-information-block__content">
+            <div class="wrapper-information-block__item">
+                <div class="wrapper-information-block__item_block">
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/anchor.svg" alt="check" />
+                    </div>
+                    <div class="wrapper-information-block__text">
+                        <p>Сбор:</p>
+                        <p>На Costa Favolosa Вы сможете выбрать различные типы кают. Мы предлагаем Вам внутренние и
+                            внешние
+                            каюты,
+                            номера с балконом и целый ряд сьютов. В сьютах Samsara есть собственные джакузи и веранда,
+                            где
+                            Вы
+                            сможете расслабиться в спокойной обстановке.</p>
+                    </div>
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/close-blue.svg" alt="check" />
+                    </div>
+
+                </div>
+                <div class="wrapper-information-block__item_block">
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/passport-2.svg" alt="check" />
+                    </div>
+                    <div class="wrapper-information-block__text">
+                        <p>СПА:</p>
+                        <p>На Costa Favolosa Вы сможете выбрать различные типы кают. Мы предлагаем Вам внутренние и
+                            внешние каюты, номера с балконом и целый ряд сьютов. В сьютах Samsara есть собственные
+                            джакузи и веранда, где Вы сможете расслабиться в спокойной обстановке.</p>
+                    </div>
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/close-blue.svg" alt="check" />
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-information-block__item">
+                <div class="wrapper-information-block__item_block">
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/heart.svg" alt="check" />
+                    </div>
+                    <div class="wrapper-information-block__text">
+                        <p>Страховка:</p>
+                        <p>На Costa Favolosa Вы сможете выбрать различные типы кают. Мы предлагаем Вам внутренние и
+                            внешние
+                            каюты,
+                            номера с балконом и целый ряд сьютов. В сьютах Samsara есть собственные джакузи и веранда,
+                            где
+                            Вы
+                            сможете расслабиться в спокойной обстановке.</p>
+                    </div>
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/close-blue.svg" alt="check" />
+                    </div>
+
+                </div>
+                <div class="wrapper-information-block__item_block">
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/air-freight.svg" alt="check" />
+                    </div>
+                    <div class="wrapper-information-block__text">
+                        <p>Авиаперелет:</p>
+                        <p>На Costa Favolosa Вы сможете выбрать различные типы кают. Мы предлагаем Вам внутренние и
+                            внешние
+                            каюты, номера с балконом и целый ряд сьютов. В сьютах Samsara есть собственные джакузи и
+                            веранда, где Вы сможете расслабиться в спокойной обстановке.</p>
+                    </div>
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/close-blue.svg" alt="check" />
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-information-block__item">
+                <div class="wrapper-information-block__item_block">
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/quality.svg" alt="check" />
+                    </div>
+                    <div class="wrapper-information-block__text">
+                        <p>Сбор:</p>
+                        <p>На Costa Favolosa Вы сможете выбрать различные типы кают. Мы предлагаем Вам внутренние и
+                            внешние
+                            каюты,
+                            номера с балконом и целый ряд сьютов. В сьютах Samsara есть собственные джакузи и веранда,
+                            где
+                            Вы
+                            сможете расслабиться в спокойной обстановке.</p>
+                    </div>
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/close-blue.svg" alt="check" />
+                    </div>
+
+                </div>
+                <div class="wrapper-information-block__item_block">
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/hotel-2.svg" alt="check" />
+                    </div>
+                    <div class="wrapper-information-block__text">
+                        <p>До круиза:</p>
+                        <p>На Costa Favolosa Вы сможете выбрать различные типы кают. Мы предлагаем Вам внутренние и
+                            внешние
+                            каюты, номера с балконом и целый ряд сьютов. В сьютах Samsara есть собственные джакузи и
+                            веранда, где Вы сможете расслабиться в спокойной обстановке.</p>
+                    </div>
+                    <div class="wrapper-information-block__icon">
+                        <img src="./assets/img/icons-logo/close-blue.svg" alt="check" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabins title -->
+
+    <section class="wrapper-title-block">
+        <div class="titles-block">
+            <h3 class="titles-block__h3">Каюты</h3>
+            <button type="button" class="titles-block__btn btn-accordion trigger">Скрыть</button>
+        </div>
+    </section>
+
+    <!-- Cabins slider -->
+
+    <section class="cabins-slider hideAccordion">
+        <div class="small-slider">
+            <a href="#" class="small-slider__link">
+                <div class="small-slider__wrapper-img">
+                    <img class="small-slider__wrapper-img_img" src="./assets/img/cabins/fantastica.png" alt="fantastica">
+                </div>
+                <div class="small-slider__description small-slider__description_news">
+                    <h4>Внутренняя каюта Fantastica</h4>
+                </div>
+                <div class="cabins-slider__content">
+                    <div class="cabins-slider__descriptions">
+                        <p>Площадь:</p>
+                        <p>28 м2 - каюта</p>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Спальных мест: 1</p>
+                        <div class="cabins-slider__descriptions_icons-bed">
+                            <img src="./assets/img/icons-logo/single-bed.svg" alt="check" />
+                        </div>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Удобства:</p>
+                        <div class="cabins-slider__descriptions_icons">
+                            <img src="./assets/img/icons-logo/wardrobe.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/television.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/security-box.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/air-conditioner.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wifi.svg" alt="check" />
+                        </div>
+                    </div>
+                </div>
+                <span class="cabins-slider__details">Посмотреть детали</span>
+            </a>
+        </div>
+        <div class="small-slider">
+            <a href="#" class="small-slider__link">
+                <div class="small-slider__wrapper-img">
+                    <img class="small-slider__wrapper-img_img" src="./assets/img/cabins/fantastica2.png" alt="fantastica">
+                </div>
+                <div class="small-slider__description small-slider__description_news">
+                    <h4>Каюта внешняя с окном Fantastica</h4>
+                </div>
+                <div class="cabins-slider__content">
+                    <div class="cabins-slider__descriptions">
+                        <p>Площадь:</p>
+                        <p>48 м2 - каюта</p>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Спальных мест: 2</p>
+                        <div class="cabins-slider__descriptions_icons-bed">
+                            <img src="./assets/img/icons-logo/single-bed.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/single-bed.svg" alt="check" />
+                        </div>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Удобства:</p>
+                        <div class="cabins-slider__descriptions_icons">
+                            <img src="./assets/img/icons-logo/bathtub.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/coffee-machine.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/smartphone.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/hair-dryer.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/minibar.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wardrobe.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/television.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/security-box.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/air-conditioner.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wifi.svg" alt="check" />
+                        </div>
+                    </div>
+                </div>
+                <span class="cabins-slider__details">Посмотреть детали</span>
+            </a>
+        </div>
+        <div class="small-slider">
+            <a href="#" class="small-slider__link">
+                <div class="small-slider__wrapper-img">
+                    <img class="small-slider__wrapper-img_img" src="./assets/img/cabins/bella.png" alt="bella">
+                </div>
+                <div class="small-slider__description small-slider__description_news">
+                    <h4>Внешняя каюта с балконом Bella</h4>
+                </div>
+                <div class="cabins-slider__content">
+                    <div class="cabins-slider__descriptions">
+                        <p>Площадь:</p>
+                        <p>65 м2 - каюта / 40 м2 - балкон</p>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Спальных мест: 3</p>
+                        <div class="cabins-slider__descriptions_icons-bed">
+                            <img src="./assets/img/icons-logo/single-bed.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/bed.svg" alt="check" />
+                        </div>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Удобства:</p>
+                        <div class="cabins-slider__descriptions_icons">
+                            <img src="./assets/img/icons-logo/bathtub.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/coffee-machine.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/smartphone.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/hair-dryer.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/minibar.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wardrobe.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/television.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/security-box.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/air-conditioner.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wifi.svg" alt="check" />
+                        </div>
+                    </div>
+                </div>
+                <span class="cabins-slider__details">Посмотреть детали</span>
+            </a>
+        </div>
+        <div class="small-slider">
+            <a href="#" class="small-slider__link">
+                <div class="small-slider__wrapper-img">
+                    <img class="small-slider__wrapper-img_img" src="./assets/img/cabins/suit.png" alt="suit">
+                </div>
+                <div class="small-slider__description small-slider__description_news">
+                    <h4>Сьют <br> Yacht Club</h4>
+                </div>
+                <div class="cabins-slider__content">
+                    <div class="cabins-slider__descriptions">
+                        <p>Площадь:</p>
+                        <p>80 м2 - каюта / 40 м2 - балкон</p>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Спальных мест: </p>
+                        <div class="cabins-slider__descriptions_icons-bed">
+                            <img src="./assets/img/icons-logo/single-bed.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/single-bed.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/bed.svg" alt="check" />
+                        </div>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Удобства:</p>
+                        <div class="cabins-slider__descriptions_icons">
+                            <img src="./assets/img/icons-logo/bathtub.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/coffee-machine.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/smartphone.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/hair-dryer.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/minibar.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wardrobe.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/television.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/security-box.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/air-conditioner.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wifi.svg" alt="check" />
+                        </div>
+                    </div>
+                </div>
+                <span class="cabins-slider__details">Посмотреть детали</span>
+            </a>
+        </div>
+        <div class="small-slider">
+            <a href="#" class="small-slider__link">
+                <div class="small-slider__wrapper-img">
+                    <img class="small-slider__wrapper-img_img" src="./assets/img/cabins/fantastica.png" alt="fantastica">
+                </div>
+                <div class="small-slider__description small-slider__description_news">
+                    <h4>Внутренняя каюта Fantastica</h4>
+                </div>
+                <div class="cabins-slider__content">
+                    <div class="cabins-slider__descriptions">
+                        <p>Площадь:</p>
+                        <p>28 м2 - каюта</p>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Спальных мест: 1</p>
+                        <div class="cabins-slider__descriptions_icons-bed">
+                            <img src="./assets/img/icons-logo/single-bed.svg" alt="check" />
+                        </div>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Удобства:</p>
+                        <div class="cabins-slider__descriptions_icons">
+                            <img src="./assets/img/icons-logo/wardrobe.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/television.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/security-box.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/air-conditioner.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wifi.svg" alt="check" />
+                        </div>
+                    </div>
+                </div>
+                <span class="cabins-slider__details">Посмотреть детали</span>
+            </a>
+        </div>
+        <div class="small-slider">
+            <a href="#" class="small-slider__link">
+                <div class="small-slider__wrapper-img">
+                    <img class="small-slider__wrapper-img_img" src="./assets/img/cabins/fantastica2.png" alt="fantastica">
+                </div>
+                <div class="small-slider__description small-slider__description_news">
+                    <h4>Каюта внешняя с окном Fantastica</h4>
+                </div>
+                <div class="cabins-slider__content">
+                    <div class="cabins-slider__descriptions">
+                        <p>Площадь:</p>
+                        <p>48 м2 - каюта</p>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Спальных мест: 2</p>
+                        <div class="cabins-slider__descriptions_icons-bed">
+                            <img src="./assets/img/icons-logo/single-bed.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/single-bed.svg" alt="check" />
+                        </div>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Удобства:</p>
+                        <div class="cabins-slider__descriptions_icons">
+                            <img src="./assets/img/icons-logo/bathtub.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/coffee-machine.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/smartphone.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/hair-dryer.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/minibar.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wardrobe.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/television.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/security-box.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/air-conditioner.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wifi.svg" alt="check" />
+                        </div>
+                    </div>
+                </div>
+                <span class="cabins-slider__details">Посмотреть детали</span>
+            </a>
+        </div>
+        <div class="small-slider">
+            <a href="#" class="small-slider__link">
+                <div class="small-slider__wrapper-img">
+                    <img class="small-slider__wrapper-img_img" src="./assets/img/cabins/bella.png" alt="bella">
+                </div>
+                <div class="small-slider__description small-slider__description_news">
+                    <h4>Внешняя каюта с балконом Bella</h4>
+                </div>
+                <div class="cabins-slider__content">
+                    <div class="cabins-slider__descriptions">
+                        <p>Площадь:</p>
+                        <p>65 м2 - каюта / 40 м2 - балкон</p>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Спальных мест: 3</p>
+                        <div class="cabins-slider__descriptions_icons-bed">
+                            <img src="./assets/img/icons-logo/single-bed.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/bed.svg" alt="check" />
+                        </div>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Удобства:</p>
+                        <div class="cabins-slider__descriptions_icons">
+                            <img src="./assets/img/icons-logo/bathtub.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/coffee-machine.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/smartphone.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/hair-dryer.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/minibar.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wardrobe.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/television.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/security-box.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/air-conditioner.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wifi.svg" alt="check" />
+                        </div>
+                    </div>
+                </div>
+                <span class="cabins-slider__details">Посмотреть детали</span>
+            </a>
+        </div>
+        <div class="small-slider">
+            <a href="#" class="small-slider__link">
+                <div class="small-slider__wrapper-img">
+                    <img class="small-slider__wrapper-img_img" src="./assets/img/cabins/suit.png" alt="suit">
+                </div>
+                <div class="small-slider__description small-slider__description_news">
+                    <h4>Сьют <br> Yacht Club</h4>
+                </div>
+                <div class="cabins-slider__content">
+                    <div class="cabins-slider__descriptions">
+                        <p>Площадь:</p>
+                        <p>80 м2 - каюта / 40 м2 - балкон</p>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Спальных мест: </p>
+                        <div class="cabins-slider__descriptions_icons-bed">
+                            <img src="./assets/img/icons-logo/single-bed.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/single-bed.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/bed.svg" alt="check" />
+                        </div>
+                    </div>
+                    <div class="cabins-slider__descriptions">
+                        <p>Удобства:</p>
+                        <div class="cabins-slider__descriptions_icons">
+                            <img src="./assets/img/icons-logo/bathtub.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/coffee-machine.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/smartphone.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/hair-dryer.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/minibar.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wardrobe.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/television.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/security-box.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/air-conditioner.svg" alt="check" />
+                            <img src="./assets/img/icons-logo/wifi.svg" alt="check" />
+                        </div>
+                    </div>
+                </div>
+                <span class="cabins-slider__details">Посмотреть детали</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- recomendaion title -->
+
+    <section class="wrapper-title-block">
+            <div class="titles-block">
+                <h3 class="titles-block__h3">Рекомендуемые круизы</h3>
+                <button type="button" class="titles-block__btn btn-accordion trigger">Скрыть</button>
+            </div>
+        </section>
+    
+        <!-- recomendaion cruises -->
+    
+        <div class="hideAccordion">
+                <div class="container-directions">
+                    <div class="wrapper-directions">
+                        <svg class="like like-liked" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="like-id-click" fill-rule="evenodd" clip-rule="evenodd" d="M19.321 7.30115C18.7883 6.69734 18.0134 6.35458 17.2016 6.36364L12.9136 6.36359V3.63633C12.9136 1.62804 11.2617 0 9.22401 0C8.85949 0 8.52916 0.211574 8.38111 0.539869L4.93496 8.18175H2.7672C1.23892 8.18175 0 9.40278 0 10.909V17.2726C0 18.7788 1.23892 19.9998 2.7672 19.9998H5.53441H15.9391C17.3085 20.0151 18.489 19.0262 18.6959 17.6816L19.9686 9.50134C20.0906 8.70888 19.8538 7.90496 19.321 7.30115ZM5.53441 19.9998C6.04384 19.9998 6.45681 19.5928 6.45681 19.0907V9.09083C6.45681 8.58876 6.04384 8.18175 5.53441 8.18175H4.93496L4.69151 8.72162C4.63909 8.83785 4.61201 8.96363 4.61201 9.09083V19.0907C4.61201 19.5928 5.02498 19.9998 5.53441 19.9998Z"
+                                fill="transparent" stroke="#2281D6" stroke-width="2px" />
+                        </svg>
+                        <a href="#" class="directions__link">
+                            <div class="directions">
+                                <div class="directions__wrapper-img">
+                                    <img class="directions__wrapper-img_img" src="./assets/img/company-single/classic.png" alt="classic">
+                                    <div class="flag">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                                fill="#FF7506"></path>
+                                        </svg>
+                                        <p class="flag__percent">-25%</p>
+                                    </div>
+                                </div>
+                                <div class="directions__wrapper-description recomendation-cruises">
+                                    <h4 class="directions__wrapper-description_h4">Классика Средиземноморья</h4>
+                                    <div class="recomendation-cruises__content">
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Порты:</p>
+                                            <p class="recomendation-cruises__content_subtitle">Палермо (о. Сицилия), Италия;
+                                                Кальяри, Италия; Пальма…</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Период:</p>
+                                            <p class="recomendation-cruises__content_subtitle">7 ночей</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Начало:</p>
+                                            <p class="recomendation-cruises__content_subtitle">27/10/19</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Лайнер:</p>
+                                            <p class="recomendation-cruises__content_subtitle">MSC Meraviglia</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Компания:</p>
+                                            <p class="recomendation-cruises__content_subtitle">MSC Cruises</p>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- tablet adaptive -->
+        
+                                <div class="directions__wrapper-description recomendation-cruises tablet-block">
+                                    <h4 class="directions__wrapper-description_h4">Классика Средиземноморья</h4>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Порты:</p>
+                                        <p class="recomendation-cruises__content_subtitle">Палермо (о. Сицилия), Италия;
+                                            Кальяри, Италия; Пальма…</p>
+                                    </div>
+                                </div>
+        
+                                <div class="directions__wrapper-price liners__wrapper-read-more">
+                                    <p class="directions__wrapper-price_cost liners__wrapper-read-more_item">619€</p>
+                                </div>
+        
+                                <!-- tablet adaptive -->
+        
+                                <div class="recomendation-cruises__content tablet-block">
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Период:</p>
+                                        <p class="recomendation-cruises__content_subtitle">7 ночей</p>
+                                    </div>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Начало:</p>
+                                        <p class="recomendation-cruises__content_subtitle">27/10/19</p>
+                                    </div>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Лайнер:</p>
+                                        <p class="recomendation-cruises__content_subtitle">MSC Meraviglia</p>
+                                    </div>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Компания:</p>
+                                        <p class="recomendation-cruises__content_subtitle">MSC Cruises</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrapper-directions">
+                        <svg class="like like-liked" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="like-id-click" fill-rule="evenodd" clip-rule="evenodd" d="M19.321 7.30115C18.7883 6.69734 18.0134 6.35458 17.2016 6.36364L12.9136 6.36359V3.63633C12.9136 1.62804 11.2617 0 9.22401 0C8.85949 0 8.52916 0.211574 8.38111 0.539869L4.93496 8.18175H2.7672C1.23892 8.18175 0 9.40278 0 10.909V17.2726C0 18.7788 1.23892 19.9998 2.7672 19.9998H5.53441H15.9391C17.3085 20.0151 18.489 19.0262 18.6959 17.6816L19.9686 9.50134C20.0906 8.70888 19.8538 7.90496 19.321 7.30115ZM5.53441 19.9998C6.04384 19.9998 6.45681 19.5928 6.45681 19.0907V9.09083C6.45681 8.58876 6.04384 8.18175 5.53441 8.18175H4.93496L4.69151 8.72162C4.63909 8.83785 4.61201 8.96363 4.61201 9.09083V19.0907C4.61201 19.5928 5.02498 19.9998 5.53441 19.9998Z"
+                                fill="transparent" stroke="#2281D6" stroke-width="2px" />
+                        </svg>
+                        <a href="#" class="directions__link">
+                            <div class="directions">
+                                <div class="directions__wrapper-img">
+                                    <img class="directions__wrapper-img_img" src="./assets/img/company-single/south.png" alt="south">
+                                    <div class="flag">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                                fill="#FF7506"></path>
+                                        </svg>
+                                        <p class="flag__percent">-20%</p>
+                                    </div>
+                                </div>
+                                <div class="directions__wrapper-description recomendation-cruises">
+                                    <h4 class="directions__wrapper-description_h4">Западное Средиземноморье</h4>
+                                    <div class="recomendation-cruises__content">
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Порты:</p>
+                                            <p class="recomendation-cruises__content_subtitle">Неаполь, Италия; Мессина (о.
+                                                Сицилия) (Италия); Валлетта…</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Период:</p>
+                                            <p class="recomendation-cruises__content_subtitle">7 ночей</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Начало:</p>
+                                            <p class="recomendation-cruises__content_subtitle">29/10/19</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Лайнер:</p>
+                                            <p class="recomendation-cruises__content_subtitle">Costa Fascinosa</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Компания:</p>
+                                            <p class="recomendation-cruises__content_subtitle">Costa Cruises</p>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- tablet adaptive -->
+        
+                                <div class="directions__wrapper-description recomendation-cruises tablet-block">
+                                    <h4 class="directions__wrapper-description_h4">Западное Средиземноморье</h4>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Порты:</p>
+                                        <p class="recomendation-cruises__content_subtitle">Неаполь, Италия; Мессина (о.
+                                            Сицилия) (Италия); Валлетта…</p>
+                                    </div>
+                                </div>
+        
+                                <div class="directions__wrapper-price liners__wrapper-read-more">
+                                    <p class="directions__wrapper-price_cost liners__wrapper-read-more_item">668€</p>
+                                </div>
+        
+                                <!-- tablet adaptive -->
+        
+                                <div class="recomendation-cruises__content tablet-block">
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Период:</p>
+                                        <p class="recomendation-cruises__content_subtitle">7 ночей</p>
+                                    </div>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Начало:</p>
+                                        <p class="recomendation-cruises__content_subtitle">29/10/19</p>
+                                    </div>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Лайнер:</p>
+                                        <p class="recomendation-cruises__content_subtitle">Costa Fascinosa</p>
+                                    </div>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Компания:</p>
+                                        <p class="recomendation-cruises__content_subtitle">Costa Cruises</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrapper-directions">
+                        <svg class="like like-liked" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="like-id-click" fill-rule="evenodd" clip-rule="evenodd" d="M19.321 7.30115C18.7883 6.69734 18.0134 6.35458 17.2016 6.36364L12.9136 6.36359V3.63633C12.9136 1.62804 11.2617 0 9.22401 0C8.85949 0 8.52916 0.211574 8.38111 0.539869L4.93496 8.18175H2.7672C1.23892 8.18175 0 9.40278 0 10.909V17.2726C0 18.7788 1.23892 19.9998 2.7672 19.9998H5.53441H15.9391C17.3085 20.0151 18.489 19.0262 18.6959 17.6816L19.9686 9.50134C20.0906 8.70888 19.8538 7.90496 19.321 7.30115ZM5.53441 19.9998C6.04384 19.9998 6.45681 19.5928 6.45681 19.0907V9.09083C6.45681 8.58876 6.04384 8.18175 5.53441 8.18175H4.93496L4.69151 8.72162C4.63909 8.83785 4.61201 8.96363 4.61201 9.09083V19.0907C4.61201 19.5928 5.02498 19.9998 5.53441 19.9998Z"
+                                fill="transparent" stroke="#2281D6" stroke-width="2px" />
+                        </svg>
+                        <a href="#" class="directions__link">
+                            <div class="directions">
+                                <div class="directions__wrapper-img">
+                                    <img class="directions__wrapper-img_img" src="./assets/img/company-single/lasur.png" alt="lasur">
+                                    <div class="flag">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                                fill="#FF7506"></path>
+                                        </svg>
+                                        <p class="flag__percent">-30%</p>
+                                    </div>
+                                </div>
+                                <div class="directions__wrapper-description recomendation-cruises">
+                                    <h4 class="directions__wrapper-description_h4">Лазурные берега</h4>
+                                    <div class="recomendation-cruises__content">
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Порты:</p>
+                                            <p class="recomendation-cruises__content_subtitle">Канны, Франция; Пальма (о.
+                                                Майорка), Испания; Барселона…</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Период:</p>
+                                            <p class="recomendation-cruises__content_subtitle">3 ночи</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Начало:</p>
+                                            <p class="recomendation-cruises__content_subtitle">20/11/19</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Лайнер:</p>
+                                            <p class="recomendation-cruises__content_subtitle">Celebrity Equinox</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Компания:</p>
+                                            <p class="recomendation-cruises__content_subtitle">Celebrity Cruises</p>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- tablet adaptive -->
+        
+                                <div class="directions__wrapper-description recomendation-cruises tablet-block">
+                                    <h4 class="directions__wrapper-description_h4">Лазурные берега</h4>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Порты:</p>
+                                        <p class="recomendation-cruises__content_subtitle">Канны, Франция; Пальма (о.
+                                            Майорка), Испания; Барселона…</p>
+                                    </div>
+                                </div>
+        
+                                <div class="directions__wrapper-price liners__wrapper-read-more">
+                                    <p class="directions__wrapper-price_cost liners__wrapper-read-more_item">923€</p>
+                                </div>
+        
+        
+                                <!-- tablet adaptive -->
+        
+                                <div class="recomendation-cruises__content tablet-block">
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Период:</p>
+                                        <p class="recomendation-cruises__content_subtitle">3 ночи</p>
+                                    </div>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Начало:</p>
+                                        <p class="recomendation-cruises__content_subtitle">20/11/19</p>
+                                    </div>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Лайнер:</p>
+                                        <p class="recomendation-cruises__content_subtitle">Celebrity Equinox</p>
+                                    </div>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Компания:</p>
+                                        <p class="recomendation-cruises__content_subtitle">Celebrity Cruises</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrapper-directions">
+                        <svg class="like like-liked" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="like-id-click" fill-rule="evenodd" clip-rule="evenodd" d="M19.321 7.30115C18.7883 6.69734 18.0134 6.35458 17.2016 6.36364L12.9136 6.36359V3.63633C12.9136 1.62804 11.2617 0 9.22401 0C8.85949 0 8.52916 0.211574 8.38111 0.539869L4.93496 8.18175H2.7672C1.23892 8.18175 0 9.40278 0 10.909V17.2726C0 18.7788 1.23892 19.9998 2.7672 19.9998H5.53441H15.9391C17.3085 20.0151 18.489 19.0262 18.6959 17.6816L19.9686 9.50134C20.0906 8.70888 19.8538 7.90496 19.321 7.30115ZM5.53441 19.9998C6.04384 19.9998 6.45681 19.5928 6.45681 19.0907V9.09083C6.45681 8.58876 6.04384 8.18175 5.53441 8.18175H4.93496L4.69151 8.72162C4.63909 8.83785 4.61201 8.96363 4.61201 9.09083V19.0907C4.61201 19.5928 5.02498 19.9998 5.53441 19.9998Z"
+                                fill="transparent" stroke="#2281D6" stroke-width="2px" />
+                        </svg>
+                        <a href="#" class="directions__link">
+                            <div class="directions">
+                                <div class="directions__wrapper-img">
+                                    <img class="directions__wrapper-img_img" src="./assets/img/company-single/rome.png" alt="rome">
+                                    <div class="flag">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                                fill="#FF7506"></path>
+                                        </svg>
+                                        <p class="flag__percent">-30%</p>
+                                    </div>
+                                </div>
+                                <div class="directions__wrapper-description recomendation-cruises">
+                                    <h4 class="directions__wrapper-description_h4">Средиземноморье - из Рима в Барселону</h4>
+                                    <div class="recomendation-cruises__content">
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Порты:</p>
+                                            <p class="recomendation-cruises__content_subtitle">Чивитавеккья (Рим), Италия;
+                                                Ливорно
+                                                (Флоренция), Италия; Канны…</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Период:</p>
+                                            <p class="recomendation-cruises__content_subtitle">7 ночей</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Начало:</p>
+                                            <p class="recomendation-cruises__content_subtitle">17/10/19</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Лайнер:</p>
+                                            <p class="recomendation-cruises__content_subtitle">Norwegian Jewel</p>
+                                        </div>
+                                        <div class="recomendation-cruises__content_item">
+                                            <p class="recomendation-cruises__content_title">Компания:</p>
+                                            <p class="recomendation-cruises__content_subtitle">Norwegian Cruise Line</p>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- tablet adaptive -->
+        
+                                <div class="directions__wrapper-description recomendation-cruises tablet-block">
+                                    <h4 class="directions__wrapper-description_h4">Средиземноморье - из Рима в Барселону</h4>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Порты:</p>
+                                        <p class="recomendation-cruises__content_subtitle">Чивитавеккья (Рим), Италия;
+                                            Ливорно
+                                            (Флоренция), Италия; Канны…</p>
+                                    </div>
+                                </div>
+        
+                                <div class="directions__wrapper-price liners__wrapper-read-more">
+                                    <p class="directions__wrapper-price_cost liners__wrapper-read-more_item">876€</p>
+                                </div>
+        
+        
+                                <!-- tablet adaptive -->
+        
+                                <div class="recomendation-cruises__content tablet-block">
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Период:</p>
+                                        <p class="recomendation-cruises__content_subtitle">7 ночей</p>
+                                    </div>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Начало:</p>
+                                        <p class="recomendation-cruises__content_subtitle">17/10/19</p>
+                                    </div>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Лайнер:</p>
+                                        <p class="recomendation-cruises__content_subtitle">Norwegian Jewel</p>
+                                    </div>
+                                    <div class="recomendation-cruises__content_item">
+                                        <p class="recomendation-cruises__content_title">Компания:</p>
+                                        <p class="recomendation-cruises__content_subtitle">Norwegian Cruise Line</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="wrapper-title-block show-more">
+                    <div class="titles-block">
+                        <button type="button" class="titles-block__btn">больше</button>
+                    </div>
+                </div>
+            </div>
+
+    <!-- reviews -->
+
+    @@include('modules/reviews.html')
+
+    <!-- subscribe -->
+
+    @@include('modules/subscribe.html')
+
+</main>
+
+@@include('modules/modal-window.html')
+@@include('modules/html-footer.html')

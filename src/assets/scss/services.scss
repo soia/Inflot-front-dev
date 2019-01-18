@@ -1,0 +1,195 @@
+.services {
+    background-color: $lightGray;
+
+    &__content {
+        padding: 40px 105px 40px 105px;
+
+        @media screen and (max-width: 767px) { 
+            padding: 30px 40px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1250px) { 
+            padding: 40px 80px;
+        }
+
+        &_link, &_text {
+            color: $blue;
+            font-size: 20px;
+            line-height: 40px;
+
+            @media screen and (max-width: 767px) { 
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+
+        &_link {
+            display: inline-block;
+            font-family: $boldFont;
+            border-bottom: 1px solid $blue;
+        }
+
+        &_text {
+            font-family: $regularFont;
+            margin: 20px 0;
+
+            @media screen and (max-width: 767px) { 
+                font-size: 16px;
+                line-height: 36px;
+            }
+        }
+
+        &_h3 {
+            color: $blue;
+            font-size: 20px;
+            line-height: 40px;
+            margin-bottom: 30px;
+            font-family: $boldFont;
+
+            @media screen and (max-width: 767px) { 
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+
+        &_list {
+            margin-bottom: 20px;
+
+            li {
+                padding-left: 40px;
+                font-family: $regularFont;
+                color: $blue;
+                font-size: 20px;
+                line-height: 40px;
+
+                @media screen and (max-width: 767px) { 
+                    padding-left: 20px;
+                    font-size: 16px;
+                    line-height: 36px;
+                }
+
+                &:before {
+                    content: "\2022";
+                    color: $blue;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            }
+        }
+
+        &_list-decimal {
+            list-style: decimal;
+            padding-left: 40px;
+            font-family: $regularFont;
+            color: $blue;
+            font-size: 20px;
+            line-height: 40px;
+
+            @media screen and (max-width: 767px) { 
+                padding-left: 20px;
+                font-size: 16px;
+                line-height: 36px;
+            }
+        }
+
+        &_translate-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-right: 200px;
+
+            div {
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    
+                    @media screen and (max-width: 767px) { 
+                        line-height: 25px;
+                    }
+
+                    &:first-child {
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 767px) { 
+                margin-right: 0;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1250px) { 
+                margin-right: 0;
+            }
+
+            &_price {
+                text-align: center;
+                max-width: 250px;
+            }
+        }
+
+        &_tours-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 50px;
+            width: 100%;
+
+            @media screen and (max-width: 767px) { 
+                margin: 0;
+                flex-wrap: wrap;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1250px) { 
+                flex-wrap: wrap;
+            }
+
+            &_left-side, &_right-side {
+                width: 50%;
+
+                @media screen and (max-width: 767px) { 
+                    width: 100%;
+                }
+
+                @media screen and (min-width: 768px) and (max-width: 1250px) { 
+                    width: 100%;
+                }
+            }
+
+            &_item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+
+                @media screen and (max-width: 767px) { 
+                    justify-content: space-between;
+                }
+
+                .services__content_text {
+                    margin: 0 50px 0 20px;
+                    width: 350px;
+
+                    @media screen and (max-width: 767px) { 
+                        margin: 0 10px;
+                        line-height: 16px;
+                        font-size: 14px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-container__tab {
+
+        .tab-container__social {
+            display: none;
+
+            @media screen and (max-width: 767px) { 
+                height: auto;
+                display: block;
+            }
+        }
+    }
+}

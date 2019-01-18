@@ -1,0 +1,171 @@
+// Dropdown style
+.main-dropdown {
+    border: none;
+    border-right: $mainBorder;
+    width: 151px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $blue;
+    border-radius: 0;
+    background-color: $lightGray;
+    border-color: rgba(207, 213, 231, .5) !important;
+    font-family: $regularFont;
+    box-sizing: border-box;
+
+    &:hover {
+        background-color: $darkGray;
+        border-right: $mainBorder;
+    }
+
+    &:after {
+        border-bottom: 2px solid $blue;
+        border-right: 2px solid $blue;
+        right: 25px;
+    }
+
+    &__currency, &__language {
+        width: 81px;
+        height: 80px;
+
+        @media screen and (max-width: 767px) { 
+            width: 80px;
+        }
+    }
+
+    &__language { 
+        background-color: #09c6d0;
+        padding: 0;
+        color: white;
+
+        &:hover {
+            background-color: #09c6d0;
+        }
+
+        &:after {
+            display: none;
+        }
+
+        li {
+            color: #2281d6;
+        }
+    }
+
+    .list {
+        width: inherit;
+        border-radius: 0;
+    }
+
+    .current {
+        max-width: 85px;
+        overflow: hidden;
+
+        @media screen and (max-width: 767px) { 
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+
+    .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+        background-color: $darkGray;
+    }
+
+    .option {
+        height: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+
+        &:not(:last-child) {
+            border-bottom: $mainBorder;
+        }
+
+        @media screen and (max-width: 767px) { 
+            font-size: 12px;
+        }
+    }
+
+    &__category-liner {
+        width: 264px;
+
+        @media screen and (max-width: 767px) { 
+            border-bottom: $mainBorder;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1250px) { 
+            width: 200px;
+        }
+
+        .current {
+            max-width: 200px;
+        } 
+    }
+}
+
+select {
+    display: none;
+}
+
+
+.deck-dropdown {
+    border: none;
+    color: $blue;
+    background-color: $lightGray;
+    border-color: rgba(207, 213, 231, .5) !important;
+    font-family: $regularFont;
+    padding: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: $mainBorder;
+    padding-left: 20px;
+
+    &:hover {
+        background-color: $darkGray;
+        border-right: $mainBorder;
+    }
+
+    &:after {
+        border-bottom: 2px solid $blue;
+        border-right: 2px solid $blue;
+        right: 25px;
+    }
+
+    &__currency {
+        width: 81px;
+        height: 80px;
+    }
+
+    .list {
+        width: inherit;
+        border-radius: 0;
+    }
+
+    .current {
+        max-width: 85px;
+        overflow: hidden;
+        color: $blue;
+        font-family: $boldFont;
+        font-size: 34px;
+        font-size: 16px;
+    }
+
+    .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+        background-color: $darkGray;
+    }
+
+    .option {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+
+        &:not(:last-child) {
+            border-bottom: $mainBorder;
+        }
+    }
+}

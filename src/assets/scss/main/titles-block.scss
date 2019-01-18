@@ -1,0 +1,224 @@
+.titles-block {
+    @include titles-block;
+
+    &_text {
+        color: $blue;
+        font-family: $regularFont;
+        line-height: 26px;
+        max-width: 315px;
+        margin-left: 75px;
+
+        @media screen and (max-width: 767px) { 
+            margin-left: 0;
+        }
+    }
+
+    &__h3 {
+        @include h3-titles-block;
+    }
+
+    &__btn {
+        @include btn-titles-block;
+        @include hoverBtn;
+    }
+
+    &__form-subscribe {
+        display: flex;
+
+        @media screen and (max-width: 767px) { 
+           flex-wrap: wrap;
+           width: 100%;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1250px) { 
+            width: 100%;
+        }
+
+        &_wrapper-input {
+            position: relative;
+
+            @media screen and (max-width: 767px) { 
+                width: 100%;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1250px) { 
+                width: 100%;
+            }
+        }
+
+        &_label {
+            position: absolute;
+            top: -12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: $blue;
+            font-family: $regularFont;
+            font-size: 10px;
+            line-height: 10px;
+        }
+
+        &_input {
+            width: 233px;
+            height: 58px;
+            background-color: #deebf8;
+            border: none;
+            outline: none;
+            padding-left: 15px;
+            font-family: $regularFont;
+            color: $blue;
+
+            @media screen and (max-width: 767px) { 
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1250px) { 
+                width: 100%;
+            }
+
+            &::placeholder {
+                opacity: 0.45;
+                color: $blue;
+                font-family: $regularFont;
+                font-size: 16px;
+            }
+
+            &:focus::-webkit-input-placeholder { 
+                color:transparent; 
+            }
+
+            &:focus:-moz-placeholder { 
+                color:transparent; 
+            }
+        }
+
+        &_btn {
+            @include hoverBtn;
+            width: 185px;
+            height: 60px;
+            background-color:$turquoise;
+            border: none;
+            outline: none;
+            color: $white;
+            font-family: $regularFont;
+            font-size: 12px;
+            line-height: 12px;
+            cursor: pointer;
+            z-index: 1;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            @media screen and (max-width: 767px) { 
+                width: 100%;
+                margin-top: 25px;
+            }
+        }
+    }
+
+    &__subscribe-wrapper {
+        display: flex;
+
+        @media screen and (min-width: 1251px) and (max-width: 1350px) { 
+            margin-bottom: 40px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1250px) { 
+            margin-bottom: 40px;
+        }
+
+        @media screen and (max-width: 767px) { 
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.wrapper-title-block {
+    border: 1px solid #e1e8ef;
+    background-color: $lightGray;
+
+    &__two-btn {
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+
+        & > div {
+            @media screen and (max-width: 767px) { 
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            } 
+        }
+
+        @media screen and (max-width: 767px) { 
+            flex-wrap: wrap;
+            padding: 40px 40px;
+        }
+
+        .titles-block {
+            padding-left: 0;
+        }
+
+        .titles-block__btn {
+            margin: 0;
+        }
+        
+        .titles-block__btn_blue {
+            margin: 0 0 0 25px;
+            background-color: $blue;
+
+            @media screen and (max-width: 767px) { 
+                margin: 20px 0 0 0;
+            }
+
+            &::after {
+                -webkit-transition: all 0.3s;
+                  -moz-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                  transition: all 0.3s;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+                  width: 0;
+            }
+        
+            &::before,
+            &::after {
+                content: '';
+                background: $turquoise;
+                position: absolute;
+                z-index: -1;
+            }
+        
+            &:hover:after {
+                width: 100%;
+            }
+        
+            &:hover {
+                color: $white;
+            }
+
+            .left-rewiew {
+                padding: 17px 25px;
+                color: $white;
+                font-family: $regularFont;
+                font-size: 12px;
+                line-height: 14px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.show-more {
+
+    &__cusom-size {
+        margin-bottom: 140px;
+        border-bottom: $mainBorder;
+    }
+
+    .titles-block {
+        justify-content: center;
+    }
+}

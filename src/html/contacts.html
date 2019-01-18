@@ -1,0 +1,864 @@
+@@include('modules/html-head.html',{ "bodyClass": "support_body", "pageTitle": "Inflot Contacts" })
+@@include('modules/header-white.html',{
+"headerClass": "" })
+
+<main class="about-company contacts">
+
+    <!--  company name -->
+
+    <section class="company-name-wrapper">
+        <div class="company-name-wrapper__info">
+            <p class="company-name-wrapper__info_text">Информация</p>
+            <h1 class="company-name-wrapper__info_title">Контакты</h1>
+        </div>
+        <div class="company-name-wrapper__logo"><img src="./assets/img/icons-logo/blue-logo.svg" alt="alt"></div>
+    </section>
+
+    <!-- tab -->
+
+    <div class="tab-container">
+
+        <ul class="tab-container__tab">
+            <li class="tab-container__tab_filter">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.03196 3.03819L7.5016 10.6885V15.8334C7.5016 16.1491 7.67993 16.4376 7.96226 16.5788L11.2956 18.2454C11.8497 18.5225 12.5016 18.1196 12.5016 17.5001V10.6885L18.9712 3.03819C19.4293 2.49654 19.0443 1.66675 18.3349 1.66675H1.66827C0.958911 1.66675 0.57391 2.49654 1.03196 3.03819ZM3.46435 3.33341H16.5388L11.032 9.84531C10.9047 9.99575 10.8349 10.1864 10.8349 10.3834V16.1517L9.16827 15.3184V10.3834C9.16827 10.1864 9.09846 9.99575 8.97124 9.84531L3.46435 3.33341Z"
+                        fill="#2281d6" />
+                </svg>
+            </li>
+            <li class="mobile-social">
+                <ul class="tab-container__select">
+                    <li class="tab-container__social">
+                        <a href="#" class="tab-container__social_link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0.833344C9.73858 0.833344 7.5 3.07192 7.5 5.83334V7.50001H5.83333C5.3731 7.50001 5 7.87311 5 8.33334V11.6667C5 12.1269 5.3731 12.5 5.83333 12.5H7.5V18.3333C7.5 18.7936 7.8731 19.1667 8.33333 19.1667H11.6667C12.1269 19.1667 12.5 18.7936 12.5 18.3333V12.5H14.1667C14.5491 12.5 14.8824 12.2398 14.9751 11.8688L15.8085 8.53546C15.9399 8.0095 15.5421 7.50001 15 7.50001H12.5V5.83334H15C15.4602 5.83334 15.8333 5.46025 15.8333 5.00001V1.66668C15.8333 1.20644 15.4602 0.833344 15 0.833344H12.5ZM12.5 2.50001H14.1667V4.16668H12.5C11.5795 4.16668 10.8333 4.91287 10.8333 5.83334V8.33334C10.8333 8.79358 11.2064 9.16668 11.6667 9.16668H13.9327L13.516 10.8333H11.6667C11.2064 10.8333 10.8333 11.2064 10.8333 11.6667V17.5H9.16667V11.6667C9.16667 11.2064 8.79357 10.8333 8.33333 10.8333H6.66667V9.16668H8.33333C8.79357 9.16668 9.16667 8.79358 9.16667 8.33334V5.83334C9.16667 3.99239 10.6591 2.50001 12.5 2.50001Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="tab-container__social">
+                        <a href="#" class="tab-container__social_link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1667 0.833344H5.83337C3.07195 0.833344 0.833374 3.07192 0.833374 5.83334V14.1667C0.833374 16.9281 3.07195 19.1667 5.83337 19.1667H14.1667C16.9281 19.1667 19.1667 16.9281 19.1667 14.1667V5.83334C19.1667 3.07192 16.9281 0.833344 14.1667 0.833344ZM2.50004 5.83334C2.50004 3.99239 3.99242 2.50001 5.83337 2.50001H14.1667C16.0077 2.50001 17.5 3.99239 17.5 5.83334V14.1667C17.5 16.0076 16.0077 17.5 14.1667 17.5H5.83337C3.99242 17.5 2.50004 16.0076 2.50004 14.1667V5.83334ZM14.1577 9.35277C14.4214 11.1309 13.515 12.8776 11.9094 13.6858C10.3038 14.4939 8.3609 14.1813 7.08984 12.9102C5.81879 11.6392 5.50615 9.69629 6.31431 8.09066C7.12247 6.48504 8.86921 5.57869 10.6473 5.84236C12.4629 6.11159 13.8885 7.53717 14.1577 9.35277ZM10.4028 7.491C11.4922 7.65253 12.3476 8.50789 12.5091 9.59725C12.6673 10.6641 12.1235 11.7121 11.1601 12.197C10.1967 12.6819 9.031 12.4944 8.26837 11.7317C7.50573 10.9691 7.31815 9.80335 7.80304 8.83998C8.28794 7.87661 9.33598 7.3328 10.4028 7.491Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="tab-container__social">
+                        <a href="#" class="tab-container__social_link">
+                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9802 2.4352C18.1442 1.76189 17.3855 1.24542 16.8192 1.64486C16.2879 2.01963 15.7102 2.32262 15.1011 2.54651C13.9662 1.53083 12.3449 1.21721 10.8956 1.77038C9.29301 2.38206 8.23977 3.92421 8.25129 5.63761C6.10124 5.47628 4.11896 4.36189 2.86527 2.5767C2.53025 2.09965 1.8029 2.17043 1.56615 2.70313C1.46844 2.92296 1.33092 3.29777 1.19562 3.79521C0.748328 5.43966 0.670069 7.17119 1.20622 8.81888C1.7255 10.4147 2.78402 11.7637 4.43712 12.7827C3.29847 13.3072 2.04626 13.5586 0.781314 13.5083C-0.0079792 13.4769 -0.303239 14.5297 0.387273 14.9133C7.91696 19.0965 16.5015 14.5273 16.5015 5.63273C16.5011 5.50975 16.4953 5.38747 16.4841 5.26599C17.2083 4.46243 17.7233 3.4901 17.9802 2.4352ZM14.3306 3.89741C14.5242 4.12 14.8303 4.20844 15.1128 4.12338C15.2865 4.07107 15.4584 4.01352 15.6283 3.95086C15.4867 4.13585 15.3319 4.31146 15.1649 4.47623C14.9866 4.65201 14.9078 4.90515 14.9548 5.15104C14.9853 5.31064 15.001 5.47273 15.0015 5.63521C15.0015 12.3424 9.45987 16.1657 3.70051 14.6505C4.66374 14.3756 5.5834 13.948 6.42273 13.3783C6.90946 13.0479 6.84368 12.3113 6.30611 12.0724C4.30276 11.182 3.14038 9.91521 2.63261 8.35474C2.23661 7.13777 2.25828 5.819 2.55455 4.54018C4.23897 6.25571 6.5754 7.21839 9.02095 7.15498C9.42745 7.14444 9.75151 6.81187 9.75151 6.40523V5.65523C9.73676 4.55009 10.4073 3.5623 11.4305 3.17177C12.4537 2.78124 13.6119 3.07103 14.3306 3.89741Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="tab-container__tab-item tab-link selected-item" data-tab="tab-1">
+                <span>Главный офис Киев</span>
+            </li>
+            <li class="tab-container__tab-item tab-link" data-tab="tab-2">
+                <span>Представительство в г. Львове</span>
+            </li>
+        </ul>
+        <div class="tab-container__select mobile-display-none">
+            <div class="tab-container__social">
+                <a href="#" class="tab-container__social_link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0.833344C9.73858 0.833344 7.5 3.07192 7.5 5.83334V7.50001H5.83333C5.3731 7.50001 5 7.87311 5 8.33334V11.6667C5 12.1269 5.3731 12.5 5.83333 12.5H7.5V18.3333C7.5 18.7936 7.8731 19.1667 8.33333 19.1667H11.6667C12.1269 19.1667 12.5 18.7936 12.5 18.3333V12.5H14.1667C14.5491 12.5 14.8824 12.2398 14.9751 11.8688L15.8085 8.53546C15.9399 8.0095 15.5421 7.50001 15 7.50001H12.5V5.83334H15C15.4602 5.83334 15.8333 5.46025 15.8333 5.00001V1.66668C15.8333 1.20644 15.4602 0.833344 15 0.833344H12.5ZM12.5 2.50001H14.1667V4.16668H12.5C11.5795 4.16668 10.8333 4.91287 10.8333 5.83334V8.33334C10.8333 8.79358 11.2064 9.16668 11.6667 9.16668H13.9327L13.516 10.8333H11.6667C11.2064 10.8333 10.8333 11.2064 10.8333 11.6667V17.5H9.16667V11.6667C9.16667 11.2064 8.79357 10.8333 8.33333 10.8333H6.66667V9.16668H8.33333C8.79357 9.16668 9.16667 8.79358 9.16667 8.33334V5.83334C9.16667 3.99239 10.6591 2.50001 12.5 2.50001Z"
+                            fill="#2281D6" />
+                    </svg>
+                </a>
+            </div>
+            <div class="tab-container__social">
+                <a href="#" class="tab-container__social_link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1667 0.833344H5.83337C3.07195 0.833344 0.833374 3.07192 0.833374 5.83334V14.1667C0.833374 16.9281 3.07195 19.1667 5.83337 19.1667H14.1667C16.9281 19.1667 19.1667 16.9281 19.1667 14.1667V5.83334C19.1667 3.07192 16.9281 0.833344 14.1667 0.833344ZM2.50004 5.83334C2.50004 3.99239 3.99242 2.50001 5.83337 2.50001H14.1667C16.0077 2.50001 17.5 3.99239 17.5 5.83334V14.1667C17.5 16.0076 16.0077 17.5 14.1667 17.5H5.83337C3.99242 17.5 2.50004 16.0076 2.50004 14.1667V5.83334ZM14.1577 9.35277C14.4214 11.1309 13.515 12.8776 11.9094 13.6858C10.3038 14.4939 8.3609 14.1813 7.08984 12.9102C5.81879 11.6392 5.50615 9.69629 6.31431 8.09066C7.12247 6.48504 8.86921 5.57869 10.6473 5.84236C12.4629 6.11159 13.8885 7.53717 14.1577 9.35277ZM10.4028 7.491C11.4922 7.65253 12.3476 8.50789 12.5091 9.59725C12.6673 10.6641 12.1235 11.7121 11.1601 12.197C10.1967 12.6819 9.031 12.4944 8.26837 11.7317C7.50573 10.9691 7.31815 9.80335 7.80304 8.83998C8.28794 7.87661 9.33598 7.3328 10.4028 7.491Z"
+                            fill="#2281D6" />
+                    </svg>
+                </a>
+            </div>
+            <div class="tab-container__social">
+                <a href="#" class="tab-container__social_link">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9802 2.4352C18.1442 1.76189 17.3855 1.24542 16.8192 1.64486C16.2879 2.01963 15.7102 2.32262 15.1011 2.54651C13.9662 1.53083 12.3449 1.21721 10.8956 1.77038C9.29301 2.38206 8.23977 3.92421 8.25129 5.63761C6.10124 5.47628 4.11896 4.36189 2.86527 2.5767C2.53025 2.09965 1.8029 2.17043 1.56615 2.70313C1.46844 2.92296 1.33092 3.29777 1.19562 3.79521C0.748328 5.43966 0.670069 7.17119 1.20622 8.81888C1.7255 10.4147 2.78402 11.7637 4.43712 12.7827C3.29847 13.3072 2.04626 13.5586 0.781314 13.5083C-0.0079792 13.4769 -0.303239 14.5297 0.387273 14.9133C7.91696 19.0965 16.5015 14.5273 16.5015 5.63273C16.5011 5.50975 16.4953 5.38747 16.4841 5.26599C17.2083 4.46243 17.7233 3.4901 17.9802 2.4352ZM14.3306 3.89741C14.5242 4.12 14.8303 4.20844 15.1128 4.12338C15.2865 4.07107 15.4584 4.01352 15.6283 3.95086C15.4867 4.13585 15.3319 4.31146 15.1649 4.47623C14.9866 4.65201 14.9078 4.90515 14.9548 5.15104C14.9853 5.31064 15.001 5.47273 15.0015 5.63521C15.0015 12.3424 9.45987 16.1657 3.70051 14.6505C4.66374 14.3756 5.5834 13.948 6.42273 13.3783C6.90946 13.0479 6.84368 12.3113 6.30611 12.0724C4.30276 11.182 3.14038 9.91521 2.63261 8.35474C2.23661 7.13777 2.25828 5.819 2.55455 4.54018C4.23897 6.25571 6.5754 7.21839 9.02095 7.15498C9.42745 7.14444 9.75151 6.81187 9.75151 6.40523V5.65523C9.73676 4.55009 10.4073 3.5623 11.4305 3.17177C12.4537 2.78124 13.6119 3.07103 14.3306 3.89741Z"
+                            fill="#2281D6" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- tab 1 -->
+    <div class="tab-content tab-content-remove selected-item" id="tab-1">
+        <div class="contacts-wrapper">
+            <div class="contacts-wrapper_left-side"><iframe class="contacts-wrapper_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.7450957325277!2d30.523064615731233!3d50.44584847947472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce541578914b%3A0x7d75d01774dc7c1e!2zMTHQkA!5e0!3m2!1sru!2sua!4v1545327933850"></iframe></div>
+
+            <div class="contacts-wrapper_right-side">
+                <div>
+                    <p class="contacts-wrapper_right-side__light-text">Главный офис:</p>
+                    <p class="contacts-wrapper_right-side__bold-text">Украина, 01024, г. Киев,</p>
+                    <p class="contacts-wrapper_right-side__bold-text">ул. Лютеранская, 11 А, офис 2</p>
+                </div>
+                <div>
+                    <a href="tel:+38(044)3643307" class="contacts-wrapper_right-side__link">+38(044) 364 33 07;</a>
+                    <br>
+                    <a href="tel:+38(067)3070100" class="contacts-wrapper_right-side__link">+38(067) 307 01 00</a>
+                    <br>
+                    <a href="mailto:e-mail:booking@inflotcruises.com" class="contacts-wrapper_right-side__link">e-mail:
+                        booking@inflotcruises.com</a>
+                </div>
+                <div>
+                    <p class="contacts-wrapper_right-side__light-text">График работы офиса:</p>
+                    <p class="contacts-wrapper_right-side__bold-text">Сб: в дежурном режиме</p>
+                    <p class="contacts-wrapper_right-side__bold-text">Вс: выходной</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tab 2 -->
+    <div class="tab-content tab-content-remove" id="tab-2">
+        <div class="contacts-wrapper">
+            <div class="contacts-wrapper_left-side"><iframe class="contacts-wrapper_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.0350212341327!2d24.023024265709438!3d49.841799479396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add723cea886d%3A0xc700d4fab69bc838!2sRIUS!5e0!3m2!1sru!2sua!4v1545330694199"></iframe></div>
+
+            <div class="contacts-wrapper_right-side">
+                <div>
+                    <p class="contacts-wrapper_right-side__light-text">Представительство в г. Львов:</p>
+                    <p class="contacts-wrapper_right-side__bold-text">Украина, 79000, г. Львов,</p>
+                    <p class="contacts-wrapper_right-side__bold-text">ул. Гнатюка, 12 А, офис 2</p>
+                </div>
+                <div>
+                    <a href="tel:(032)2533638" class="contacts-wrapper_right-side__link">(032) 253 36 38;</a>
+                    <br>
+                    <a href="tel:+38(067)3070100" class="contacts-wrapper_right-side__link">+38(067) 307 01 00</a>
+                    <br>
+                    <a href="mailto:e-mail:booking@inflotcruises.com" class="contacts-wrapper_right-side__link">e-mail:
+                        booking@inflotcruises.com</a>
+                </div>
+                <div>
+                    <p class="contacts-wrapper_right-side__light-text">График работы офиса:</p>
+                    <p class="contacts-wrapper_right-side__bold-text">Сб: в дежурном режиме</p>
+                    <p class="contacts-wrapper_right-side__bold-text">Вс: выходной</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- information block -->
+    <div class="wrapper-information-block">
+        <ul class="wrapper-information-block__list">
+            <li class="wrapper-information-block__svg">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.833252 9.99992C0.833252 15.0625 4.93731 19.1666 9.99992 19.1666C15.0625 19.1666 19.1666 15.0625 19.1666 9.99992C19.1666 4.93731 15.0625 0.833252 9.99992 0.833252C4.93731 0.833252 0.833252 4.93731 0.833252 9.99992ZM17.4999 9.99992C17.4999 14.1421 14.1421 17.4999 9.99992 17.4999C5.85778 17.4999 2.49992 14.1421 2.49992 9.99992C2.49992 5.85778 5.85778 2.49992 9.99992 2.49992C14.1421 2.49992 17.4999 5.85778 17.4999 9.99992ZM9.16659 6.66658V9.99992C9.16659 10.4602 9.53968 10.8333 9.99992 10.8333C10.4602 10.8333 10.8333 10.4602 10.8333 9.99992V6.66658C10.8333 6.20635 10.4602 5.83325 9.99992 5.83325C9.53968 5.83325 9.16659 6.20635 9.16659 6.66658ZM10.5892 11.9107C10.9146 12.2361 10.9146 12.7637 10.5892 13.0892C10.2637 13.4146 9.7361 13.4146 9.41066 13.0892C9.08523 12.7637 9.08523 12.2361 9.41066 11.9107C9.7361 11.5852 10.2637 11.5852 10.5892 11.9107Z"
+                        fill="#2281D6" />
+                </svg>
+            </li>
+            <li class="wrapper-information-block__title">
+                <span>Информация</span>
+            </li>
+        </ul>
+        <div class="wrapper-information-block__content">
+
+            <p class="wrapper-information-block__content_text">Вас рада приветствовать Группа компаний «Инфлот Круиз
+                энд Ферри Украина».</p>
+
+            <p class="wrapper-information-block__content_text">Инфлот Круиз энд Ферри Украина является многопрофильным
+                туроператором по круизам и предлагает круизные путешествия и туры по всему миру для украинских туристов
+                и береговое экскурсионное обслуживание круизных судов в Украине. Мы работаем в круизном туризме с 19
+                июля 2001 года.</p>
+
+        </div>
+    </div>
+
+    <!-- our team title -->
+
+    <section class="wrapper-title-block border-bottom-none border-bottom-tablet border-bottom-mobile">
+        <div class="titles-block">
+            <h3 class="titles-block__h3">Сотрудники</h3>
+            <button type="button" class="titles-block__btn btn-accordion trigger">Скрыть</button>
+        </div>
+    </section>
+
+    <!-- tab -->
+    <div class="hideAccordion">
+
+        <div class="tab-container tablet-display-none mobile-display-none">
+
+            <ul class="tab-container__tab">
+                <li class="tab-container__tab_filter">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.03196 3.03819L7.5016 10.6885V15.8334C7.5016 16.1491 7.67993 16.4376 7.96226 16.5788L11.2956 18.2454C11.8497 18.5225 12.5016 18.1196 12.5016 17.5001V10.6885L18.9712 3.03819C19.4293 2.49654 19.0443 1.66675 18.3349 1.66675H1.66827C0.958911 1.66675 0.57391 2.49654 1.03196 3.03819ZM3.46435 3.33341H16.5388L11.032 9.84531C10.9047 9.99575 10.8349 10.1864 10.8349 10.3834V16.1517L9.16827 15.3184V10.3834C9.16827 10.1864 9.09846 9.99575 8.97124 9.84531L3.46435 3.33341Z"
+                            fill="#2281d6" />
+                    </svg>
+                </li>
+                <li class="tab-container__tab-item tab-team selected-item" data-tab="tab-team-1">
+                    <span>Продажи</span>
+                </li>
+                <li class="tab-container__tab-item tab-team" data-tab="tab-team-2">
+                    <span>Руководство</span>
+                </li>
+                <li class="tab-container__tab-item tab-team" data-tab="tab-team-3">
+                    <span>Работа с агентами</span>
+                </li>
+                <li class="tab-container__tab-item tab-team" data-tab="tab-team-4">
+                    <span>Финансы</span>
+                </li>
+                <li class="tab-container__tab-item tab-team" data-tab="tab-team-5">
+                    <span>Визовый отдел</span>
+                </li>
+                <li class="tab-container__tab-item tab-team" data-tab="tab-team-6">
+                    <span>Экскурсионный отдел</span>
+                </li>
+                <li class="tab-container__tab-item tab-team" data-tab="tab-team-7">
+                    <span>Продвижение</span>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- tab 1 -->
+        <div class="tab-content team-tab-remove selected-item" id="tab-team-1">
+
+            <div class="our-team">
+                <div class="our-team-list">
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff1.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Игорь Прядко</p>
+                                <p>Генеральный директор</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:booking@inflotcruises.com" class="hover-underline">booking@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:janett_smirnova" class="hover-underline">-</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff2.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Мария Климович</p>
+                                <p>Заместитель директора</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:m.klimovich@inflotcruises.com" class="hover-underline">m.klimovich@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:maria_klimovich" class="hover-underline">maria_klimovich</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff3.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Миа Никитина</p>
+                                <p>Заместитель директора по маркетингу и продажам</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:a.gusev@inflotcruises.com" class="hover-underline">a.gusev@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:a.gusev" class="hover-underline">a.gusev</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                </div>
+
+                <!-- show more  -->
+
+                <div class="wrapper-title-block show-more border-bottom-none tablet-display-block mobile-display-block">
+                    <div class="titles-block">
+                    <button type="button" class="titles-block__btn">больше</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- tab 2 -->
+        <div class="tab-content team-tab-remove" id="tab-team-2">
+            <div class="our-team">
+                <div class="our-team-list">
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff3.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Миа Никитина</p>
+                                <p>Заместитель директора по маркетингу и продажам</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:a.gusev@inflotcruises.com" class="hover-underline">a.gusev@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:a.gusev" class="hover-underline">a.gusev</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff1.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Игорь Прядко</p>
+                                <p>Генеральный директор</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:booking@inflotcruises.com" class="hover-underline">booking@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p></p>
+                                    <p><a href="skype:janett_smirnova" class="hover-underline"></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff2.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Мария Климович</p>
+                                <p>Заместитель директора</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:m.klimovich@inflotcruises.com" class="hover-underline">m.klimovich@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:maria_klimovich" class="hover-underline">maria_klimovich</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tab 3 -->
+        <div class="tab-content team-tab-remove" id="tab-team-3">
+            <div class="our-team">
+                <div class="our-team-list">
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff1.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Игорь Прядко</p>
+                                <p>Генеральный директор</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:booking@inflotcruises.com" class="hover-underline">booking@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p></p>
+                                    <p><a href="skype:janett_smirnova" class="hover-underline"></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff2.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Мария Климович</p>
+                                <p>Заместитель директора</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:m.klimovich@inflotcruises.com" class="hover-underline">m.klimovich@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:maria_klimovich" class="hover-underline">maria_klimovich</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff3.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Миа Никитина</p>
+                                <p>Заместитель директора по маркетингу и продажам</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:a.gusev@inflotcruises.com" class="hover-underline">a.gusev@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:a.gusev" class="hover-underline">a.gusev</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tab 4 -->
+        <div class="tab-content team-tab-remove" id="tab-team-4">
+            <div class="our-team">
+                <div class="our-team-list">
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff2.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Мария Климович</p>
+                                <p>Заместитель директора</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:m.klimovich@inflotcruises.com" class="hover-underline">m.klimovich@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:maria_klimovich" class="hover-underline">maria_klimovich</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff1.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Игорь Прядко</p>
+                                <p>Генеральный директор</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:booking@inflotcruises.com" class="hover-underline">booking@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p></p>
+                                    <p><a href="skype:janett_smirnova" class="hover-underline"></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff3.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Миа Никитина</p>
+                                <p>Заместитель директора по маркетингу и продажам</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:a.gusev@inflotcruises.com" class="hover-underline">a.gusev@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:a.gusev" class="hover-underline">a.gusev</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tab 5 -->
+        <div class="tab-content team-tab-remove" id="tab-team-5">
+            <div class="our-team">
+                <div class="our-team-list">
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff1.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Игорь Прядко</p>
+                                <p>Генеральный директор</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:booking@inflotcruises.com" class="hover-underline">booking@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p></p>
+                                    <p><a href="skype:janett_smirnova" class="hover-underline"></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff2.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Мария Климович</p>
+                                <p>Заместитель директора</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:m.klimovich@inflotcruises.com" class="hover-underline">m.klimovich@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:maria_klimovich" class="hover-underline">maria_klimovich</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff3.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Миа Никитина</p>
+                                <p>Заместитель директора по маркетингу и продажам</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:a.gusev@inflotcruises.com" class="hover-underline">a.gusev@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:a.gusev" class="hover-underline">a.gusev</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tab 6 -->
+        <div class="tab-content team-tab-remove" id="tab-team-6">
+            <div class="our-team">
+                <div class="our-team-list">
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff3.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Миа Никитина</p>
+                                <p>Заместитель директора по маркетингу и продажам</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:a.gusev@inflotcruises.com" class="hover-underline">a.gusev@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:a.gusev" class="hover-underline">a.gusev</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff1.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Игорь Прядко</p>
+                                <p>Генеральный директор</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:booking@inflotcruises.com" class="hover-underline">booking@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p></p>
+                                    <p><a href="skype:janett_smirnova" class="hover-underline"></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff2.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Мария Климович</p>
+                                <p>Заместитель директора</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:m.klimovich@inflotcruises.com" class="hover-underline">m.klimovich@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:maria_klimovich" class="hover-underline">maria_klimovich</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tab 7 -->
+        <div class="tab-content team-tab-remove" id="tab-team-7">
+            <div class="our-team">
+                <div class="our-team-list">
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff1.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Игорь Прядко</p>
+                                <p>Генеральный директор</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:booking@inflotcruises.com" class="hover-underline">booking@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p></p>
+                                    <p><a href="skype:janett_smirnova" class="hover-underline"></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff2.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Мария Климович</p>
+                                <p>Заместитель директора</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:m.klimovich@inflotcruises.com" class="hover-underline">m.klimovich@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:maria_klimovich" class="hover-underline">maria_klimovich</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                    <div class="our-team-list_item popUp">
+                        <div class="our-team-list__img">
+                            <img src="./assets/img/team/stuff3.png" alt="team">
+                        </div>
+                        <div class="our-team-list__content">
+                            <div class="our-team-list__content_name">
+                                <p>Миа Никитина</p>
+                                <p>Заместитель директора по маркетингу и продажам</p>
+                            </div>
+                            <div class="our-team-list__content_text">
+                                <div class="our-team-list__content_item">
+                                    <p>Тел:</p>
+                                    <p><a href="tel:(044)3643307" class="hover-underline">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="our-team-list__content_item">
+                                    <p>e-mail:</p>
+                                    <p><a href="mailto:a.gusev@inflotcruises.com" class="hover-underline">a.gusev@inflotcruises.com</a></p>
+                                </div>
+
+                                <div class="our-team-list__content_item">
+                                    <p>skype:</p>
+                                    <p><a href="skype:a.gusev" class="hover-underline">a.gusev</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" data-effect="mfp-zoom-in" class="left-rewiew our-team__connetion">Связаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    @@include('modules/reviews.html')
+
+    @@include('modules/subscribe.html')
+
+</main>
+
+@@include('modules/modal-window.html')
+@@include('modules/html-footer.html')

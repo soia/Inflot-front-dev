@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://rawgithub.com/dimsemenov/Magnific-Popup/master/dist/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+    
+    <title>Inflot Agency</title>
+</head>
+
+<body class="support_body" id="body">
+
+    <!-- preloader -->
+
+<div class="loader">
+    <div class="laoder-frame">
+        <img class="svg-loader" src="https://kyivstore.com/wp-content/uploads/2016/09/loader.svg" alt="circle-loader">
+    </div>
+</div>
+<header>
+    <div class="header__container header__white">
+        <div class="header header-cabinet">
+                <div class="menu" id="menu">
+                        <div class="menu__header">
+                            <div class="menu__header_btn btnMenu">
+                                <p class="toggle">Закрыть</p>
+                            </div>
+                            <div class="header__logo">
+                                <a href="#"><img src="./assets/img/icons-logo/blue-logo.svg" alt="inflot-logo"></a>
+                            </div>
+                            <div class="header__right-side">
+                                <ul class="header__right-side_links popUp">
+                                    <li class="header__right-side_button"><a href="#sign-in" class="sign-btn" data-effect="mfp-zoom-in">Войти</a></li>
+                                </ul>
+                                <div class="header__right-side_language">
+                                    <select class="main-dropdown main-dropdown__language">
+                                        <option selected disabled value="1">Ру</option>
+                                        <option value="2">Ру</option>
+                                        <option value="3">Укр</option>
+                                        <option value="4">En</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__categories">
+                            <div class="menu__categories_top">
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Резюме
+                                            агенства</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Все заявки</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Бонусная програма</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Инструкции</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Просчет</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Выйти</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__bottom">
+                            <p class="menu__bottom_rights">© 2018 Inflot. Все права защищены.</p>
+                            <div class="menu__bottom_social-wrapper">
+                                <a href="#" target="_blank"><img src="./assets/img/icons-logo/blue-twitter.svg" alt="twitter"></a>
+                                <a href="#" target="_blank"><img src="./assets/img/icons-logo/blue-facebook.svg" alt="facebook"></a>
+                                <a href="#" target="_blank"><img src="./assets/img/icons-logo/blue-instagram.svg" alt="instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+            <div class="header-cabinet__left-side">
+                <div class="header__left-side_menu btnMenu">
+                    <svg class="ham hamRotate ham8" id="svg" viewBox="0 0 100 100" width="30">
+                        <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
+                        <path class="line middle" d="m 30,50 h 40"></path>
+                        <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
+                    </svg>
+                    <p>Меню</p>
+                </div>
+                <div class="search-box mobile-display-none">
+                    <form action="#">
+                        <input type="text" placeholder="Поиск" required class="search-box-input">
+                        <div class="header__right-side_search">
+                            <img src="./assets/img/icons-logo/search.svg" alt="search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="header-cabinet__left-side_links">
+                    <li class="header-cabinet__left-side_links-active"><a href="#"><span class="link-menu-header">Резюме
+                                агенства</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">Все заявки</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">Бонусная програма</span></a></li>
+                </ul>
+            </div>
+            <div class="header-cabinet__logo">
+                <a href="#">
+                    <img src="./assets/img/icons-logo/blue-logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header-cabinet__right-side">
+                <ul class="header-cabinet__right-side_links">
+                    <li><a href="#"><span class="link-menu-header">Инструкции</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">просчет</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">Выйти</span></a></li>
+                    <li>
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./assets/img/icons-logo/logo-cabinet.png" alt="logo" class="header-cabinet__right-side_links-logo-cabinet">
+                                <div class="header-cabinet__right-side_wrapper-name">
+                                    <p>John</p>
+                                    <p>Doe</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-cabinet__right-side_language">
+                    <select class="main-dropdown main-dropdown__language">
+                        <option selected disabled value="1">Ру</option>
+                        <option value="2">Ру</option>
+                        <option value="3">Укр</option>
+                        <option value="4">En</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="header__breadcrumbs-wrapper">
+            <a class="header__breadcrumbs-wrapper_plus">+</a>
+            <a class="header__breadcrumbs-wrapper_item">Личный кабинет <span class="slash">|</span> </a>
+        </div>
+    </div>
+</header>
+
+<main class="cabinet-resume">
+
+    <!--  agency title -->
+
+    <section class="directions-title-wrapper">
+        <div class="directions-title-wrapper__info">
+            <p class="directions-title-wrapper__info_text">Агенство</p>
+            <h1 class="directions-title-wrapper__info_title">ФОП CruiseDirect</h1>
+        </div>
+        <a href="#" target="_blank" class="titles-block__btn">Круизы онлайн</a>
+    </section>
+
+    <!--  information block -->
+
+    <div class="wrapper-information-block__container">
+        <div class="wrapper-information-block__list">
+            <div class="wrapper-information-block__left-side border-right">
+                <div class="wrapper-information-block__svg">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.833252 9.99992C0.833252 15.0625 4.93731 19.1666 9.99992 19.1666C15.0625 19.1666 19.1666 15.0625 19.1666 9.99992C19.1666 4.93731 15.0625 0.833252 9.99992 0.833252C4.93731 0.833252 0.833252 4.93731 0.833252 9.99992ZM17.4999 9.99992C17.4999 14.1421 14.1421 17.4999 9.99992 17.4999C5.85778 17.4999 2.49992 14.1421 2.49992 9.99992C2.49992 5.85778 5.85778 2.49992 9.99992 2.49992C14.1421 2.49992 17.4999 5.85778 17.4999 9.99992ZM9.16659 6.66658V9.99992C9.16659 10.4602 9.53968 10.8333 9.99992 10.8333C10.4602 10.8333 10.8333 10.4602 10.8333 9.99992V6.66658C10.8333 6.20635 10.4602 5.83325 9.99992 5.83325C9.53968 5.83325 9.16659 6.20635 9.16659 6.66658ZM10.5892 11.9107C10.9146 12.2361 10.9146 12.7637 10.5892 13.0892C10.2637 13.4146 9.7361 13.4146 9.41066 13.0892C9.08523 12.7637 9.08523 12.2361 9.41066 11.9107C9.7361 11.5852 10.2637 11.5852 10.5892 11.9107Z"
+                            fill="#2281D6"></path>
+                    </svg>
+                </div>
+                <div class="wrapper-information-block__title">
+                    <span>Информация агенстве</span>
+                </div>
+            </div>
+            <div class="cabinet-resume__left-side">
+                <div class="cabinet-resume__left-side_row">
+                    <p>ПІП керівника:</p>
+                    <p>Иванов Иван Иванович</p>
+                </div>
+                <div class="cabinet-resume__left-side_row">
+                    <div class="cabinet-resume__left-side_row-item">
+                        <p>Город:</p>
+                        <p>Киев</p>
+                    </div>
+                    <div class="cabinet-resume__left-side_row-item">
+                        <p>Адресс:</p>
+                        <p>ул. Машиностроиетелей, 23</p>
+                    </div>
+                </div>
+                <div class="cabinet-resume__left-side_row">
+                    <div class="cabinet-resume__left-side_row-item">
+                        <p>Тел.:</p>
+                        <p><a href="tel:(044)3633303" class="footer__categories_phone">(044) 363 33 03</a>
+                        </p>
+                    </div>
+                    <div class="cabinet-resume__left-side_row-item">
+                        <p>mail:</p>
+                        <p><a href="mailto:booking@romashka.com" class="footer__categories_mail link-menu-header">booking@romashka.com</a></p>
+                    </div>
+                </div>
+                <div class="cabinet-resume__left-side_row">
+                    <div class="cabinet-resume__left-side_row-item">
+                        <p>Договір №: </p>
+                        <p>7773568</p>
+                    </div>
+                    <div class="cabinet-resume__left-side_row-item">
+                        <p>Строк дії договорy:</p>
+                        <p>31.01.2017 – 31.01.2018</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-information-block__list">
+            <div class="wrapper-information-block__right-side">
+                <div class="flex">
+                    <div class="wrapper-information-block__svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 9.99996C7.69881 9.99996 5.83333 8.13448 5.83333 5.83329C5.83333 3.53211 7.69881 1.66663 10 1.66663C12.3012 1.66663 14.1667 3.53211 14.1667 5.83329C14.1667 8.13448 12.3012 9.99996 10 9.99996ZM17.5 17.5V15.8333C17.5 13.5321 15.6345 11.6666 13.3333 11.6666H6.66667C4.36548 11.6666 2.5 13.5321 2.5 15.8333V17.5C2.5 17.9602 2.8731 18.3333 3.33333 18.3333C3.79357 18.3333 4.16667 17.9602 4.16667 17.5V15.8333C4.16667 14.4526 5.28595 13.3333 6.66667 13.3333H13.3333C14.714 13.3333 15.8333 14.4526 15.8333 15.8333V17.5C15.8333 17.9602 16.2064 18.3333 16.6667 18.3333C17.1269 18.3333 17.5 17.9602 17.5 17.5ZM12.5 5.83329C12.5 7.214 11.3807 8.33329 10 8.33329C8.61929 8.33329 7.5 7.214 7.5 5.83329C7.5 4.45258 8.61929 3.33329 10 3.33329C11.3807 3.33329 12.5 4.45258 12.5 5.83329Z"
+                                fill="#2281D6" />
+                        </svg>
+                    </div>
+                    <div class="wrapper-information-block__title">
+                        <span>Ведущий менеджер</span>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="wrapper-information-block__title border-left">
+                        <span>Связаться</span>
+                    </div>
+                    <a href="tel:+380322533638" class="wrapper-information-block__svg wrapper-information-block__svg_print">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0984669 8.19082C0.533258 4.32141 3.58963 1.26889 7.45958 0.83897C8.24275 0.751966 8.69801 1.69999 8.14047 2.25683L5.12471 5.2688C5.76224 4.73066 6.53717 4.34938 7.39184 4.18263C8.1991 4.02513 8.72225 5.00822 8.14067 5.5898L4.84901 8.88146C4.26743 9.46304 3.28434 8.93989 3.44184 8.13263C3.60901 7.2758 3.99179 6.49913 4.53208 5.86068L1.51547 8.8735C0.957932 9.43034 0.0104771 8.97388 0.0984669 8.19082ZM4.53208 5.86068C4.71274 5.64721 4.91101 5.44919 5.12471 5.2688L4.53208 5.86068ZM2.59304 14.9339C2.58229 14.4902 2.89047 14.1265 3.30201 14.0684C4.16437 13.9546 5.0111 13.7437 5.82793 13.4389C6.13246 13.3244 6.47576 13.3977 6.70379 13.6231L7.76212 14.6815C8.02738 14.9467 8.43719 15.002 8.76329 14.8166C10.98 13.5562 12.8153 11.7208 14.0758 9.50412C14.2612 9.17802 14.2059 8.76821 13.9406 8.50295L12.8856 7.44793C12.6568 7.2166 12.5836 6.87329 12.6988 6.56688C13.0029 5.75193 13.2138 4.9052 13.3265 4.0505C13.385 3.63632 13.7416 3.32972 14.168 3.33387L16.6673 3.33387C16.9012 3.3341 17.1242 3.43262 17.2819 3.60538C17.4396 3.77815 17.5175 4.00924 17.4977 4.22921C17.238 6.67488 16.4058 9.02498 15.0647 11.0953C13.8509 13.0055 12.2313 14.625 10.3146 15.843C8.25982 17.1756 5.92109 18.0075 3.50137 18.2706C3.26768 18.2917 3.03591 18.2133 2.863 18.0547C2.6901 17.8961 2.59208 17.6719 2.59304 17.4339V14.9339ZM0.926527 17.4305L0.926519 14.9432C0.90081 13.679 1.82357 12.5938 3.07678 12.417C3.82197 12.3187 4.54634 12.1383 5.24352 11.8781C6.15523 11.5354 7.18514 11.7551 7.87914 12.4413L8.48001 13.0422C10.0172 12.0623 11.3216 10.7579 12.3015 9.22071L11.7039 8.62313C11.0144 7.92583 10.7947 6.89592 11.1381 5.98232C11.3976 5.28703 11.578 4.56266 11.6753 3.82491C11.852 2.57471 12.9216 1.6549 14.1764 1.66725L16.6682 1.66721C17.3707 1.66787 18.0399 1.96345 18.513 2.48173C18.9861 3.00002 19.2196 3.6933 19.1565 4.39221C18.8678 7.11119 17.9471 9.71144 16.4676 11.9953C15.1265 14.1059 13.3319 15.9005 11.2151 17.2456C8.94808 18.7158 6.36042 19.6363 3.66654 19.929C2.95045 19.9939 2.25514 19.7587 1.73643 19.2828C1.21772 18.8069 0.92367 18.1344 0.926527 17.4305Z"
+                                fill="#2281D6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="cabinet-resume__right-side">
+
+                <div class="cabinet-resume__right-side_row">
+                    <div class="cabinet-resume__right-side_row-item">
+                        <img src="./assets/img/cabinet/agency/mia.png" alt="photo">
+                        <div class="cabinet-resume__right-side_row-wrapper">
+                            <div class="cabinet-resume__right-side_name">
+                                <p>Миа</p>
+                                <p>Никитина</p>
+                            </div>
+
+                            <div class="cabinet-resume__right-side_contact-wrapper">
+                                <div class="cabinet-resume__right-side_phone">
+                                    <p>Тел.:</p>
+                                    <p><a href="tel:(044)3643307" class="footer__categories_phone">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="cabinet-resume__right-side_mail">
+                                    <p>mail:</p>
+                                    <p><a href="mailto:mia_nikitina@gmail.com" class="footer__categories_mail link-menu-header">mia_nikitina@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-information-block__right-side wrapper-information-block__right-bottom">
+                    <div class="flex">
+                        <div class="wrapper-information-block__svg">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.91667 5.83329C2.91667 8.13448 4.78215 9.99996 7.08333 9.99996C9.38452 9.99996 11.25 8.13448 11.25 5.83329C11.25 3.53211 9.38452 1.66663 7.08333 1.66663C4.78215 1.66663 2.91667 3.53211 2.91667 5.83329ZM14.1667 15.8333V17.5C14.1667 17.9602 13.7936 18.3333 13.3333 18.3333C12.8731 18.3333 12.5 17.9602 12.5 17.5V15.8333C12.5 14.4526 11.3807 13.3333 10 13.3333H4.16667C2.78595 13.3333 1.66667 14.4526 1.66667 15.8333V17.5C1.66667 17.9602 1.29357 18.3333 0.833333 18.3333C0.373096 18.3333 0 17.9602 0 17.5V15.8333C0 13.5321 1.86548 11.6666 4.16667 11.6666H10C12.3012 11.6666 14.1667 13.5321 14.1667 15.8333ZM7.08333 8.33329C8.46404 8.33329 9.58333 7.214 9.58333 5.83329C9.58333 4.45258 8.46404 3.33329 7.08333 3.33329C5.70262 3.33329 4.58333 4.45258 4.58333 5.83329C4.58333 7.214 5.70262 8.33329 7.08333 8.33329ZM13.5774 8.57737C13.9028 8.25193 14.4305 8.25193 14.7559 8.57737L15.8333 9.65478L18.5774 6.9107C18.9028 6.58527 19.4305 6.58527 19.7559 6.9107C20.0814 7.23614 20.0814 7.76378 19.7559 8.08921L16.4226 11.4225C16.0972 11.748 15.5695 11.748 15.2441 11.4225L13.5774 9.75588C13.252 9.43044 13.252 8.90281 13.5774 8.57737Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </div>
+                        <div class="wrapper-information-block__title">
+                            <span>Куратор</span>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="wrapper-information-block__title border-left">
+                            <span>Связаться</span>
+                        </div>
+                        <a href="tel:+380322533638" class="wrapper-information-block__svg wrapper-information-block__svg_print">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0984669 8.19082C0.533258 4.32141 3.58963 1.26889 7.45958 0.83897C8.24275 0.751966 8.69801 1.69999 8.14047 2.25683L5.12471 5.2688C5.76224 4.73066 6.53717 4.34938 7.39184 4.18263C8.1991 4.02513 8.72225 5.00822 8.14067 5.5898L4.84901 8.88146C4.26743 9.46304 3.28434 8.93989 3.44184 8.13263C3.60901 7.2758 3.99179 6.49913 4.53208 5.86068L1.51547 8.8735C0.957932 9.43034 0.0104771 8.97388 0.0984669 8.19082ZM4.53208 5.86068C4.71274 5.64721 4.91101 5.44919 5.12471 5.2688L4.53208 5.86068ZM2.59304 14.9339C2.58229 14.4902 2.89047 14.1265 3.30201 14.0684C4.16437 13.9546 5.0111 13.7437 5.82793 13.4389C6.13246 13.3244 6.47576 13.3977 6.70379 13.6231L7.76212 14.6815C8.02738 14.9467 8.43719 15.002 8.76329 14.8166C10.98 13.5562 12.8153 11.7208 14.0758 9.50412C14.2612 9.17802 14.2059 8.76821 13.9406 8.50295L12.8856 7.44793C12.6568 7.2166 12.5836 6.87329 12.6988 6.56688C13.0029 5.75193 13.2138 4.9052 13.3265 4.0505C13.385 3.63632 13.7416 3.32972 14.168 3.33387L16.6673 3.33387C16.9012 3.3341 17.1242 3.43262 17.2819 3.60538C17.4396 3.77815 17.5175 4.00924 17.4977 4.22921C17.238 6.67488 16.4058 9.02498 15.0647 11.0953C13.8509 13.0055 12.2313 14.625 10.3146 15.843C8.25982 17.1756 5.92109 18.0075 3.50137 18.2706C3.26768 18.2917 3.03591 18.2133 2.863 18.0547C2.6901 17.8961 2.59208 17.6719 2.59304 17.4339V14.9339ZM0.926527 17.4305L0.926519 14.9432C0.90081 13.679 1.82357 12.5938 3.07678 12.417C3.82197 12.3187 4.54634 12.1383 5.24352 11.8781C6.15523 11.5354 7.18514 11.7551 7.87914 12.4413L8.48001 13.0422C10.0172 12.0623 11.3216 10.7579 12.3015 9.22071L11.7039 8.62313C11.0144 7.92583 10.7947 6.89592 11.1381 5.98232C11.3976 5.28703 11.578 4.56266 11.6753 3.82491C11.852 2.57471 12.9216 1.6549 14.1764 1.66725L16.6682 1.66721C17.3707 1.66787 18.0399 1.96345 18.513 2.48173C18.9861 3.00002 19.2196 3.6933 19.1565 4.39221C18.8678 7.11119 17.9471 9.71144 16.4676 11.9953C15.1265 14.1059 13.3319 15.9005 11.2151 17.2456C8.94808 18.7158 6.36042 19.6363 3.66654 19.929C2.95045 19.9939 2.25514 19.7587 1.73643 19.2828C1.21772 18.8069 0.92367 18.1344 0.926527 17.4305Z"
+                                    fill="#2281D6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cabinet-resume__right-side_row">
+                    <div class="cabinet-resume__right-side_row-item">
+                        <img src="./assets/img/cabinet/agency/janett.png" alt="photo">
+                        <div class="cabinet-resume__right-side_row-wrapper">
+                            <div class="cabinet-resume__right-side_name">
+                                <p>Джанетт</p>
+                                <p>Смирнова</p>
+                            </div>
+
+                            <div class="cabinet-resume__right-side_contact-wrapper">
+                                <div class="cabinet-resume__right-side_phone">
+                                    <p>Тел.:</p>
+                                    <p><a href="tel:(044)3643307">(044) 364 33 07</a></p>
+                                </div>
+                                <div class="cabinet-resume__right-side_mail">
+                                    <p>mail:</p>
+                                    <p><a href="mailto:janett_smirnova@gmail.com">janett_smirnova@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer-cabinet">
+    <div class="footer">
+        <div class="footer__wrapper-categories">
+            <div class="footer__categories">
+                <p class="footer__categories_title">
+                    Личный кабинет
+                </p>
+                <ul>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Резюме агенства</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Все заявки</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Бонусна програма</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Инструкции</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title">
+                    Контакты
+                </p>
+                <ul>
+                    <li>
+                        <p class="footer__categories_city">Киев:</p>
+                    </li>
+                    <li><a href="tel:+380443643307" class="footer__categories_phone">+ 38 (044) 364 33 07</a></li>
+                    <li><a href="tel:+380673070100" class="footer__categories_phone">+ 38 (067) 307 01 00</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title mobile-display-none">
+                </p>
+                <ul>
+                    <li>
+                        <p class="footer__categories_city">Львов:</p>
+                    </li>
+                    <li><a href="tel:+380322533638" class="footer__categories_phone">+ 38 (032) 253 36 38</a></li>
+                    <li><a href="tel:+380953708979" class="footer__categories_phone">+ 38 (095) 370 89 79</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title mobile-display-none">
+                </p>
+                <ul>
+                    <li>
+                        <p class="footer__categories_city">Почта:</p>
+                    </li>
+                    <li><a href="mailto:booking@inflotcruises.com" class="footer__categories_mail">booking@inflotcruises.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <a href="#"><img src="./assets/img/icons-logo/white-logo.svg" alt="inflot-logo"></a>
+        <p class="footer__bottom_rights">© 2018 Inflot. Все права защищены.</p>
+        <div class="footer__bottom_social-wrapper">
+            <a href="#" target="_blank"><img src="./assets/img/icons-logo/twitter.svg" alt="twitter"></a>
+            <a href="#" target="_blank"><img src="./assets/img/icons-logo/facebook.svg" alt="facebook"></a>
+            <a href="#" target="_blank"><img src="./assets/img/icons-logo/instagram.svg" alt="instagram"></a>
+        </div>
+    </div>
+</footer>
+<!-- JS -->
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://rawgithub.com/dimsemenov/Magnific-Popup/master/dist/jquery.magnific-popup.js?v=0.8.9"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+<script src="./assets/js/datepicker.min.js"></script>
+<script src="./assets/js/scripts.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<!-- end JS -->
+</body>
+
+</html>

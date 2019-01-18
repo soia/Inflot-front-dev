@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://rawgithub.com/dimsemenov/Magnific-Popup/master/dist/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+    
+    <title>Inflot Miscalculation</title>
+</head>
+
+<body class="support_body" id="body">
+
+    <!-- preloader -->
+
+<div class="loader">
+    <div class="laoder-frame">
+        <img class="svg-loader" src="https://kyivstore.com/wp-content/uploads/2016/09/loader.svg" alt="circle-loader">
+    </div>
+</div>
+<header>
+    <div class="header__container header__white">
+        <div class="header header-cabinet">
+                <div class="menu" id="menu">
+                        <div class="menu__header">
+                            <div class="menu__header_btn btnMenu">
+                                <p class="toggle">Закрыть</p>
+                            </div>
+                            <div class="header__logo">
+                                <a href="#"><img src="./assets/img/icons-logo/blue-logo.svg" alt="inflot-logo"></a>
+                            </div>
+                            <div class="header__right-side">
+                                <ul class="header__right-side_links popUp">
+                                    <li class="header__right-side_button"><a href="#sign-in" class="sign-btn" data-effect="mfp-zoom-in">Войти</a></li>
+                                </ul>
+                                <div class="header__right-side_language">
+                                    <select class="main-dropdown main-dropdown__language">
+                                        <option selected disabled value="1">Ру</option>
+                                        <option value="2">Ру</option>
+                                        <option value="3">Укр</option>
+                                        <option value="4">En</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__categories">
+                            <div class="menu__categories_top">
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Резюме
+                                            агенства</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Все заявки</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Бонусная програма</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Инструкции</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Просчет</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Выйти</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__bottom">
+                            <p class="menu__bottom_rights">© 2018 Inflot. Все права защищены.</p>
+                            <div class="menu__bottom_social-wrapper">
+                                <a href="#" target="_blank"><img src="./assets/img/icons-logo/blue-twitter.svg" alt="twitter"></a>
+                                <a href="#" target="_blank"><img src="./assets/img/icons-logo/blue-facebook.svg" alt="facebook"></a>
+                                <a href="#" target="_blank"><img src="./assets/img/icons-logo/blue-instagram.svg" alt="instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+            <div class="header-cabinet__left-side">
+                <div class="header__left-side_menu btnMenu">
+                    <svg class="ham hamRotate ham8" id="svg" viewBox="0 0 100 100" width="30">
+                        <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
+                        <path class="line middle" d="m 30,50 h 40"></path>
+                        <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
+                    </svg>
+                    <p>Меню</p>
+                </div>
+                <div class="search-box mobile-display-none">
+                    <form action="#">
+                        <input type="text" placeholder="Поиск" required class="search-box-input">
+                        <div class="header__right-side_search">
+                            <img src="./assets/img/icons-logo/search.svg" alt="search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="header-cabinet__left-side_links">
+                    <li class="header-cabinet__left-side_links-active"><a href="#"><span class="link-menu-header">Резюме
+                                агенства</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">Все заявки</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">Бонусная програма</span></a></li>
+                </ul>
+            </div>
+            <div class="header-cabinet__logo">
+                <a href="#">
+                    <img src="./assets/img/icons-logo/blue-logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header-cabinet__right-side">
+                <ul class="header-cabinet__right-side_links">
+                    <li><a href="#"><span class="link-menu-header">Инструкции</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">просчет</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">Выйти</span></a></li>
+                    <li>
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./assets/img/icons-logo/logo-cabinet.png" alt="logo" class="header-cabinet__right-side_links-logo-cabinet">
+                                <div class="header-cabinet__right-side_wrapper-name">
+                                    <p>John</p>
+                                    <p>Doe</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-cabinet__right-side_language">
+                    <select class="main-dropdown main-dropdown__language">
+                        <option selected disabled value="1">Ру</option>
+                        <option value="2">Ру</option>
+                        <option value="3">Укр</option>
+                        <option value="4">En</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="header__breadcrumbs-wrapper">
+            <a class="header__breadcrumbs-wrapper_plus">+</a>
+            <a class="header__breadcrumbs-wrapper_item">Личный кабинет <span class="slash">|</span> </a>
+        </div>
+    </div>
+</header>
+
+<main class="cabinet-resume cabinet-bonus cabinet-miscalculation">
+
+    <!--  agency title -->
+
+    <section class="directions-title-wrapper">
+        <div class="directions-title-wrapper__info">
+            <p class="directions-title-wrapper__info_text">Агенство</p>
+            <h1 class="directions-title-wrapper__info_title">ФОП CruiseDirect</h1>
+        </div>
+        <a href="#" target="_blank" class="titles-block__btn">Круизы онлайн</a>
+    </section>
+
+    <!--  information block -->
+
+    <div class="wrapper-information-block__container">
+        <div class="wrapper-information-block__list">
+            <div class="wrapper-information-block__left-side border-right-none">
+                <div class="wrapper-information-block__svg">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.833252 9.99992C0.833252 15.0625 4.93731 19.1666 9.99992 19.1666C15.0625 19.1666 19.1666 15.0625 19.1666 9.99992C19.1666 4.93731 15.0625 0.833252 9.99992 0.833252C4.93731 0.833252 0.833252 4.93731 0.833252 9.99992ZM17.4999 9.99992C17.4999 14.1421 14.1421 17.4999 9.99992 17.4999C5.85778 17.4999 2.49992 14.1421 2.49992 9.99992C2.49992 5.85778 5.85778 2.49992 9.99992 2.49992C14.1421 2.49992 17.4999 5.85778 17.4999 9.99992ZM9.16659 6.66658V9.99992C9.16659 10.4602 9.53968 10.8333 9.99992 10.8333C10.4602 10.8333 10.8333 10.4602 10.8333 9.99992V6.66658C10.8333 6.20635 10.4602 5.83325 9.99992 5.83325C9.53968 5.83325 9.16659 6.20635 9.16659 6.66658ZM10.5892 11.9107C10.9146 12.2361 10.9146 12.7637 10.5892 13.0892C10.2637 13.4146 9.7361 13.4146 9.41066 13.0892C9.08523 12.7637 9.08523 12.2361 9.41066 11.9107C9.7361 11.5852 10.2637 11.5852 10.5892 11.9107Z"
+                            fill="#2281D6"></path>
+                    </svg>
+                </div>
+                <div class="wrapper-information-block__title">
+                    <span>Описание</span>
+                </div>
+            </div>
+            <div class="cabinet-resume__left-side cabinet-bonus">
+                <p class="cabinet-bonus__description">Туристическая компания, на сайте которой установлен
+                    поисковый модуль круизов и которая осуществляет
+                    бронирование каюты на круизном лайнере (далее «Компания»), и пользователь сайта, направляющий
+                    запрос на бронирование круиза с помощью формы «Бронировать круиз» (далее «Вы») договорились о
+                    нижеследующем.</p>
+            </div>
+        </div>
+
+        <div class="wrapper-information-block__list">
+            <div class="wrapper-information-block__right-side">
+                <div class="cabinet-miscalculation__right-side_miscalculation">
+                    <div class="cabinet-miscalculation__right-side_item">
+                        <div class="wrapper-information-block__svg border-left">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.833252 9.99992C0.833252 15.0625 4.93731 19.1666 9.99992 19.1666C15.0625 19.1666 19.1666 15.0625 19.1666 9.99992C19.1666 4.93731 15.0625 0.833252 9.99992 0.833252C4.93731 0.833252 0.833252 4.93731 0.833252 9.99992ZM17.4999 9.99992C17.4999 14.1421 14.1421 17.4999 9.99992 17.4999C5.85778 17.4999 2.49992 14.1421 2.49992 9.99992C2.49992 5.85778 5.85778 2.49992 9.99992 2.49992C14.1421 2.49992 17.4999 5.85778 17.4999 9.99992ZM9.16659 6.66658V9.99992C9.16659 10.4602 9.53968 10.8333 9.99992 10.8333C10.4602 10.8333 10.8333 10.4602 10.8333 9.99992V6.66658C10.8333 6.20635 10.4602 5.83325 9.99992 5.83325C9.53968 5.83325 9.16659 6.20635 9.16659 6.66658ZM10.5892 11.9107C10.9146 12.2361 10.9146 12.7637 10.5892 13.0892C10.2637 13.4146 9.7361 13.4146 9.41066 13.0892C9.08523 12.7637 9.08523 12.2361 9.41066 11.9107C9.7361 11.5852 10.2637 11.5852 10.5892 11.9107Z"
+                                    fill="#2281D6"></path>
+                            </svg>
+                        </div>
+                        <div class="wrapper-information-block__title">
+                            <span>Сделать просчет тура</span>
+                        </div>
+                    </div>
+                    <div class="tab-container__select">
+                        <div class="tab-container__select_option border-left-none">
+                            Сменить валюту
+                        </div>
+                        <div class="tab-container__select_currency">
+                            <div class="">
+                                <select class="main-dropdown main-dropdown__currency" style="display: none;">
+                                    <option selected="" disabled="" value="1">€</option>
+                                    <option value="2">€</option>
+                                    <option value="3">$</option>
+                                    <option value="4">₴</option>
+                                </select>
+                                <div class="nice-select main-dropdown main-dropdown__currency" tabindex="0"><span class="current">€</span>
+                                    <ul class="list">
+                                        <li data-value="1" class="option selected disabled">€</li>
+                                        <li data-value="2" class="option">€</li>
+                                        <li data-value="3" class="option">$</li>
+                                        <li data-value="4" class="option">₴</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cabinet-resume__right-side cabinet-bonus__right-side">
+                <form action="#" method="POST">
+                    <div class="cabinet-miscalculation__form">
+                        <div class="cabinet-miscalculation__form_wrapper">
+                            <div class="cabinet-miscalculation__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="from" class="titles-block__form-subscribe_label">Диапозон дат</label>
+                                    <input type="text" class="datepicker-range titles-block__form-subscribe_input calendar"
+                                        id="from" placeholder="Выберите дату">
+                                </div>
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="region" class="titles-block__form-subscribe_label">Регион круиза</label>
+                                    <input type="text" id="region" class="titles-block__form-subscribe_input" required=""
+                                        placeholder="Южная Америка">
+                                </div>
+                            </div>
+                            <div class="cabinet-miscalculation__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="manager" class="titles-block__form-subscribe_label">Менеджер:</label>
+                                    <input type="text" id="manager" class="titles-block__form-subscribe_input" required=""
+                                        placeholder="Джанетт Смирнова">
+                                </div>
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="budget" class="titles-block__form-subscribe_label">Бюджет</label>
+                                    <input type="number" id="budget" class="titles-block__form-subscribe_input"
+                                        required="" placeholder="-">
+                                </div>
+                            </div>
+                            <div class="cabinet-miscalculation__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input terms-content__long-input">
+                                    <label for="cruisesCompany" class="titles-block__form-subscribe_label">Круизная
+                                        компания</label>
+                                    <input type="number" id="cruisesCompany" class="titles-block__form-subscribe_input"
+                                        required="" placeholder="Costa Cruises">
+                                </div>
+                            </div>
+                            <div class="cabinet-miscalculation__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input terms-content__long-input">
+                                    <label for="writeToUs" class="titles-block__form-subscribe_label">Сообщение</label>
+                                    <textarea placeholder="Напиши нам!" id="writeToUs" class="titles-block__form-subscribe_input"></textarea>
+                                </div>
+                            </div>
+                            <button class="titles-block__btn" type="submit">Сохранить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer-cabinet">
+    <div class="footer">
+        <div class="footer__wrapper-categories">
+            <div class="footer__categories">
+                <p class="footer__categories_title">
+                    Личный кабинет
+                </p>
+                <ul>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Резюме агенства</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Все заявки</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Бонусна програма</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Инструкции</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title">
+                    Контакты
+                </p>
+                <ul>
+                    <li>
+                        <p class="footer__categories_city">Киев:</p>
+                    </li>
+                    <li><a href="tel:+380443643307" class="footer__categories_phone">+ 38 (044) 364 33 07</a></li>
+                    <li><a href="tel:+380673070100" class="footer__categories_phone">+ 38 (067) 307 01 00</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title mobile-display-none">
+                </p>
+                <ul>
+                    <li>
+                        <p class="footer__categories_city">Львов:</p>
+                    </li>
+                    <li><a href="tel:+380322533638" class="footer__categories_phone">+ 38 (032) 253 36 38</a></li>
+                    <li><a href="tel:+380953708979" class="footer__categories_phone">+ 38 (095) 370 89 79</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title mobile-display-none">
+                </p>
+                <ul>
+                    <li>
+                        <p class="footer__categories_city">Почта:</p>
+                    </li>
+                    <li><a href="mailto:booking@inflotcruises.com" class="footer__categories_mail">booking@inflotcruises.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <a href="#"><img src="./assets/img/icons-logo/white-logo.svg" alt="inflot-logo"></a>
+        <p class="footer__bottom_rights">© 2018 Inflot. Все права защищены.</p>
+        <div class="footer__bottom_social-wrapper">
+            <a href="#" target="_blank"><img src="./assets/img/icons-logo/twitter.svg" alt="twitter"></a>
+            <a href="#" target="_blank"><img src="./assets/img/icons-logo/facebook.svg" alt="facebook"></a>
+            <a href="#" target="_blank"><img src="./assets/img/icons-logo/instagram.svg" alt="instagram"></a>
+        </div>
+    </div>
+</footer>
+<!-- JS -->
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://rawgithub.com/dimsemenov/Magnific-Popup/master/dist/jquery.magnific-popup.js?v=0.8.9"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+<script src="./assets/js/datepicker.min.js"></script>
+<script src="./assets/js/scripts.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<!-- end JS -->
+</body>
+
+</html>

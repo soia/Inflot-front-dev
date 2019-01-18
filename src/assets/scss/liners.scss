@@ -1,0 +1,121 @@
+.liners {
+    &__wrapper {
+        &-read-more {
+            &_item {
+                border-bottom: 2px solid rgba(34,129,214,0.5);
+                padding-bottom: 5px;
+
+                @media screen and (max-width: 767px) { 
+                    border-bottom: 1px solid $blue;
+                    padding-bottom: 3px;
+                }
+            }
+        }
+    }
+
+    &-single {
+
+        @media screen and (max-width: 767px) { 
+            .small-slider__description_news, .cabins-slider__content, .cabins-slider__details {
+                margin: 25px 30px !important;
+            }
+
+            .wrapper-vertical-slider__subtitle_class {
+                margin-bottom: 40px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .small-slider__wrapper-img {
+                width: auto;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1250px) { 
+            .wrapper-vertical-slider__right-side {
+                width: calc(100% - 160px);
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1250px) { 
+            .tab-container__tab-item {
+                padding: 0 17px;
+            }
+        }
+
+        .directions {
+            @media screen and (max-width: 767px) { 
+                padding-bottom: 40px;
+    
+                &__wrapper-price {
+                    justify-content: flex-start;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+
+    .tab-container__tab_filter, .main-dropdown__currency, .tab-container__select {
+        @media screen and (max-width: 767px) { 
+            width: 80px;
+            box-sizing: border-box;
+        }
+    }
+
+    .tab-container__tab .main-dropdown {
+        @media screen and (max-width: 767px) { 
+            box-sizing: border-box;
+            width: 100%;
+        }
+    }
+
+    .liners-tab {
+
+        @media screen and (max-width: 767px) { 
+            width: calc(100% - 80px);
+        }
+    }
+
+    .tab-container__tab {
+        @media screen and (max-width: 767px) { 
+            border-bottom: none;
+        }
+    }
+
+    .tab-container__tab .tab-container__select {
+        display: none;
+
+        @media screen and (max-width: 767px) { 
+            display: block;
+        }
+    }
+
+    .tab-container__tab .tab-container__select .main-dropdown__currency {
+
+        @media screen and (max-width: 767px) { 
+            width: 79px;
+            border-right: $mainBorder;
+        }
+    }
+
+   .liners__wrapper-read-more {
+        @media screen and (max-width: 767px) { 
+            justify-content: flex-start;
+            transform: translateY(0);
+            margin-bottom: 25px;
+        }
+    } 
+}
+
+.cruises {
+    .directions {
+        @media screen and (max-width: 767px) { 
+            padding-bottom: 40px;
+
+            &__wrapper-price {
+                justify-content: flex-start;
+                transform: translateY(0);
+            }
+        }
+    }
+}

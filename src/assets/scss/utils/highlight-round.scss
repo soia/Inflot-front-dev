@@ -1,0 +1,168 @@
+.highlight {
+    position: relative;
+    
+    img {
+        display: block;
+    }
+
+    &__round {
+        width: 14px;
+        height: 14px;
+        border: 3px solid $white;
+        border-radius: 50%;
+        transform: translate3d(-7px, -7px, 0);
+        transition: transform .6s cubic-bezier(.19, 1, .22, 1), opacity .4s ease;
+        cursor: pointer;
+        opacity: .8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:before, &:after {
+            content: '';
+            width: 130%;
+            height: 130%;
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 50%;
+            opacity: 1;
+            position: absolute;
+            transform: scale(0);
+        }
+
+        &:hover span {
+            opacity: 1;
+            transition: opacity .6s cubic-bezier(.19, 1, .22, 1) 80ms
+        }
+    }
+
+    &__price {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: 800;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        margin: -.9375rem 0 0 1.5625rem;
+        color: #fff;
+        pointer-events: none;
+        transition: opacity .3s cubic-bezier(.19, 1, .22, 1);
+        opacity: 0
+    }
+
+    &__overlay-inner {
+        transition: width .2s ease, height .2s ease
+    }
+
+    &__title {
+        &:hover span {
+            opacity: 1;
+            transition: opacity .6s cubic-bezier(.19,1,.22,1) 80ms;
+        }
+
+        &_name {
+            position: absolute;
+            top: -22px;
+            left: 25px;
+            color: $white;
+            font-family: $regularFont;
+            font-size: 16px;
+            line-height: 16px;
+            width: max-content;
+            opacity: 0;
+        }
+
+        &_cost {
+            position: absolute;
+            top: -3px;
+            left: 25px;
+            color: $white;
+            font-family: $boldFont;
+            font-size: 16px;
+            line-height: 16px;
+            width: max-content;
+            opacity: 0;
+        }
+
+
+    }
+
+    &__overlay {
+        
+        &:hover .highlight__round {
+            opacity: 1
+        }
+
+        &:hover .highlight__round:before {
+            display: block;
+            animation: pulse .6s ease
+        }
+        
+        &:hover .highlight__round:after {
+            display: block;
+            animation: pulse .6s ease;
+            animation-delay: .2s
+        }
+        
+        &:hover .highlight__round:nth-child(0):before {
+            animation-delay: 0s
+        }
+        
+        &:hover .highlight__round:nth-child(1):before {
+            animation-delay: .1s
+        }
+        
+        &:hover .highlight__round:nth-child(2):before {
+            animation-delay: .2s
+        }
+        
+        &:hover .highlight__round:nth-child(3):before {
+            animation-delay: .3s
+        }
+        
+        &:hover .highlight__round:nth-child(4):before {
+            animation-delay: .4s
+        }
+        
+        &:hover .highlight__round:nth-child(5):before {
+            animation-delay: .5s
+        }
+        
+        &:hover .highlight__round:nth-child(6):before {
+            animation-delay: .6s
+        }
+        
+        &:hover .highlight__round:nth-child(7):before {
+            animation-delay: .7s
+        }
+        
+        &:hover .highlight__round:nth-child(8):before {
+            animation-delay: .8s
+        }
+        
+        &:hover .highlight__round:nth-child(9):before {
+            animation-delay: .9s
+        }
+        
+        &:hover .highlight__round:nth-child(10):before {
+            animation-delay: 1s
+        }
+    }
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 1;
+		transform: scale(0);
+	}
+	40% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2);
+	}
+}

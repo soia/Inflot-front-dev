@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://rawgithub.com/dimsemenov/Magnific-Popup/master/dist/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+    
+    <title>Inflot Services</title>
+</head>
+
+<body class="support_body" id="body">
+
+    <!-- preloader -->
+
+<div class="loader">
+    <div class="laoder-frame">
+        <img class="svg-loader" src="https://kyivstore.com/wp-content/uploads/2016/09/loader.svg" alt="circle-loader">
+    </div>
+</div>
+<header>
+    <div class="header__container header__white">
+        <div class="header">
+            <div class="menu" id="menu">
+                <div class="menu__header">
+                    <div class="menu__header_btn btnMenu">
+                        <p class="toggle">Закрыть</p>
+                    </div>
+                    <div class="header__logo">
+                        <a href="#"><img src="./assets/img/icons-logo/blue-logo.svg" alt="inflot-logo"></a>
+                    </div>
+                    <div class="header__right-side">
+                        <ul class="header__right-side_links popUp">
+                            <li class="header__right-side_button"><a href="#sign-in" class="sign-btn" data-effect="mfp-zoom-in">Войти</a></li>
+                        </ul>
+                        <div class="header__right-side_language">
+                            <select class="main-dropdown main-dropdown__language">
+                                <option selected disabled value="1">Ру</option>
+                                <option value="2">Ру</option>
+                                <option value="3">Укр</option>
+                                <option value="4">En</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__categories">
+                    <div class="menu__categories_top">
+                        <div class="menu__categories_top-block">
+                            <p class="menu__categories_contacts-title">Акции</p>
+                            <ul>
+                                <li><a href="#" class="menu__categories_link">Акции компаний</a></li>
+                                <li><a href="#" class="menu__categories_link">Акции Inflot</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__categories_top-block">
+                            <p class="menu__categories_contacts-title">Направления</p>
+                            <ul>
+                                <li><a href="#" class="menu__categories_link">Средиземное море</a></li>
+                                <li><a href="#" class="menu__categories_link">Карибское море</a></li>
+                                <li><a href="#" class="menu__categories_link">Балтийское море</a></li>
+                                <li><a href="#" class="menu__categories_link">Эмираты</a></li>
+                                <li><a href="#" class="menu__categories_link">Европа</a></li>
+                                <li><a href="#" class="menu__categories_link">Фьорды Норвегии</a></li>
+                                <li><a href="#" class="menu__categories_link">Скандинавия</a></li>
+                                <li><a href="#" class="menu__categories_link">Азия</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__categories_top-block">
+                            <p class="menu__categories_contacts-title">Туры</p>
+                            <ul>
+                                <li><a href="#" class="menu__categories_link">Вокруг света</a></li>
+                                <li><a href="#" class="menu__categories_link">Новогодние</a></li>
+                                <li><a href="#" class="menu__categories_link">Моторный корабль</a></li>
+                                <li><a href="#" class="menu__categories_link">Майские праздники</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__categories_top-block">
+                            <p class="menu__categories_contacts-title">Компании</p>
+                            <ul>
+                                <li><a href="#" class="menu__categories_link">Oceania Cruises</a></li>
+                                <li><a href="#" class="menu__categories_link">Compagnie Du Ponant</a></li>
+                                <li><a href="#" class="menu__categories_link">Celebrity Cruises</a></li>
+                                <li><a href="#" class="menu__categories_link">Holland America Line</a></li>
+                                <li><a href="#" class="menu__categories_link">Princess Cruises</a></li>
+                                <li><a href="#" class="menu__categories_link">Смотреть все</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__categories_top-block">
+                            <p class="menu__categories_contacts-title">Круизы</p>
+                            <ul>
+                                <li><a href="#" class="menu__categories_link">Кругосветные</a></li>
+                                <li><a href="#" class="menu__categories_link">Новогодние</a></li>
+                                <li><a href="#" class="menu__categories_link">Теплоход</a></li>
+                                <li><a href="#" class="menu__categories_link">Майские</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__categories_top-block">
+                            <p class="menu__categories_contacts-title">Сервисы</p>
+                            <ul>
+                                <li><a href="#" class="menu__categories_link">Страхование</a></li>
+                                <li><a href="#" class="menu__categories_link">Визовая поддержка</a></li>
+                                <li><a href="#" class="menu__categories_link">Визо I</a></li>
+                                <li><a href="#" class="menu__categories_link">Визо II</a></li>
+                                <li><a href="#" class="menu__categories_link">Авиабилеты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu__categories_top">
+                        <div class="menu__categories_top-block">
+                            <p class="menu__categories_contacts-title">Новости</p>
+                            <ul>
+                                <li><a href="#" class="menu__categories_link">Кругосветные</a></li>
+                                <li><a href="#" class="menu__categories_link">Новогидние</a></li>
+                                <li><a href="#" class="menu__categories_link">Теплоход</a></li>
+                                <li><a href="#" class="menu__categories_link">Майские</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__categories_top-block">
+                            <p class="menu__categories_contacts-title">О компании</p>
+                            <ul>
+                                <li><a href="#" class="menu__categories_link">Сотрудники</a></li>
+                                <li><a href="#" class="menu__categories_link">Лицензии</a></li>
+                                <li><a href="#" class="menu__categories_link">Документы</a></li>
+                                <li><a href="#" class="menu__categories_link">Отзывы</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__categories_top-block menu__categories_border-none">
+                            <p class="menu__categories_contacts-title">Сотрудничество</p>
+                            <ul>
+                                <li><a href="#" class="menu__categories_link">Туристу</a></li>
+                                <li><a href="#" class="menu__categories_link">Агенту</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__categories_top-block menu__categories_border-none">
+                            <p class="menu__categories_contacts-title">Контакты</p>
+                            <ul>
+                                <li>
+                                    <p class="menu__categories_contacts-sub-title">Киев:</p>
+                                </li>
+                                <li><a href="tel:+380443643307" class="menu__categories_phone">+ 38 (044)
+                                        364 33 07</a></li>
+                                <li><a href="tel:+380673070100" class="menu__categories_phone">+ 38 (067)
+                                        307 01 00</a></li>
+                                <li>
+                                    <p class="menu__categories_contacts-sub-title">Почта:</p>
+                                </li>
+                                <li><a href="mailto:booking@inflotcruises.com" class="menu__categories_phone">booking@inflotcruises.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__categories_top-block">
+                            <ul class="menu__categories_padding-top">
+                                <li>
+                                    <p class="menu__categories_contacts-sub-title">Львов:</p>
+                                </li>
+                                <li><a href="tel:+380322533638" class="menu__categories_phone">+ 38 (032)
+                                        253 36 38</a></li>
+                                <li><a href="tel:+380953708979" class="menu__categories_phone">+ 38 (095)
+                                        370 89 79</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__categories_top-block">
+                            <ul class="menu__categories_padding-top">
+                                <li>
+                                    <p class="menu__categories_contacts-sub-title">Адрес:</p>
+                                </li>
+                                <li>
+                                    <p class="menu__categories_adress">Ферри Украина» <br>
+                                        01024, Украина, г. Киев, <br>
+                                        ул. Лютеранская 11 А, офис 2</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__bottom">
+                    <p class="menu__bottom_rights">© 2018 Inflot. Все права защищены.</p>
+                    <div class="menu__bottom_social-wrapper">
+                        <a href="#" target="_blank"><img src="./assets/img/icons-logo/blue-twitter.svg" alt="twitter"></a>
+                        <a href="#" target="_blank"><img src="./assets/img/icons-logo/blue-facebook.svg" alt="facebook"></a>
+                        <a href="#" target="_blank"><img src="./assets/img/icons-logo/blue-instagram.svg" alt="instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__left-side">
+                <div class="header__left-side_menu btnMenu">
+                    <svg class="ham hamRotate ham8" id="svg" viewBox="0 0 100 100" width="30">
+                        <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                        <path class="line middle" d="m 30,50 h 40" />
+                        <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                    </svg>
+                    <p>Меню</p>
+                </div>
+                <ul class="header__left-side_links">
+                    <li><a href="#"><span class="link-menu-header">Акции</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">Сервисы</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">Cотрудничество</span></a></li>
+                </ul>
+                <ul class="header__left-side_links tablet-block">
+                    <li><a href="#"><span class="link-menu-header">Акции</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">Контакты</span></a></li>
+                </ul>
+            </div>
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./assets/img/icons-logo/blue-logo.svg" alt="search">
+                </a>
+            </div>
+            <div class="header__right-side">
+                <ul class="header__right-side_links popUp">
+                    <li><a href="#">
+                            <span class="link-menu-header">Контакты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-menu-header__favourits">
+                            <span class="link-menu-header">Избранное</span>
+                            <span class="link-menu-header__heart">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.321 7.30115C18.7883 6.69734 18.0134 6.35458 17.2016 6.36364L12.9136 6.36359V3.63633C12.9136 1.62804 11.2617 0 9.22401 0C8.85949 0 8.52916 0.211574 8.38111 0.539869L4.93496 8.18175H2.7672C1.23892 8.18175 0 9.40278 0 10.909V17.2726C0 18.7788 1.23892 19.9998 2.7672 19.9998H5.53441H15.9391C17.3085 20.0151 18.489 19.0262 18.6959 17.6816L19.9686 9.50134C20.0906 8.70888 19.8538 7.90496 19.321 7.30115ZM5.53441 19.9998C6.04384 19.9998 6.45681 19.5928 6.45681 19.0907V9.09083C6.45681 8.58876 6.04384 8.18175 5.53441 8.18175H4.93496L4.69151 8.72162C4.63909 8.83785 4.61201 8.96363 4.61201 9.09083V19.0907C4.61201 19.5928 5.02498 19.9998 5.53441 19.9998Z"
+                                        fill="transparent" stroke="#2281D6" stroke-width="2px"></path>
+                                </svg>
+                            </span>
+                            <span class="link-menu-header__favourits-counter">12</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="header__right-side_links popUp">
+                    <li class="header__right-side_button"><a href="#sign-in" class="sign-btn" data-effect="mfp-zoom-in">Войти</a></li>
+                </ul>
+
+                <div class="search-box">
+                    <form action="#">
+                    <input type="text" placeholder="Поиск" required class="search-box-input">
+                    <div class="header__right-side_search">
+                        <img src="./assets/img/icons-logo/search.svg" alt="search">
+                    </div>
+                </form>
+                </div>
+                <div class="header__right-side_language">
+                    <select class="main-dropdown main-dropdown__language">
+                        <option selected disabled value="1">Ру</option>
+                        <option value="2">Ру</option>
+                        <option value="3">Укр</option>
+                        <option value="4">En</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="header__breadcrumbs-wrapper">
+            <a class="header__breadcrumbs-wrapper_plus">+</a>
+            <a class="header__breadcrumbs-wrapper_item">Главная <span class="slash">|</span> </a>
+        </div>
+    </div>
+</header>
+
+<main class="terms">
+
+    <!--  company name -->
+
+    <section class="company-name-wrapper">
+        <div class="company-name-wrapper__info">
+            <p class="company-name-wrapper__info_text">Описание</p>
+            <h1 class="company-name-wrapper__info_title">Условия сотрудничества</h1>
+        </div>
+        <div class="company-name-wrapper__logo"><img src="./assets/img/icons-logo/blue-logo.svg" alt="alt"></div>
+    </section>
+
+    <!-- tab -->
+
+    <div class="tab-container">
+
+        <ul class="tab-container__tab">
+            <li class="tab-container__tab_filter">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.03196 3.03819L7.5016 10.6885V15.8334C7.5016 16.1491 7.67993 16.4376 7.96226 16.5788L11.2956 18.2454C11.8497 18.5225 12.5016 18.1196 12.5016 17.5001V10.6885L18.9712 3.03819C19.4293 2.49654 19.0443 1.66675 18.3349 1.66675H1.66827C0.958911 1.66675 0.57391 2.49654 1.03196 3.03819ZM3.46435 3.33341H16.5388L11.032 9.84531C10.9047 9.99575 10.8349 10.1864 10.8349 10.3834V16.1517L9.16827 15.3184V10.3834C9.16827 10.1864 9.09846 9.99575 8.97124 9.84531L3.46435 3.33341Z"
+                        fill="#2281d6" />
+                </svg>
+            </li>
+            <li class="mobile-social">
+                <ul class="tab-container__select">
+                    <li class="tab-container__social">
+                        <a href="#" class="tab-container__social_link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0.833344C9.73858 0.833344 7.5 3.07192 7.5 5.83334V7.50001H5.83333C5.3731 7.50001 5 7.87311 5 8.33334V11.6667C5 12.1269 5.3731 12.5 5.83333 12.5H7.5V18.3333C7.5 18.7936 7.8731 19.1667 8.33333 19.1667H11.6667C12.1269 19.1667 12.5 18.7936 12.5 18.3333V12.5H14.1667C14.5491 12.5 14.8824 12.2398 14.9751 11.8688L15.8085 8.53546C15.9399 8.0095 15.5421 7.50001 15 7.50001H12.5V5.83334H15C15.4602 5.83334 15.8333 5.46025 15.8333 5.00001V1.66668C15.8333 1.20644 15.4602 0.833344 15 0.833344H12.5ZM12.5 2.50001H14.1667V4.16668H12.5C11.5795 4.16668 10.8333 4.91287 10.8333 5.83334V8.33334C10.8333 8.79358 11.2064 9.16668 11.6667 9.16668H13.9327L13.516 10.8333H11.6667C11.2064 10.8333 10.8333 11.2064 10.8333 11.6667V17.5H9.16667V11.6667C9.16667 11.2064 8.79357 10.8333 8.33333 10.8333H6.66667V9.16668H8.33333C8.79357 9.16668 9.16667 8.79358 9.16667 8.33334V5.83334C9.16667 3.99239 10.6591 2.50001 12.5 2.50001Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="tab-container__social">
+                        <a href="#" class="tab-container__social_link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1667 0.833344H5.83337C3.07195 0.833344 0.833374 3.07192 0.833374 5.83334V14.1667C0.833374 16.9281 3.07195 19.1667 5.83337 19.1667H14.1667C16.9281 19.1667 19.1667 16.9281 19.1667 14.1667V5.83334C19.1667 3.07192 16.9281 0.833344 14.1667 0.833344ZM2.50004 5.83334C2.50004 3.99239 3.99242 2.50001 5.83337 2.50001H14.1667C16.0077 2.50001 17.5 3.99239 17.5 5.83334V14.1667C17.5 16.0076 16.0077 17.5 14.1667 17.5H5.83337C3.99242 17.5 2.50004 16.0076 2.50004 14.1667V5.83334ZM14.1577 9.35277C14.4214 11.1309 13.515 12.8776 11.9094 13.6858C10.3038 14.4939 8.3609 14.1813 7.08984 12.9102C5.81879 11.6392 5.50615 9.69629 6.31431 8.09066C7.12247 6.48504 8.86921 5.57869 10.6473 5.84236C12.4629 6.11159 13.8885 7.53717 14.1577 9.35277ZM10.4028 7.491C11.4922 7.65253 12.3476 8.50789 12.5091 9.59725C12.6673 10.6641 12.1235 11.7121 11.1601 12.197C10.1967 12.6819 9.031 12.4944 8.26837 11.7317C7.50573 10.9691 7.31815 9.80335 7.80304 8.83998C8.28794 7.87661 9.33598 7.3328 10.4028 7.491Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="tab-container__social">
+                        <a href="#" class="tab-container__social_link">
+                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9802 2.4352C18.1442 1.76189 17.3855 1.24542 16.8192 1.64486C16.2879 2.01963 15.7102 2.32262 15.1011 2.54651C13.9662 1.53083 12.3449 1.21721 10.8956 1.77038C9.29301 2.38206 8.23977 3.92421 8.25129 5.63761C6.10124 5.47628 4.11896 4.36189 2.86527 2.5767C2.53025 2.09965 1.8029 2.17043 1.56615 2.70313C1.46844 2.92296 1.33092 3.29777 1.19562 3.79521C0.748328 5.43966 0.670069 7.17119 1.20622 8.81888C1.7255 10.4147 2.78402 11.7637 4.43712 12.7827C3.29847 13.3072 2.04626 13.5586 0.781314 13.5083C-0.0079792 13.4769 -0.303239 14.5297 0.387273 14.9133C7.91696 19.0965 16.5015 14.5273 16.5015 5.63273C16.5011 5.50975 16.4953 5.38747 16.4841 5.26599C17.2083 4.46243 17.7233 3.4901 17.9802 2.4352ZM14.3306 3.89741C14.5242 4.12 14.8303 4.20844 15.1128 4.12338C15.2865 4.07107 15.4584 4.01352 15.6283 3.95086C15.4867 4.13585 15.3319 4.31146 15.1649 4.47623C14.9866 4.65201 14.9078 4.90515 14.9548 5.15104C14.9853 5.31064 15.001 5.47273 15.0015 5.63521C15.0015 12.3424 9.45987 16.1657 3.70051 14.6505C4.66374 14.3756 5.5834 13.948 6.42273 13.3783C6.90946 13.0479 6.84368 12.3113 6.30611 12.0724C4.30276 11.182 3.14038 9.91521 2.63261 8.35474C2.23661 7.13777 2.25828 5.819 2.55455 4.54018C4.23897 6.25571 6.5754 7.21839 9.02095 7.15498C9.42745 7.14444 9.75151 6.81187 9.75151 6.40523V5.65523C9.73676 4.55009 10.4073 3.5623 11.4305 3.17177C12.4537 2.78124 13.6119 3.07103 14.3306 3.89741Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="tab-container__tab-item tab-link selected-item" data-tab="tab-1">
+                <span>Туристу</span>
+            </li>
+            <li class="tab-container__tab-item tab-link" data-tab="tab-2">
+                <span>Агенту</span>
+            </li>
+        </ul>
+        <div class="tab-container__select mobile-display-none">
+            <div class="tab-container__social">
+                <a href="#" class="tab-container__social_link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0.833344C9.73858 0.833344 7.5 3.07192 7.5 5.83334V7.50001H5.83333C5.3731 7.50001 5 7.87311 5 8.33334V11.6667C5 12.1269 5.3731 12.5 5.83333 12.5H7.5V18.3333C7.5 18.7936 7.8731 19.1667 8.33333 19.1667H11.6667C12.1269 19.1667 12.5 18.7936 12.5 18.3333V12.5H14.1667C14.5491 12.5 14.8824 12.2398 14.9751 11.8688L15.8085 8.53546C15.9399 8.0095 15.5421 7.50001 15 7.50001H12.5V5.83334H15C15.4602 5.83334 15.8333 5.46025 15.8333 5.00001V1.66668C15.8333 1.20644 15.4602 0.833344 15 0.833344H12.5ZM12.5 2.50001H14.1667V4.16668H12.5C11.5795 4.16668 10.8333 4.91287 10.8333 5.83334V8.33334C10.8333 8.79358 11.2064 9.16668 11.6667 9.16668H13.9327L13.516 10.8333H11.6667C11.2064 10.8333 10.8333 11.2064 10.8333 11.6667V17.5H9.16667V11.6667C9.16667 11.2064 8.79357 10.8333 8.33333 10.8333H6.66667V9.16668H8.33333C8.79357 9.16668 9.16667 8.79358 9.16667 8.33334V5.83334C9.16667 3.99239 10.6591 2.50001 12.5 2.50001Z"
+                            fill="#2281D6" />
+                    </svg>
+                </a>
+            </div>
+            <div class="tab-container__social">
+                <a href="#" class="tab-container__social_link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1667 0.833344H5.83337C3.07195 0.833344 0.833374 3.07192 0.833374 5.83334V14.1667C0.833374 16.9281 3.07195 19.1667 5.83337 19.1667H14.1667C16.9281 19.1667 19.1667 16.9281 19.1667 14.1667V5.83334C19.1667 3.07192 16.9281 0.833344 14.1667 0.833344ZM2.50004 5.83334C2.50004 3.99239 3.99242 2.50001 5.83337 2.50001H14.1667C16.0077 2.50001 17.5 3.99239 17.5 5.83334V14.1667C17.5 16.0076 16.0077 17.5 14.1667 17.5H5.83337C3.99242 17.5 2.50004 16.0076 2.50004 14.1667V5.83334ZM14.1577 9.35277C14.4214 11.1309 13.515 12.8776 11.9094 13.6858C10.3038 14.4939 8.3609 14.1813 7.08984 12.9102C5.81879 11.6392 5.50615 9.69629 6.31431 8.09066C7.12247 6.48504 8.86921 5.57869 10.6473 5.84236C12.4629 6.11159 13.8885 7.53717 14.1577 9.35277ZM10.4028 7.491C11.4922 7.65253 12.3476 8.50789 12.5091 9.59725C12.6673 10.6641 12.1235 11.7121 11.1601 12.197C10.1967 12.6819 9.031 12.4944 8.26837 11.7317C7.50573 10.9691 7.31815 9.80335 7.80304 8.83998C8.28794 7.87661 9.33598 7.3328 10.4028 7.491Z"
+                            fill="#2281D6" />
+                    </svg>
+                </a>
+            </div>
+            <div class="tab-container__social">
+                <a href="#" class="tab-container__social_link">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9802 2.4352C18.1442 1.76189 17.3855 1.24542 16.8192 1.64486C16.2879 2.01963 15.7102 2.32262 15.1011 2.54651C13.9662 1.53083 12.3449 1.21721 10.8956 1.77038C9.29301 2.38206 8.23977 3.92421 8.25129 5.63761C6.10124 5.47628 4.11896 4.36189 2.86527 2.5767C2.53025 2.09965 1.8029 2.17043 1.56615 2.70313C1.46844 2.92296 1.33092 3.29777 1.19562 3.79521C0.748328 5.43966 0.670069 7.17119 1.20622 8.81888C1.7255 10.4147 2.78402 11.7637 4.43712 12.7827C3.29847 13.3072 2.04626 13.5586 0.781314 13.5083C-0.0079792 13.4769 -0.303239 14.5297 0.387273 14.9133C7.91696 19.0965 16.5015 14.5273 16.5015 5.63273C16.5011 5.50975 16.4953 5.38747 16.4841 5.26599C17.2083 4.46243 17.7233 3.4901 17.9802 2.4352ZM14.3306 3.89741C14.5242 4.12 14.8303 4.20844 15.1128 4.12338C15.2865 4.07107 15.4584 4.01352 15.6283 3.95086C15.4867 4.13585 15.3319 4.31146 15.1649 4.47623C14.9866 4.65201 14.9078 4.90515 14.9548 5.15104C14.9853 5.31064 15.001 5.47273 15.0015 5.63521C15.0015 12.3424 9.45987 16.1657 3.70051 14.6505C4.66374 14.3756 5.5834 13.948 6.42273 13.3783C6.90946 13.0479 6.84368 12.3113 6.30611 12.0724C4.30276 11.182 3.14038 9.91521 2.63261 8.35474C2.23661 7.13777 2.25828 5.819 2.55455 4.54018C4.23897 6.25571 6.5754 7.21839 9.02095 7.15498C9.42745 7.14444 9.75151 6.81187 9.75151 6.40523V5.65523C9.73676 4.55009 10.4073 3.5623 11.4305 3.17177C12.4537 2.78124 13.6119 3.07103 14.3306 3.89741Z"
+                            fill="#2281D6" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content tab-content-remove selected-item" id="tab-1">
+        <div class="terms-content">
+            <p class="terms-content__regular-text">Туристическая компания, на сайте которой установлен поисковый модуль
+                круизов и которая осуществляет бронирование каюты на круизном лайнере (далее «Компания»), и
+                пользователь сайта, направляющий запрос на бронирование круиза с помощью формы «Бронировать круиз»
+                (далее «Вы») договорились о нижеследующем.</p>
+
+            <p class="terms-content__bold-text">Запрос</p>
+
+            <p class="terms-content__regular-text">Запрос направляется при помощи формы «Бронировать круиз», на которую
+                Вы переходите при выборе категории каюты путем нажатия на команду «Запрос» в описании круиза.</p>
+
+            <p class="terms-content__bold-text">Этап 1. Предварительное бронирование</p>
+
+            <p class="terms-content__regular-text">На основании Вашего запроса Компания осуществляет предварительное
+                бронирование каюты выбранной категории. Предварительное бронирование:</p>
+            <ul class="terms-content_list">
+                <li>позволяет Вам <span class="terms-content__bold-text">зафиксировать цену и наличие кают;</span></li>
+                <li><span class="terms-content__bold-text">не требует предоплаты;</span></li>
+                <li><span class="terms-content__bold-text">отменяеться совершенно бесплатно;</span></li>
+            </ul>
+
+            <p class="terms-content__regular-text">В ответ на Ваш запрос на E-mail адрес, указанный в запросе, Компания
+                направляет электронное сообщение, которое содержит:</p>
+            <ul class="terms-content_list">
+                <li>подтверждение предварительного бронирования, включающее <span class="terms-content__bold-text">номер
+                        и расположение</span> предварительно
+                    забронированной каюты, а также срок действия предварительного бронирования, в течение которого за
+                    вами закреплена данная каюта и цена;</li>
+                <li>наличие и расположение альтернативных кают выбранной категории;</li>
+            </ul>
+
+            <p class="terms-content__bold-text">Этап 2. ОПЛАТА</p>
+
+            <p class="terms-content__regular-text">В случае Вашего согласия с предварительным бронированием Вы
+                осуществляете оплату стоимости круиза на основании выставленного Компанией счета и договора на
+                туристическое обслуживание. Оплата выбранной каюты может быть полной (100%) или частичной, состоящей из
+                предоплаты (депозита) и полной оплаты согласно условиям круизной компании и договора на туристическое
+                обслуживание. Договор на туристическое обслуживание подписывается Вами на соответсвующих страницах и
+                направляется/передается в Компанию.</p>
+
+            <p class="terms-content__bold-text">Этап 3. БРОНИРОВАНИЕ</p>
+
+            <p class="terms-content__regular-text">После получения Вашей оплаты Компания осуществляет <span class="terms-content__bold-text">финальное
+                    бронирование</span> выбранной каюты и направляет Вам электронное сообщение, которое содержит:</p>
+            <ul class="terms-content_list">
+                <li><span class="terms-content__bold-text">Подтверждение бронирования выбранной каюты</span></li>
+                <li>Дополнительную информацию по Вашему круизу.</li>
+            </ul>
+
+            <p class="terms-content__regular-text">Мы будем рады проконсультировать вас, если у вас возникли вопросы по
+                условиям бронирования. пожалуйста, обращайтесь по телефонам, указанным на сайте компании.</p>
+
+            <p class="terms-content__regular-text">Электронные сообщения с подтверждением предварительного и полного
+                бронирования могут содержать дополнительную информацию туристического характера, включая рекламу
+                сопутствующих услуг. Направляя запрос, Вы соглашаетесь с данными условиями бронирования.</p>
+        </div>
+    </div>
+
+    <!-- tab 2 -->
+    <div class="tab-content tab-content-remove" id="tab-2">
+
+        <!-- сhoose contract type -->
+        <div class="wrapper-information-block border-top-none">
+            <ul class="wrapper-information-block__list">
+                <li class="wrapper-information-block__svg">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.833252 9.99992C0.833252 15.0625 4.93731 19.1666 9.99992 19.1666C15.0625 19.1666 19.1666 15.0625 19.1666 9.99992C19.1666 4.93731 15.0625 0.833252 9.99992 0.833252C4.93731 0.833252 0.833252 4.93731 0.833252 9.99992ZM17.4999 9.99992C17.4999 14.1421 14.1421 17.4999 9.99992 17.4999C5.85778 17.4999 2.49992 14.1421 2.49992 9.99992C2.49992 5.85778 5.85778 2.49992 9.99992 2.49992C14.1421 2.49992 17.4999 5.85778 17.4999 9.99992ZM9.16659 6.66658V9.99992C9.16659 10.4602 9.53968 10.8333 9.99992 10.8333C10.4602 10.8333 10.8333 10.4602 10.8333 9.99992V6.66658C10.8333 6.20635 10.4602 5.83325 9.99992 5.83325C9.53968 5.83325 9.16659 6.20635 9.16659 6.66658ZM10.5892 11.9107C10.9146 12.2361 10.9146 12.7637 10.5892 13.0892C10.2637 13.4146 9.7361 13.4146 9.41066 13.0892C9.08523 12.7637 9.08523 12.2361 9.41066 11.9107C9.7361 11.5852 10.2637 11.5852 10.5892 11.9107Z"
+                            fill="#2281D6" />
+                    </svg>
+                </li>
+                <li class="wrapper-information-block__title">
+                    <span>Выберите тип договора</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="terms-content">
+
+            <div class="terms-content__radio-form">
+                <div class="terms-content__type-of-contract">
+                    <input type="radio" id="type-of-contract-1" class="terms-content__radio-button" name="type-of-contract"
+                        checked>
+                    <label for="type-of-contract-1">Агентский договор для организаций - плательщиков НДС</label>
+                </div>
+                <div class="terms-content__type-of-contract">
+                    <input type="radio" id="type-of-contract-2" class="terms-content__radio-button" name="type-of-contract">
+                    <label for="type-of-contract-2">Агентский договор для организаций - не плательщиков НДС</label>
+                </div>
+            </div>
+        </div>
+
+        <form action="#" method="POST">
+
+            <!-- Contact Information -->
+
+            <div class="wrapper-information-block border-bottom-none">
+                <ul class="wrapper-information-block__list">
+                    <li class="wrapper-information-block__svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.833252 9.99992C0.833252 15.0625 4.93731 19.1666 9.99992 19.1666C15.0625 19.1666 19.1666 15.0625 19.1666 9.99992C19.1666 4.93731 15.0625 0.833252 9.99992 0.833252C4.93731 0.833252 0.833252 4.93731 0.833252 9.99992ZM17.4999 9.99992C17.4999 14.1421 14.1421 17.4999 9.99992 17.4999C5.85778 17.4999 2.49992 14.1421 2.49992 9.99992C2.49992 5.85778 5.85778 2.49992 9.99992 2.49992C14.1421 2.49992 17.4999 5.85778 17.4999 9.99992ZM9.16659 6.66658V9.99992C9.16659 10.4602 9.53968 10.8333 9.99992 10.8333C10.4602 10.8333 10.8333 10.4602 10.8333 9.99992V6.66658C10.8333 6.20635 10.4602 5.83325 9.99992 5.83325C9.53968 5.83325 9.16659 6.20635 9.16659 6.66658ZM10.5892 11.9107C10.9146 12.2361 10.9146 12.7637 10.5892 13.0892C10.2637 13.4146 9.7361 13.4146 9.41066 13.0892C9.08523 12.7637 9.08523 12.2361 9.41066 11.9107C9.7361 11.5852 10.2637 11.5852 10.5892 11.9107Z"
+                                fill="#2281D6" />
+                        </svg>
+                    </li>
+                    <li class="wrapper-information-block__title">
+                        <span>Контактная информация</span>
+                    </li>
+                </ul>
+                <div class="terms-content terms-content__desktop-form padding-bottom-null padding-top-null">
+                    <div class="titles-block__form-subscribe">
+                        <div class="terms-content__third-form-wrapper">
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="legalName" class="titles-block__form-subscribe_label">Юридическое
+                                        наименование компании</label>
+                                    <input type="text" id="legalName" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="shortName" class="titles-block__form-subscribe_label">Краткое
+                                        наименование компании</label>
+                                    <input type="text" id="shortName" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+                            </div>
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input terms-content__long-input">
+                                    <label for="affiliation" class="titles-block__form-subscribe_label">Принадлежность
+                                        агентства к сети</label>
+                                    <input type="text" id="affiliation" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+                            </div>
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="surName" class="titles-block__form-subscribe_label">Фамилия</label>
+                                    <input type="text" id="surName" class="titles-block__form-subscribe_input" required
+                                        placeholder="Заполните поле">
+                                </div>
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="name" class="titles-block__form-subscribe_label">Имя</label>
+                                    <input type="text" id="name" class="titles-block__form-subscribe_input" required
+                                        placeholder="Заполните поле">
+                                </div>
+                            </div>
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input terms-content__long-input margin-bottom-right">
+                                    <label for="middleName" class="titles-block__form-subscribe_label">Отчество</label>
+                                    <input type="text" id="middleName" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+                            </div>
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="foundationOfAuthority" class="titles-block__form-subscribe_label">Основание
+                                        полномочий</label>
+                                    <input type="text" id="foundationOfAuthority" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="lawAdress" class="titles-block__form-subscribe_label">Юридический
+                                        адрес</label>
+                                    <input type="text" id="lawAdress" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+                            </div>
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="index" class="titles-block__form-subscribe_label">Индекс</label>
+                                    <input type="number" id="index" class="titles-block__form-subscribe_input" required
+                                        placeholder="Заполните поле">
+                                </div>
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="phone" class="titles-block__form-subscribe_label">Телефон</label>
+                                    <input type="tel" id="phone" class="titles-block__form-subscribe_input" required
+                                        placeholder="Заполните поле">
+                                </div>
+                            </div>
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input terms-content__long-input">
+                                    <label for="emailAdress" class="titles-block__form-subscribe_label">Электронный
+                                        адрес</label>
+                                    <input type="email" id="emailAdress" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+
+                            </div>
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input terms-content__long-input">
+                                    <label for="fax" class="titles-block__form-subscribe_label">Факс</label>
+                                    <input type="number" id="fax" class="titles-block__form-subscribe_input" required
+                                        placeholder="Заполните поле">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bank guarantee -->
+            <div class="wrapper-information-block border-bottom-none">
+                <ul class="wrapper-information-block__list">
+                    <li class="wrapper-information-block__svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.833252 9.99992C0.833252 15.0625 4.93731 19.1666 9.99992 19.1666C15.0625 19.1666 19.1666 15.0625 19.1666 9.99992C19.1666 4.93731 15.0625 0.833252 9.99992 0.833252C4.93731 0.833252 0.833252 4.93731 0.833252 9.99992ZM17.4999 9.99992C17.4999 14.1421 14.1421 17.4999 9.99992 17.4999C5.85778 17.4999 2.49992 14.1421 2.49992 9.99992C2.49992 5.85778 5.85778 2.49992 9.99992 2.49992C14.1421 2.49992 17.4999 5.85778 17.4999 9.99992ZM9.16659 6.66658V9.99992C9.16659 10.4602 9.53968 10.8333 9.99992 10.8333C10.4602 10.8333 10.8333 10.4602 10.8333 9.99992V6.66658C10.8333 6.20635 10.4602 5.83325 9.99992 5.83325C9.53968 5.83325 9.16659 6.20635 9.16659 6.66658ZM10.5892 11.9107C10.9146 12.2361 10.9146 12.7637 10.5892 13.0892C10.2637 13.4146 9.7361 13.4146 9.41066 13.0892C9.08523 12.7637 9.08523 12.2361 9.41066 11.9107C9.7361 11.5852 10.2637 11.5852 10.5892 11.9107Z"
+                                fill="#2281D6" />
+                        </svg>
+                    </li>
+                    <li class="wrapper-information-block__title">
+                        <span>Банковская гарантия</span>
+                    </li>
+                </ul>
+
+                <div class="terms-content padding-bottom-null padding-top-null">
+                    <div class="titles-block__form-subscribe">
+                        <div class="terms-content__third-form-wrapper">
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="bankingNumberGuarantees" class="titles-block__form-subscribe_label">Номер
+                                        банковской
+                                        гарантии</label>
+                                    <input type="number" id="bankingNumberGuarantees" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="bankGives" class="titles-block__form-subscribe_label">Банк, выдавший
+                                        гарантию</label>
+                                    <input type="text" id="bankGives" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+
+                            </div>
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input terms-content__long-input">
+                                    <label for="bankingTermGuarantees" class="titles-block__form-subscribe_label">Срок
+                                        банковской
+                                        гарантии</label>
+                                    <input type="number" id="bankingTermGuarantees" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- billing agency details -->
+            <div class="wrapper-information-block border-bottom-none">
+                <ul class="wrapper-information-block__list">
+                    <li class="wrapper-information-block__svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.833252 9.99992C0.833252 15.0625 4.93731 19.1666 9.99992 19.1666C15.0625 19.1666 19.1666 15.0625 19.1666 9.99992C19.1666 4.93731 15.0625 0.833252 9.99992 0.833252C4.93731 0.833252 0.833252 4.93731 0.833252 9.99992ZM17.4999 9.99992C17.4999 14.1421 14.1421 17.4999 9.99992 17.4999C5.85778 17.4999 2.49992 14.1421 2.49992 9.99992C2.49992 5.85778 5.85778 2.49992 9.99992 2.49992C14.1421 2.49992 17.4999 5.85778 17.4999 9.99992ZM9.16659 6.66658V9.99992C9.16659 10.4602 9.53968 10.8333 9.99992 10.8333C10.4602 10.8333 10.8333 10.4602 10.8333 9.99992V6.66658C10.8333 6.20635 10.4602 5.83325 9.99992 5.83325C9.53968 5.83325 9.16659 6.20635 9.16659 6.66658ZM10.5892 11.9107C10.9146 12.2361 10.9146 12.7637 10.5892 13.0892C10.2637 13.4146 9.7361 13.4146 9.41066 13.0892C9.08523 12.7637 9.08523 12.2361 9.41066 11.9107C9.7361 11.5852 10.2637 11.5852 10.5892 11.9107Z"
+                                fill="#2281D6" />
+                        </svg>
+                    </li>
+                    <li class="wrapper-information-block__title">
+                        <span>Реквизиты агентства для выставления счетов</span>
+                    </li>
+                </ul>
+
+                <div class="terms-content padding-bottom-null padding-top-null billing-agency">
+                    <div class="titles-block__form-subscribe">
+                        <div class="terms-content__third-form-wrapper">
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="edrpou" class="titles-block__form-subscribe_label">ЕДРПОУ</label>
+                                    <input type="number" id="edrpou" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="innNumber" class="titles-block__form-subscribe_label">ИНН</label>
+                                    <input type="number" id="innNumber" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+                                <div class="titles-block__form-subscribe_wrapper-input  terms-content__long-input">
+                                    <label for="bankId" class="titles-block__form-subscribe_label">Банк</label>
+                                    <input type="text" id="bankId" class="titles-block__form-subscribe_input" required
+                                        placeholder="Заполните поле">
+                                </div>
+                            </div>
+
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input terms-content__long-input">
+                                    <label for="checkingAccount" class="titles-block__form-subscribe_label">Р/с</label>
+                                    <input type="number" id="checkingAccount" class="titles-block__form-subscribe_input terms-content__long-input"
+                                        required placeholder="Заполните поле">
+                                </div>
+
+                                <div class="titles-block__form-subscribe_wrapper-input terms-content__long-input">
+                                    <label for="mfo" class="titles-block__form-subscribe_label">МФО</label>
+                                    <input type="number" id="mfo" class="titles-block__form-subscribe_input" required
+                                        placeholder="Заполните поле">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- emergency communication -->
+            <div class="wrapper-information-block border-bottom-none">
+                <ul class="wrapper-information-block__list">
+                    <li class="wrapper-information-block__svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.833252 9.99992C0.833252 15.0625 4.93731 19.1666 9.99992 19.1666C15.0625 19.1666 19.1666 15.0625 19.1666 9.99992C19.1666 4.93731 15.0625 0.833252 9.99992 0.833252C4.93731 0.833252 0.833252 4.93731 0.833252 9.99992ZM17.4999 9.99992C17.4999 14.1421 14.1421 17.4999 9.99992 17.4999C5.85778 17.4999 2.49992 14.1421 2.49992 9.99992C2.49992 5.85778 5.85778 2.49992 9.99992 2.49992C14.1421 2.49992 17.4999 5.85778 17.4999 9.99992ZM9.16659 6.66658V9.99992C9.16659 10.4602 9.53968 10.8333 9.99992 10.8333C10.4602 10.8333 10.8333 10.4602 10.8333 9.99992V6.66658C10.8333 6.20635 10.4602 5.83325 9.99992 5.83325C9.53968 5.83325 9.16659 6.20635 9.16659 6.66658ZM10.5892 11.9107C10.9146 12.2361 10.9146 12.7637 10.5892 13.0892C10.2637 13.4146 9.7361 13.4146 9.41066 13.0892C9.08523 12.7637 9.08523 12.2361 9.41066 11.9107C9.7361 11.5852 10.2637 11.5852 10.5892 11.9107Z"
+                                fill="#2281D6" />
+                        </svg>
+                    </li>
+                    <li class="wrapper-information-block__title">
+                        <span>Экстренная связь</span>
+                    </li>
+                </ul>
+
+                <div class="terms-content padding-bottom-null padding-top-null">
+                    <div class="titles-block__form-subscribe">
+
+                        <div class="terms-content__third-form-wrapper">
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="phoneNumber" class="titles-block__form-subscribe_label">Телефон</label>
+                                    <input type="tel" id="phoneNumber" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="fullName" class="titles-block__form-subscribe_label">ФИО</label>
+                                    <input type="text" id="fullName" class="titles-block__form-subscribe_input"
+                                        required placeholder="Заполните поле">
+                                </div>
+
+                            </div>
+
+                            <div class="terms-content__input-row">
+                                <div class="titles-block__form-subscribe_wrapper-input">
+                                    <label for="position" class="titles-block__form-subscribe_label">Должность</label>
+                                    <input type="text" id="position" class="titles-block__form-subscribe_input"
+                                        placeholder="Заполните поле">
+                                </div>
+                                <button class="titles-block__form-subscribe_btn">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- subscribe title -->
+
+<section class="wrapper-title-block">
+    <div class="titles-block">
+        <div class="titles-block__subscribe-wrapper">
+            <h3 class="titles-block__h3">Подпишись!</h3>
+            <p class="titles-block_text">Подпишитесь, чтобы получать последние обновления! Не пропустите ...</p>
+        </div>
+        <form class="titles-block__form-subscribe" action="#" method="POST">
+            <div class="titles-block__form-subscribe_wrapper-input">
+                <label for="subscribe" class="titles-block__form-subscribe_label">Почта</label>
+                <input type="email" id="subscribe" class="titles-block__form-subscribe_input" required placeholder="Электронный адрес">
+            </div>
+            <button class="titles-block__form-subscribe_btn">Подпишись</button>
+        </form>
+    </div>
+</section>
+
+</main>
+
+<div id="sign-in" class="white-popup consultation-popUp mfp-with-anim mfp-hide">
+    <form action="#" method="POST">
+        <div class="consultation-popUp__wrapper">
+            <h3 class="consultation-popUp__title">Вход</h3>
+            <div class="consultation-popUp__wrapper-input">
+                <label for="sign-in-popUp__input-login" class="titles-block__form-subscribe_label">логин</label>
+                <input type="text" id="sign-in-popUp__input-login" class="consultation-popUp__input-phone" required
+                    placeholder="Укажите Ваш логин">
+            </div>
+            <div class="consultation-popUp__wrapper-input">
+                <label for="sign-in-popUp__input-password" class="titles-block__form-subscribe_label">Пароль</label>
+                <input type="password" id="sign-in-popUp__input-password" class="consultation-popUp__input-phone" required placeholder="Напишите пароль">
+            </div>
+            <button type="submit" class="titles-block__form-subscribe_btn consultation-popUp__btn">Войти</button>
+        </div>
+    </form>
+</div>
+
+<div id="connect" class="white-popup consultation-popUp mfp-with-anim mfp-hide">
+    <form action="#" method="POST">
+        <div class="consultation-popUp__wrapper">
+            <h3 class="consultation-popUp__title">Связаться</h3>
+            <div class="consultation-popUp__wrapper-input">
+                <label for="connect-popUp__input-phone" class="titles-block__form-subscribe_label">телефон</label>
+                <input type="text" id="connect-popUp__input-phone" class="consultation-popUp__input-phone" required
+                    placeholder="Укажите Ваш телефон">
+            </div>
+            <div class="consultation-popUp__wrapper-input">
+                <label for="connect-popUp__input-mail" class="titles-block__form-subscribe_label">почта</label>
+                <input type="password" id="connect-popUp__input-mail" class="consultation-popUp__input-phone" required placeholder="Напишите Вашу почту">
+            </div>
+            <button type="submit" class="titles-block__form-subscribe_btn consultation-popUp__btn">Связаться</button>
+        </div>
+    </form>
+</div>
+
+<div id="consultation" class="white-popup consultation-popUp mfp-with-anim mfp-hide">
+    <form action="#" method="POST">
+        <div class="consultation-popUp__wrapper">
+            <h3 class="consultation-popUp__title">Консультация</h3>
+            <div class="consultation-popUp__wrapper-input">
+                <label for="consultation-popUp__input-name" class="titles-block__form-subscribe_label">Ваше имя</label>
+                <input type="text" id="consultation-popUp__input-name" class="consultation-popUp__input-name" required
+                    placeholder="Введите имя">
+            </div>
+            <div class="consultation-popUp__wrapper-input">
+                <label for="consultation-popUp__input-phone" class="titles-block__form-subscribe_label">номер телефона</label>
+                <input type="tel" id="consultation-popUp__input-phone" class="consultation-popUp__input-phone" required
+                    placeholder="Укажите Ваш телефон">
+            </div>
+            <button type="submit" class="titles-block__form-subscribe_btn consultation-popUp__btn">проконсультироваться</button>
+        </div>
+    </form>
+</div>
+
+<div id="review" class="white-popup consultation-popUp mfp-with-anim mfp-hide">
+    <form action="#" method="POST">
+        <div class="consultation-popUp__wrapper">
+            <h3 class="consultation-popUp__title">Отзыв</h3>
+            <div class="consultation-popUp__wrapper-input">
+                <label for="review-popUp__input-name" class="titles-block__form-subscribe_label">Комментарий</label>
+                <textarea placeholder="Напиши нам!" id="review-popUp__input-name" class="consultation-popUp__input-name"></textarea>
+            </div>
+            <div class="consultation-popUp__wrapper-input">
+                <label for="consultation-popUp__input-name" class="titles-block__form-subscribe_label">Ваше имя</label>
+                <input type="text" id="review__input-name" class="consultation-popUp__input-name" required placeholder="Введите имя">
+            </div>
+            <div class="consultation-popUp__wrapper-input">
+                <label for="review-popUp__input-mail" class="titles-block__form-subscribe_label">Почта</label>
+                <input type="email" id="review-popUp__input-mail" class="consultation-popUp__input-phone" required placeholder="Напишите почту">
+            </div>
+            <button type="submit" class="titles-block__form-subscribe_btn consultation-popUp__btn">Оставить отзыв</button>
+        </div>
+    </form>
+</div>
+
+<div id="contact" class="white-popup consultation-popUp mfp-with-anim mfp-hide">
+    <form action="#" method="POST">
+        <div class="consultation-popUp__wrapper">
+            <h3 class="consultation-popUp__title">Связаться</h3>
+            <div class="consultation-popUp__wrapper-input">
+                <label for="contact-popUp__input-phone" class="titles-block__form-subscribe_label">номер телефона</label>
+                <input type="tel" id="contact-popUp__input-phone" class="consultation-popUp__input-phone" required
+                    placeholder="Ваш контактный телефон">
+            </div>
+            <div class="consultation-popUp__wrapper-input">
+                <label for="contact-popUp__input-name" class="titles-block__form-subscribe_label">Ваше имя</label>
+                <input type="text" id="contact-popUp__input-name" class="consultation-popUp__input-name" required placeholder="Введите имя">
+            </div>
+            <div class="consultation-popUp__wrapper-input">
+                <label for="contact-popUp__input-mail" class="titles-block__form-subscribe_label">Почта</label>
+                <input type="email" id="contact-popUp__input-mail" class="consultation-popUp__input-phone" required placeholder="Напишите почту">
+            </div>
+            <button type="submit" class="titles-block__form-subscribe_btn consultation-popUp__btn">Оставить отзыв</button>
+        </div>
+    </form>
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer__wrapper-categories">
+            <div class="footer__categories">
+                <p class="footer__categories_title">
+                    Направления
+                </p>
+                <ul>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Средиземное море</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Карибское море</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Балтийское море</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Emirates</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Европа</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">фьорды Норвегии</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Скандинавия</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Азия</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title">
+                    Туры
+                </p>
+                <ul>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Вокруг света</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Новогодние</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Моторный корабль</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Майские праздники</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title">
+                    Новости
+                </p>
+                <ul>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Неделя</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Отличные новости</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Горячие новости</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title">
+                    Вопросы ответы
+                </p>
+                <ul>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Вопросы-Ответы</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Помогите</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Сотрудничество</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Перезвоним</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title">
+                    Разное
+                </p>
+                <ul>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Акции</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Сервисы</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title">
+                    Контакты
+                </p>
+                <ul>
+                    <li>
+                        <p class="footer__categories_city">Киев:</p>
+                    </li>
+                    <li><a href="tel:+380443643307" class="footer__categories_phone">+ 38 (044) 364 33 07</a></li>
+                    <li><a href="tel:+380673070100" class="footer__categories_phone">+ 38 (067) 307 01 00</a></li>
+
+                    <li>
+                        <p class="footer__categories_city">Львов:</p>
+                    </li>
+                    <li><a href="tel:+380322533638" class="footer__categories_phone">+ 38 (032) 253 36 38</a></li>
+                    <li><a href="tel:+380953708979" class="footer__categories_phone">+ 38 (095) 370 89 79</a></li>
+
+                    <li>
+                        <p class="footer__categories_city">Почта:</p>
+                    </li>
+                    <li><a href="mailto:booking@inflotcruises.com" class="footer__categories_mail">booking@inflotcruises.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <a href="#"><img src="./assets/img/icons-logo/white-logo.svg" alt="inflot-logo"></a>
+            <p class="footer__bottom_rights">© 2018 Inflot. Все права защищены.</p>
+            <div class="footer__bottom_social-wrapper">
+                <a href="#" target="_blank"><img src="./assets/img/icons-logo/twitter.svg" alt="twitter"></a>
+                <a href="#" target="_blank"><img src="./assets/img/icons-logo/facebook.svg" alt="facebook"></a>
+                <a href="#" target="_blank"><img src="./assets/img/icons-logo/instagram.svg" alt="instagram"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- JS -->
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://rawgithub.com/dimsemenov/Magnific-Popup/master/dist/jquery.magnific-popup.js?v=0.8.9"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+<script src="./assets/js/datepicker.min.js"></script>
+<script src="./assets/js/scripts.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<!-- end JS -->
+</body>
+
+</html>

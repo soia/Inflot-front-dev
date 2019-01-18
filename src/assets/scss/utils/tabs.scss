@@ -1,0 +1,245 @@
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: $mainBorder;
+    border-top: $mainBorder;
+    background-color: $lightGray;
+
+    @media screen and (max-width: 767px) { 
+        flex-wrap: wrap;
+    }
+
+    &__tab, &__select {
+        display: flex;
+        align-items: center;
+    }
+
+    &__tab-item {
+        color: $blue;
+        opacity: 0.5;
+        font-family: $boldFont;
+        transition: all 0.25s;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+            background-color: #e2eefa;
+        }
+
+        @media screen and (max-width: 767px) { 
+            font-size: 12px;
+        }
+    }
+
+    &__tab {
+
+        @media screen and (max-width: 767px) { 
+            width: 100%;
+            border-bottom: $mainBorder;
+            flex-wrap: wrap;
+
+            .mobile-tab  {
+                width: calc(50% - 40.5px);
+            }
+        }
+
+        &_filter {
+            height: 80px;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: $mainBorder;
+            cursor: pointer;
+        }
+
+        .cruises-tab {
+            @media screen and (max-width: 767px) { 
+                &:nth-child(2) {
+                    width: calc(100% - 161px);
+
+                    .main-dropdown {
+                        width: 100%;
+                        border-bottom: $mainBorder;
+                    }
+                }
+
+                &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7),{
+                    width: 50%;
+
+                    .main-dropdown {
+                        width: 100%;
+                    }
+                }
+
+                &:nth-child(4), &:nth-child(5) {
+                    border-bottom: $mainBorder;
+                }
+            }
+        }
+
+        .services-tab {
+            @media screen and (max-width: 767px) { 
+
+                &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                    width: 25%;
+                    box-sizing: border-box;
+
+                    .tab-container__social_link {
+                        padding: 0;
+                        width: 100%;
+                    }
+                }
+
+                &:nth-child(2) {
+                    border-left: 0;
+                }
+
+                &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                    border-bottom: $mainBorder;
+                }
+
+                &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10)  {
+                    width: 33.3%;
+                    box-sizing: border-box;
+                }
+
+                &:nth-child(10) {
+                    margin-left: 0;
+                }
+            } 
+        }
+
+        .company-single-tab {
+            @media screen and (max-width: 767px) { 
+                &:nth-child(2) {
+                    width: calc(100% - 161px);
+                }
+
+                &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+                    width: 33.3%;
+                    box-sizing: border-box;
+                    padding: 0;
+                }
+
+                &:nth-child(6) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    &__tab-item {
+        border-right: $mainBorder;
+        height: 80px;
+        max-width: 100%;
+        padding: 0 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+
+        @media screen and (min-width: 768px) and (max-width: 1250px) { 
+            padding: 0 17px;
+            font-size: 14px;
+        }
+    }
+
+    .selected-item {
+        opacity: 1;
+        background-color: #e2eefa;
+    }
+
+    &__select {
+        color: $blue;
+        font-family: $boldFont;
+
+        &_option {
+            height: 80px;
+            max-width: 100%;
+            padding: 0 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: $mainBorder;
+
+            @media screen and (max-width: 767px) { 
+                display: none;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1250px) { 
+                display: none;
+                padding: 0 30px;
+            }
+
+            svg {
+                margin-left: 20px;
+                cursor: pointer;
+                width: 20px;
+                height: 20px;
+                overflow: inherit;
+
+                @media screen and (min-width: 768px) and (max-width: 1250px) { 
+                    margin-left: 0;
+                }
+            }
+        }
+
+        &_option-saved {
+            user-select: none;
+            cursor: pointer;
+            transition: all 0.25s;
+
+            &:hover {
+                background-color: #e2eefa;
+            }
+        }
+
+        &_currency {
+            border-left: $mainBorder;
+            cursor: pointer;
+            transition: all 0.25s;
+
+            &:hover {
+                background-color: $darkGray;
+            }
+        }
+    }
+
+    &__social {
+        height: 100%;
+        display: flex;
+        border-left: $mainBorder;
+
+        &:hover {
+            background-color: #e2eefa;
+        }
+
+        &_link {
+            height: 80px;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (max-width: 767px) { 
+                padding: 0 29.5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) { 
+    .tab-container__social:last-child .tab-container__social_link {
+        border-right: $mainBorder; 
+    }
+}
+.tab-content {
+    display: block ;
+    height: 0;
+    overflow: hidden;
+}
+
+.tab-content.selected-item {
+    height: auto;
+}

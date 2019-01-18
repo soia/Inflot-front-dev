@@ -1,0 +1,639 @@
+@@include('modules/html-head.html',{ "bodyClass": "support_body", "pageTitle": "Inflot Company" })
+@@include('modules/header-white.html',{
+"headerClass": "" })
+
+<main class="company">
+
+    <!-- directions title -->
+
+    <section class="wrapper-title-block">
+        <div class="titles-block">
+            <h3 class="titles-block__h3">Компании</h3>
+            <a href="#" target="_blank" class="titles-block__btn">Все компании</a>
+        </div>
+    </section>
+
+    <!-- tab title -->
+    <div class="tab-container">
+
+        <ul class="tab-container__tab">
+            <li class="tab-container__tab_filter">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.03196 3.03819L7.5016 10.6885V15.8334C7.5016 16.1491 7.67993 16.4376 7.96226 16.5788L11.2956 18.2454C11.8497 18.5225 12.5016 18.1196 12.5016 17.5001V10.6885L18.9712 3.03819C19.4293 2.49654 19.0443 1.66675 18.3349 1.66675H1.66827C0.958911 1.66675 0.57391 2.49654 1.03196 3.03819ZM3.46435 3.33341H16.5388L11.032 9.84531C10.9047 9.99575 10.8349 10.1864 10.8349 10.3834V16.1517L9.16827 15.3184V10.3834C9.16827 10.1864 9.09846 9.99575 8.97124 9.84531L3.46435 3.33341Z"
+                        fill="#2281d6" />
+                </svg>
+            </li>
+            <li class="tab-container__tab-item tab-link selected-item" data-tab="tab-1">
+                <span>Стандарт</span>
+            </li>
+            <li class="tab-container__tab-item tab-link" data-tab="tab-2">
+                <span>Премиум</span>
+            </li>
+            <li class="tab-container__select">
+                <ul>
+                    <li class="tab-container__select_option">
+                        Сменить валюту
+                    </li>
+                    <li class="">
+                        <select class="main-dropdown main-dropdown__currency">
+                            <option selected disabled value="1">€</option>
+                            <option value="2">€</option>
+                            <option value="3">$</option>
+                            <option value="4">₴</option>
+                        </select>
+                    </li>
+                </ul>
+            </li>
+            <li class="tab-container__tab-item tab-link" data-tab="tab-3">
+                <span>Люкс</span>
+            </li>
+            <li class="tab-container__tab-item tab-link" data-tab="tab-4">
+                <span>Речные</span>
+            </li>
+        </ul>
+        <div class="tab-container__select mobile-display-none">
+            <div class="tab-container__select_option">
+                Сменить валюту
+            </div>
+            <div class="tab-container__select_currency">
+                <div class="">
+                    <select class="main-dropdown main-dropdown__currency">
+                        <option selected disabled value="1">€</option>
+                        <option value="2">€</option>
+                        <option value="3">$</option>
+                        <option value="4">₴</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tab 1 -->
+    <div class="tab-content tab-content-remove selected-item" id="tab-1">
+        <section class="container-directions">
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-35%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/MSC-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/MSC-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">MSC Cruises</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Европа, Южная Америка, Атлантический океан,
+                                <br>
+                                ОАЭ, ЮАР </p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 119€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-25%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/MSC-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/MSC-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">Costa Cruises</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Африка, Арабские Эмираты, Карибские о-ва,
+                                <br>
+                                Северная Европа, Азия</p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 459€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-10%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/princess-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/princess-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">Princess Cruises</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Европа, Южная Америка, Атлантический океан,
+                                <br>
+                                ОАЭ, ЮАР </p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 98€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-15%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/norwegian-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/norwegian-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">Norwegian Cruise Line</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Европа, Южная Америка, Атлантический океан,
+                                <br>
+                                ОАЭ, ЮАР </p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 149€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- tab 2 -->
+    <div class="tab-content tab-content-remove" id="tab-2">
+        <section class="container-directions">
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-15%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/norwegian-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/norwegian-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">Norwegian Cruise Line</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Европа, Южная Америка, Атлантический океан,
+                                <br>
+                                ОАЭ, ЮАР </p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 149€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-35%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/MSC-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/MSC-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">MSC Cruises</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Европа, Южная Америка, Атлантический океан,
+                                <br>
+                                ОАЭ, ЮАР </p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 119€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-25%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/MSC-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/MSC-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">Costa Cruises</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Африка, Арабские Эмираты, Карибские о-ва,
+                                <br>
+                                Северная Европа, Азия</p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 459€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-10%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/princess-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/princess-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">Princess Cruises</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Европа, Южная Америка, Атлантический океан,
+                                <br>
+                                ОАЭ, ЮАР </p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 98€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- tab 3 -->
+    <div class="tab-content tab-content-remove" id="tab-3">
+        <section class="container-directions">
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-25%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/MSC-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/MSC-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">Costa Cruises</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Африка, Арабские Эмираты, Карибские о-ва,
+                                <br>
+                                Северная Европа, Азия</p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 459€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-35%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/MSC-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/MSC-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">MSC Cruises</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Европа, Южная Америка, Атлантический океан,
+                                <br>
+                                ОАЭ, ЮАР </p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 119€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-10%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/princess-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/princess-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">Princess Cruises</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Европа, Южная Америка, Атлантический океан,
+                                <br>
+                                ОАЭ, ЮАР </p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 98€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-15%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/norwegian-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/norwegian-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">Norwegian Cruise Line</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Европа, Южная Америка, Атлантический океан,
+                                <br>
+                                ОАЭ, ЮАР </p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 149€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- tab 4 -->
+    <div class="tab-content tab-content-remove" id="tab-4">
+        <section class="container-directions">
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-35%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/MSC-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/MSC-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">MSC Cruises</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Европа, Южная Америка, Атлантический океан,
+                                <br>
+                                ОАЭ, ЮАР </p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 119€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-25%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/MSC-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/MSC-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">Costa Cruises</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Африка, Арабские Эмираты, Карибские о-ва,
+                                <br>
+                                Северная Европа, Азия</p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 459€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-10%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/princess-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/princess-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">Princess Cruises</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Европа, Южная Америка, Атлантический океан,
+                                <br>
+                                ОАЭ, ЮАР </p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 98€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper-directions">
+                <a href="#" class="directions__link">
+                    <div class="directions">
+                        <div class="directions__wrapper-img directions__wrapper-logo">
+                            <div class="flag">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H48V48L23.4894 41.4247L0 48V0Z"
+                                        fill="#FF7506"></path>
+                                </svg>
+                                <p class="flag__percent">-15%</p>
+                            </div>
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-blue" src="./assets/img/company-logo/norwegian-blue.png"
+                                alt="MSC">
+                            <img class="directions__wrapper-logo_img directions__wrapper-logo_img-white" src="./assets/img/company-logo/norwegian-white.png"
+                                alt="MSC">
+                        </div>
+                        <div class="directions__wrapper-description company__direction-info">
+                            <h4 class="directions__wrapper-description_h4 company__list-h4">Norwegian Cruise Line</h4>
+                            <p class="directions__wrapper-description_text company__list-directions">Направления:</p>
+                            <p class="directions__wrapper-description_text">Европа, Южная Америка, Атлантический океан,
+                                <br>
+                                ОАЭ, ЮАР </p>
+                        </div>
+                        <div class="directions__wrapper-description">
+                            <p class="directions__wrapper-description_text company__list-directions">Класификация:</p>
+                            <p class="directions__wrapper-description_text">Премиум</p>
+                        </div>
+                        <div class="directions__wrapper-price">
+                            <p class="directions__wrapper-price_cost">от 149€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- subscribe title -->
+
+    <div class="wrapper-title-block show-more">
+        <div class="titles-block">
+            <button type="button" class="titles-block__btn">больше</button>
+        </div>
+    </div>
+
+    <!-- subscribe -->
+
+    @@include('modules/subscribe.html')
+
+</main>
+
+@@include('modules/modal-window.html')
+@@include('modules/html-footer.html')

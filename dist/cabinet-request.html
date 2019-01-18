@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://rawgithub.com/dimsemenov/Magnific-Popup/master/dist/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+    
+    <title>Inflot Request</title>
+</head>
+
+<body class="support_body" id="body">
+
+    <!-- preloader -->
+
+<div class="loader">
+    <div class="laoder-frame">
+        <img class="svg-loader" src="https://kyivstore.com/wp-content/uploads/2016/09/loader.svg" alt="circle-loader">
+    </div>
+</div>
+<header>
+    <div class="header__container header__white">
+        <div class="header header-cabinet">
+                <div class="menu" id="menu">
+                        <div class="menu__header">
+                            <div class="menu__header_btn btnMenu">
+                                <p class="toggle">Закрыть</p>
+                            </div>
+                            <div class="header__logo">
+                                <a href="#"><img src="./assets/img/icons-logo/blue-logo.svg" alt="inflot-logo"></a>
+                            </div>
+                            <div class="header__right-side">
+                                <ul class="header__right-side_links popUp">
+                                    <li class="header__right-side_button"><a href="#sign-in" class="sign-btn" data-effect="mfp-zoom-in">Войти</a></li>
+                                </ul>
+                                <div class="header__right-side_language">
+                                    <select class="main-dropdown main-dropdown__language">
+                                        <option selected disabled value="1">Ру</option>
+                                        <option value="2">Ру</option>
+                                        <option value="3">Укр</option>
+                                        <option value="4">En</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__categories">
+                            <div class="menu__categories_top">
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Резюме
+                                            агенства</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Все заявки</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Бонусная програма</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Инструкции</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Просчет</a></p>
+                                </div>
+                                <div class="menu__categories_top-block">
+                                    <p class="menu__categories_contacts-title"><a href="#" class="menu__categories_header-cabinet">Выйти</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__bottom">
+                            <p class="menu__bottom_rights">© 2018 Inflot. Все права защищены.</p>
+                            <div class="menu__bottom_social-wrapper">
+                                <a href="#" target="_blank"><img src="./assets/img/icons-logo/blue-twitter.svg" alt="twitter"></a>
+                                <a href="#" target="_blank"><img src="./assets/img/icons-logo/blue-facebook.svg" alt="facebook"></a>
+                                <a href="#" target="_blank"><img src="./assets/img/icons-logo/blue-instagram.svg" alt="instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+            <div class="header-cabinet__left-side">
+                <div class="header__left-side_menu btnMenu">
+                    <svg class="ham hamRotate ham8" id="svg" viewBox="0 0 100 100" width="30">
+                        <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
+                        <path class="line middle" d="m 30,50 h 40"></path>
+                        <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
+                    </svg>
+                    <p>Меню</p>
+                </div>
+                <div class="search-box mobile-display-none">
+                    <form action="#">
+                        <input type="text" placeholder="Поиск" required class="search-box-input">
+                        <div class="header__right-side_search">
+                            <img src="./assets/img/icons-logo/search.svg" alt="search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="header-cabinet__left-side_links">
+                    <li class="header-cabinet__left-side_links-active"><a href="#"><span class="link-menu-header">Резюме
+                                агенства</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">Все заявки</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">Бонусная програма</span></a></li>
+                </ul>
+            </div>
+            <div class="header-cabinet__logo">
+                <a href="#">
+                    <img src="./assets/img/icons-logo/blue-logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header-cabinet__right-side">
+                <ul class="header-cabinet__right-side_links">
+                    <li><a href="#"><span class="link-menu-header">Инструкции</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">просчет</span></a></li>
+                    <li><a href="#"><span class="link-menu-header">Выйти</span></a></li>
+                    <li>
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./assets/img/icons-logo/logo-cabinet.png" alt="logo" class="header-cabinet__right-side_links-logo-cabinet">
+                                <div class="header-cabinet__right-side_wrapper-name">
+                                    <p>John</p>
+                                    <p>Doe</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-cabinet__right-side_language">
+                    <select class="main-dropdown main-dropdown__language">
+                        <option selected disabled value="1">Ру</option>
+                        <option value="2">Ру</option>
+                        <option value="3">Укр</option>
+                        <option value="4">En</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="header__breadcrumbs-wrapper">
+            <a class="header__breadcrumbs-wrapper_plus">+</a>
+            <a class="header__breadcrumbs-wrapper_item">Личный кабинет <span class="slash">|</span> </a>
+        </div>
+    </div>
+</header>
+
+<main class="cabinet-resume cabinet-request cabinet-request-inside">
+
+    <!--  agency title -->
+
+    <section class="directions-title-wrapper">
+        <div class="directions-title-wrapper__info">
+            <p class="directions-title-wrapper__info_text">Агенство</p>
+            <h1 class="directions-title-wrapper__info_title">ФОП CruiseDirect</h1>
+        </div>
+        <a href="#" target="_blank" class="titles-block__btn">Круизы онлайн</a>
+    </section>
+
+    <!--  information block -->
+
+    <div class="wrapper-information-block__container">
+
+        <div class="wrapper-information-block__list">
+            <div class="wrapper-information-block__right-side">
+                <div class="wrapper-information-block__left-side border-right-none border-bottom-none">
+                    <div class="wrapper-information-block__svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.03196 3.03819L7.5016 10.6885V15.8334C7.5016 16.1491 7.67993 16.4376 7.96226 16.5788L11.2956 18.2454C11.8497 18.5225 12.5016 18.1196 12.5016 17.5001V10.6885L18.9712 3.03819C19.4293 2.49654 19.0443 1.66675 18.3349 1.66675H1.66827C0.958911 1.66675 0.57391 2.49654 1.03196 3.03819ZM3.46435 3.33341H16.5388L11.032 9.84531C10.9047 9.99575 10.8349 10.1864 10.8349 10.3834V16.1517L9.16827 15.3184V10.3834C9.16827 10.1864 9.09846 9.99575 8.97124 9.84531L3.46435 3.33341Z"
+                                fill="#2281d6"></path>
+                        </svg>
+                    </div>
+                    <div class="wrapper-information-block__title">
+                        <span>Фильтрация заявки</span>
+                    </div>
+                </div>
+                <div class="cabinet-request__right-side_request">
+                    <div class="tab-container__select">
+                        <div class="tab-container__select_option">
+                            Сменить валюту
+                        </div>
+                        <div class="tab-container__select_currency">
+                            <div class="">
+                                <select class="main-dropdown main-dropdown__currency" style="display: none;">
+                                    <option selected="" disabled="" value="1">€</option>
+                                    <option value="2">€</option>
+                                    <option value="3">$</option>
+                                    <option value="4">₴</option>
+                                </select>
+                                <div class="nice-select main-dropdown main-dropdown__currency" tabindex="0"><span class="current">€</span>
+                                    <ul class="list">
+                                        <li data-value="1" class="option selected disabled">€</li>
+                                        <li data-value="2" class="option">€</li>
+                                        <li data-value="3" class="option">$</li>
+                                        <li data-value="4" class="option">₴</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cabinet-resume__right-side cabinet-bonus__right-side">
+                <form action="#" method="POST" class="cabinet-request-inside__form">
+                    <div class="titles-block__form-subscribe_wrapper-input">
+                        <label for="budget" class="titles-block__form-subscribe_label">Номер заявки</label>
+                        <input type="number" id="budget" class="titles-block__form-subscribe_input" required=""
+                            placeholder="01">
+                    </div>
+                    <div class="titles-block__form-subscribe_wrapper-input">
+                        <label for="from" class="titles-block__form-subscribe_label">Дата тура</label>
+                        <input type="text" class="datepicker-here titles-block__form-subscribe_input calendar" id="from"
+                            placeholder="Выберите дату">
+                    </div>
+                    <div class="titles-block__form-subscribe_wrapper-input">
+                        <label for="touristSurname" class="titles-block__form-subscribe_label">Фамилия туриста</label>
+                        <input type="text" id="touristSurname" class="titles-block__form-subscribe_input" required=""
+                            placeholder="Джон Сноу">
+                    </div>
+                    <button class="titles-block__btn" type="submit">Поиск</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!--  information block -->
+
+    <div class="wrapper-information-block__container">
+
+        <div class="wrapper-information-block__list wrapper-information-block__list_right-side ">
+            <div class="cabinet-request__application">
+                <div class="cabinet-request__application-container">
+                    <div class="cabinet-request__application_item-head">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.49996 1.66663H15.8333C17.214 1.66663 18.3333 2.78591 18.3333 4.16663V15.8333C18.3333 17.214 17.214 18.3333 15.8333 18.3333H7.49996H4.16663C2.78591 18.3333 1.66663 17.214 1.66663 15.8333V4.16663C1.66663 2.78591 2.78591 1.66663 4.16663 1.66663H7.49996ZM6.66663 3.33329H4.16663C3.70639 3.33329 3.33329 3.70639 3.33329 4.16663V15.8333C3.33329 16.2935 3.70639 16.6666 4.16663 16.6666H6.66663V3.33329ZM8.33329 16.6666V3.33329H15.8333C16.2935 3.33329 16.6666 3.70639 16.6666 4.16663V15.8333C16.6666 16.2935 16.2935 16.6666 15.8333 16.6666H8.33329Z"
+                                fill="#2281D6" />
+                        </svg>
+                    </div>
+                    <a href="#" target="_blank" class="cabinet-request__application_item">
+                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 55.25 55.25" style="enable-background:new 0 0 55.25 55.25;"
+                            xml:space="preserve">
+                            <path d="M52.618,2.631c-3.51-3.508-9.219-3.508-12.729,0L3.827,38.693C3.81,38.71,3.8,38.731,3.785,38.749  c-0.021,0.024-0.039,0.05-0.058,0.076c-0.053,0.074-0.094,0.153-0.125,0.239c-0.009,0.026-0.022,0.049-0.029,0.075  c-0.003,0.01-0.009,0.02-0.012,0.03l-3.535,14.85c-0.016,0.067-0.02,0.135-0.022,0.202C0.004,54.234,0,54.246,0,54.259  c0.001,0.114,0.026,0.225,0.065,0.332c0.009,0.025,0.019,0.047,0.03,0.071c0.049,0.107,0.11,0.21,0.196,0.296  c0.095,0.095,0.207,0.168,0.328,0.218c0.121,0.05,0.25,0.075,0.379,0.075c0.077,0,0.155-0.009,0.231-0.027l14.85-3.535  c0.027-0.006,0.051-0.021,0.077-0.03c0.034-0.011,0.066-0.024,0.099-0.039c0.072-0.033,0.139-0.074,0.201-0.123  c0.024-0.019,0.049-0.033,0.072-0.054c0.008-0.008,0.018-0.012,0.026-0.02l36.063-36.063C56.127,11.85,56.127,6.14,52.618,2.631z   M51.204,4.045c2.488,2.489,2.7,6.397,0.65,9.137l-9.787-9.787C44.808,1.345,48.716,1.557,51.204,4.045z M46.254,18.895l-9.9-9.9  l1.414-1.414l9.9,9.9L46.254,18.895z M4.961,50.288c-0.391-0.391-1.023-0.391-1.414,0L2.79,51.045l2.554-10.728l4.422-0.491  l-0.569,5.122c-0.004,0.038,0.01,0.073,0.01,0.11c0,0.038-0.014,0.072-0.01,0.11c0.004,0.033,0.021,0.06,0.028,0.092  c0.012,0.058,0.029,0.111,0.05,0.165c0.026,0.065,0.057,0.124,0.095,0.181c0.031,0.046,0.062,0.087,0.1,0.127  c0.048,0.051,0.1,0.094,0.157,0.134c0.045,0.031,0.088,0.06,0.138,0.084C9.831,45.982,9.9,46,9.972,46.017  c0.038,0.009,0.069,0.03,0.108,0.035c0.036,0.004,0.072,0.006,0.109,0.006c0,0,0.001,0,0.001,0c0,0,0.001,0,0.001,0h0.001  c0,0,0.001,0,0.001,0c0.036,0,0.073-0.002,0.109-0.006l5.122-0.569l-0.491,4.422L4.204,52.459l0.757-0.757  C5.351,51.312,5.351,50.679,4.961,50.288z M17.511,44.809L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0  L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738  l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992L17.511,44.809z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"
+                                fill="#2281D6"></path>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" class="cabinet-request__application_item">
+                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 55.25 55.25" style="enable-background:new 0 0 55.25 55.25;"
+                            xml:space="preserve">
+                            <path d="M52.618,2.631c-3.51-3.508-9.219-3.508-12.729,0L3.827,38.693C3.81,38.71,3.8,38.731,3.785,38.749  c-0.021,0.024-0.039,0.05-0.058,0.076c-0.053,0.074-0.094,0.153-0.125,0.239c-0.009,0.026-0.022,0.049-0.029,0.075  c-0.003,0.01-0.009,0.02-0.012,0.03l-3.535,14.85c-0.016,0.067-0.02,0.135-0.022,0.202C0.004,54.234,0,54.246,0,54.259  c0.001,0.114,0.026,0.225,0.065,0.332c0.009,0.025,0.019,0.047,0.03,0.071c0.049,0.107,0.11,0.21,0.196,0.296  c0.095,0.095,0.207,0.168,0.328,0.218c0.121,0.05,0.25,0.075,0.379,0.075c0.077,0,0.155-0.009,0.231-0.027l14.85-3.535  c0.027-0.006,0.051-0.021,0.077-0.03c0.034-0.011,0.066-0.024,0.099-0.039c0.072-0.033,0.139-0.074,0.201-0.123  c0.024-0.019,0.049-0.033,0.072-0.054c0.008-0.008,0.018-0.012,0.026-0.02l36.063-36.063C56.127,11.85,56.127,6.14,52.618,2.631z   M51.204,4.045c2.488,2.489,2.7,6.397,0.65,9.137l-9.787-9.787C44.808,1.345,48.716,1.557,51.204,4.045z M46.254,18.895l-9.9-9.9  l1.414-1.414l9.9,9.9L46.254,18.895z M4.961,50.288c-0.391-0.391-1.023-0.391-1.414,0L2.79,51.045l2.554-10.728l4.422-0.491  l-0.569,5.122c-0.004,0.038,0.01,0.073,0.01,0.11c0,0.038-0.014,0.072-0.01,0.11c0.004,0.033,0.021,0.06,0.028,0.092  c0.012,0.058,0.029,0.111,0.05,0.165c0.026,0.065,0.057,0.124,0.095,0.181c0.031,0.046,0.062,0.087,0.1,0.127  c0.048,0.051,0.1,0.094,0.157,0.134c0.045,0.031,0.088,0.06,0.138,0.084C9.831,45.982,9.9,46,9.972,46.017  c0.038,0.009,0.069,0.03,0.108,0.035c0.036,0.004,0.072,0.006,0.109,0.006c0,0,0.001,0,0.001,0c0,0,0.001,0,0.001,0h0.001  c0,0,0.001,0,0.001,0c0.036,0,0.073-0.002,0.109-0.006l5.122-0.569l-0.491,4.422L4.204,52.459l0.757-0.757  C5.351,51.312,5.351,50.679,4.961,50.288z M17.511,44.809L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0  L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738  l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992L17.511,44.809z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"
+                                fill="#2281D6"></path>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" class="cabinet-request__application_item">
+                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 55.25 55.25" style="enable-background:new 0 0 55.25 55.25;"
+                            xml:space="preserve">
+                            <path d="M52.618,2.631c-3.51-3.508-9.219-3.508-12.729,0L3.827,38.693C3.81,38.71,3.8,38.731,3.785,38.749  c-0.021,0.024-0.039,0.05-0.058,0.076c-0.053,0.074-0.094,0.153-0.125,0.239c-0.009,0.026-0.022,0.049-0.029,0.075  c-0.003,0.01-0.009,0.02-0.012,0.03l-3.535,14.85c-0.016,0.067-0.02,0.135-0.022,0.202C0.004,54.234,0,54.246,0,54.259  c0.001,0.114,0.026,0.225,0.065,0.332c0.009,0.025,0.019,0.047,0.03,0.071c0.049,0.107,0.11,0.21,0.196,0.296  c0.095,0.095,0.207,0.168,0.328,0.218c0.121,0.05,0.25,0.075,0.379,0.075c0.077,0,0.155-0.009,0.231-0.027l14.85-3.535  c0.027-0.006,0.051-0.021,0.077-0.03c0.034-0.011,0.066-0.024,0.099-0.039c0.072-0.033,0.139-0.074,0.201-0.123  c0.024-0.019,0.049-0.033,0.072-0.054c0.008-0.008,0.018-0.012,0.026-0.02l36.063-36.063C56.127,11.85,56.127,6.14,52.618,2.631z   M51.204,4.045c2.488,2.489,2.7,6.397,0.65,9.137l-9.787-9.787C44.808,1.345,48.716,1.557,51.204,4.045z M46.254,18.895l-9.9-9.9  l1.414-1.414l9.9,9.9L46.254,18.895z M4.961,50.288c-0.391-0.391-1.023-0.391-1.414,0L2.79,51.045l2.554-10.728l4.422-0.491  l-0.569,5.122c-0.004,0.038,0.01,0.073,0.01,0.11c0,0.038-0.014,0.072-0.01,0.11c0.004,0.033,0.021,0.06,0.028,0.092  c0.012,0.058,0.029,0.111,0.05,0.165c0.026,0.065,0.057,0.124,0.095,0.181c0.031,0.046,0.062,0.087,0.1,0.127  c0.048,0.051,0.1,0.094,0.157,0.134c0.045,0.031,0.088,0.06,0.138,0.084C9.831,45.982,9.9,46,9.972,46.017  c0.038,0.009,0.069,0.03,0.108,0.035c0.036,0.004,0.072,0.006,0.109,0.006c0,0,0.001,0,0.001,0c0,0,0.001,0,0.001,0h0.001  c0,0,0.001,0,0.001,0c0.036,0,0.073-0.002,0.109-0.006l5.122-0.569l-0.491,4.422L4.204,52.459l0.757-0.757  C5.351,51.312,5.351,50.679,4.961,50.288z M17.511,44.809L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0  L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738  l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992L17.511,44.809z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"
+                                fill="#2281D6"></path>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" class="cabinet-request__application_item">
+                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 55.25 55.25" style="enable-background:new 0 0 55.25 55.25;"
+                            xml:space="preserve">
+                            <path d="M52.618,2.631c-3.51-3.508-9.219-3.508-12.729,0L3.827,38.693C3.81,38.71,3.8,38.731,3.785,38.749  c-0.021,0.024-0.039,0.05-0.058,0.076c-0.053,0.074-0.094,0.153-0.125,0.239c-0.009,0.026-0.022,0.049-0.029,0.075  c-0.003,0.01-0.009,0.02-0.012,0.03l-3.535,14.85c-0.016,0.067-0.02,0.135-0.022,0.202C0.004,54.234,0,54.246,0,54.259  c0.001,0.114,0.026,0.225,0.065,0.332c0.009,0.025,0.019,0.047,0.03,0.071c0.049,0.107,0.11,0.21,0.196,0.296  c0.095,0.095,0.207,0.168,0.328,0.218c0.121,0.05,0.25,0.075,0.379,0.075c0.077,0,0.155-0.009,0.231-0.027l14.85-3.535  c0.027-0.006,0.051-0.021,0.077-0.03c0.034-0.011,0.066-0.024,0.099-0.039c0.072-0.033,0.139-0.074,0.201-0.123  c0.024-0.019,0.049-0.033,0.072-0.054c0.008-0.008,0.018-0.012,0.026-0.02l36.063-36.063C56.127,11.85,56.127,6.14,52.618,2.631z   M51.204,4.045c2.488,2.489,2.7,6.397,0.65,9.137l-9.787-9.787C44.808,1.345,48.716,1.557,51.204,4.045z M46.254,18.895l-9.9-9.9  l1.414-1.414l9.9,9.9L46.254,18.895z M4.961,50.288c-0.391-0.391-1.023-0.391-1.414,0L2.79,51.045l2.554-10.728l4.422-0.491  l-0.569,5.122c-0.004,0.038,0.01,0.073,0.01,0.11c0,0.038-0.014,0.072-0.01,0.11c0.004,0.033,0.021,0.06,0.028,0.092  c0.012,0.058,0.029,0.111,0.05,0.165c0.026,0.065,0.057,0.124,0.095,0.181c0.031,0.046,0.062,0.087,0.1,0.127  c0.048,0.051,0.1,0.094,0.157,0.134c0.045,0.031,0.088,0.06,0.138,0.084C9.831,45.982,9.9,46,9.972,46.017  c0.038,0.009,0.069,0.03,0.108,0.035c0.036,0.004,0.072,0.006,0.109,0.006c0,0,0.001,0,0.001,0c0,0,0.001,0,0.001,0h0.001  c0,0,0.001,0,0.001,0c0.036,0,0.073-0.002,0.109-0.006l5.122-0.569l-0.491,4.422L4.204,52.459l0.757-0.757  C5.351,51.312,5.351,50.679,4.961,50.288z M17.511,44.809L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0  L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738  l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992L17.511,44.809z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"
+                                fill="#2281D6"></path>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" class="cabinet-request__application_item">
+                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 55.25 55.25" style="enable-background:new 0 0 55.25 55.25;"
+                            xml:space="preserve">
+                            <path d="M52.618,2.631c-3.51-3.508-9.219-3.508-12.729,0L3.827,38.693C3.81,38.71,3.8,38.731,3.785,38.749  c-0.021,0.024-0.039,0.05-0.058,0.076c-0.053,0.074-0.094,0.153-0.125,0.239c-0.009,0.026-0.022,0.049-0.029,0.075  c-0.003,0.01-0.009,0.02-0.012,0.03l-3.535,14.85c-0.016,0.067-0.02,0.135-0.022,0.202C0.004,54.234,0,54.246,0,54.259  c0.001,0.114,0.026,0.225,0.065,0.332c0.009,0.025,0.019,0.047,0.03,0.071c0.049,0.107,0.11,0.21,0.196,0.296  c0.095,0.095,0.207,0.168,0.328,0.218c0.121,0.05,0.25,0.075,0.379,0.075c0.077,0,0.155-0.009,0.231-0.027l14.85-3.535  c0.027-0.006,0.051-0.021,0.077-0.03c0.034-0.011,0.066-0.024,0.099-0.039c0.072-0.033,0.139-0.074,0.201-0.123  c0.024-0.019,0.049-0.033,0.072-0.054c0.008-0.008,0.018-0.012,0.026-0.02l36.063-36.063C56.127,11.85,56.127,6.14,52.618,2.631z   M51.204,4.045c2.488,2.489,2.7,6.397,0.65,9.137l-9.787-9.787C44.808,1.345,48.716,1.557,51.204,4.045z M46.254,18.895l-9.9-9.9  l1.414-1.414l9.9,9.9L46.254,18.895z M4.961,50.288c-0.391-0.391-1.023-0.391-1.414,0L2.79,51.045l2.554-10.728l4.422-0.491  l-0.569,5.122c-0.004,0.038,0.01,0.073,0.01,0.11c0,0.038-0.014,0.072-0.01,0.11c0.004,0.033,0.021,0.06,0.028,0.092  c0.012,0.058,0.029,0.111,0.05,0.165c0.026,0.065,0.057,0.124,0.095,0.181c0.031,0.046,0.062,0.087,0.1,0.127  c0.048,0.051,0.1,0.094,0.157,0.134c0.045,0.031,0.088,0.06,0.138,0.084C9.831,45.982,9.9,46,9.972,46.017  c0.038,0.009,0.069,0.03,0.108,0.035c0.036,0.004,0.072,0.006,0.109,0.006c0,0,0.001,0,0.001,0c0,0,0.001,0,0.001,0h0.001  c0,0,0.001,0,0.001,0c0.036,0,0.073-0.002,0.109-0.006l5.122-0.569l-0.491,4.422L4.204,52.459l0.757-0.757  C5.351,51.312,5.351,50.679,4.961,50.288z M17.511,44.809L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0  L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738  l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992L17.511,44.809z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"
+                                fill="#2281D6"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="cabinet-request__application requestDesktopSlider">
+                    <div class="cabinet-request__application-container">
+                        <div class="cabinet-request__application_item-head">
+                            <p>№</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p class="cabinet-request__application_item-number">1</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p class="cabinet-request__application_item-number">2</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p class="cabinet-request__application_item-number">3</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p class="cabinet-request__application_item-number">4</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p class="cabinet-request__application_item-number">5</p>
+                        </div>
+                    </div>
+                    <div class="cabinet-request__application-container">
+                        <div class="cabinet-request__application_item-head">
+                            <p>Дата
+                                офрмления</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>14/02/2019</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>18/02/2019</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>08/03/2019</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>08/03/2019</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>08/03/2019</p>
+                        </div>
+                    </div>
+                    <div class="cabinet-request__application-container">
+                        <div class="cabinet-request__application_item-head">
+                            <p>Начало
+                                тура</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>08/03/2019</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>30/05/2019</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>02/06/2019</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>21/07/2019</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>02/06/2019</p>
+                        </div>
+                    </div>
+                    <div class="cabinet-request__application-container">
+                        <div class="cabinet-request__application_item-head">
+                            <p>Тур</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>Южная Америка из Кальяо (Лима, Перу) в Буэнос-…</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>Южная Америка из Кальяо (Лима, Перу) в Буэнос-…</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>Южная Америка из Кальяо (Лима, Перу) в Буэнос…</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>Южная Америка из Кальяо (Лима, Перу) в Буэнос-…</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>Южная Америка из Кальяо (Лима, Перу) в Буэнос…</p>
+                        </div>
+                    </div>
+                    <div class="cabinet-request__application-container">
+                        <div class="cabinet-request__application_item-head">
+                            <p>Статус
+                                заказа</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.70711 12.2929C4.31658 11.9024 3.68342 11.9024 3.29289 12.2929C2.90237 12.6834 2.90237 13.3166 3.29289 13.7071L8.29289 18.7071C8.68342 19.0976 9.31658 19.0976 9.70711 18.7071L20.7071 7.70711C21.0976 7.31658 21.0976 6.68342 20.7071 6.29289C20.3166 5.90237 19.6834 5.90237 19.2929 6.29289L9 16.5858L4.70711 12.2929Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM12 5C12.5523 5 13 5.44772 13 6V11.5858L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071C15.3166 16.0976 14.6834 16.0976 14.2929 15.7071L11.2929 12.7071C11.1054 12.5196 11 12.2652 11 12V6C11 5.44772 11.4477 5 12 5Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM12 5C12.5523 5 13 5.44772 13 6V11.5858L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071C15.3166 16.0976 14.6834 16.0976 14.2929 15.7071L11.2929 12.7071C11.1054 12.5196 11 12.2652 11 12V6C11 5.44772 11.4477 5 12 5Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="cabinet-request__application-container">
+                        <div class="cabinet-request__application_item-head">
+                            <p>ФИО
+                                Туристов</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>Витряченко А.И.
+                                Пашко Д.Ю.</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>Руденко И.А.
+                                Нехру Д.Ю.</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>Куделин К.У.</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>Яковенко А.И.</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>Лужко А.С.
+                                Болонин А.Г.
+                                Михаилов М.Н.</p>
+                        </div>
+                    </div>
+                    <div class="cabinet-request__application-container">
+                        <div class="cabinet-request__application_item-head">
+                            <p>Кол.- во
+                                Чел.</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>2</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>2</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>1</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>1</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <div class="cabinet-request__application-container">
+                        <div class="cabinet-request__application_item-head">
+                            <p>Кол.- во
+                                Кают</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>1</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>2</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>1</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>1</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <div class="cabinet-request__application-container">
+                        <div class="cabinet-request__application_item-head">
+                            <p>Нетто,
+                                $</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>500</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>700</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>150</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>200</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>15000</p>
+                        </div>
+                    </div>
+                    <div class="cabinet-request__application-container">
+                        <div class="cabinet-request__application_item-head">
+                            <p>Брутто,
+                                $</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>3500</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>2700</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>100</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>300</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>44000</p>
+                        </div>
+                    </div>
+                    <div class="cabinet-request__application-container">
+                        <div class="cabinet-request__application_item-head">
+                            <p>Комисия,
+                                $</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>35</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>12</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>3</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>8</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <p>28</p>
+                        </div>
+                    </div>
+                    <div class="cabinet-request__application-container">
+                        <div class="cabinet-request__application_item-head">
+                            <p>Статус
+                                док.</p>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.70711 12.2929C4.31658 11.9024 3.68342 11.9024 3.29289 12.2929C2.90237 12.6834 2.90237 13.3166 3.29289 13.7071L8.29289 18.7071C8.68342 19.0976 9.31658 19.0976 9.70711 18.7071L20.7071 7.70711C21.0976 7.31658 21.0976 6.68342 20.7071 6.29289C20.3166 5.90237 19.6834 5.90237 19.2929 6.29289L9 16.5858L4.70711 12.2929Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.70711 12.2929C4.31658 11.9024 3.68342 11.9024 3.29289 12.2929C2.90237 12.6834 2.90237 13.3166 3.29289 13.7071L8.29289 18.7071C8.68342 19.0976 9.31658 19.0976 9.70711 18.7071L20.7071 7.70711C21.0976 7.31658 21.0976 6.68342 20.7071 6.29289C20.3166 5.90237 19.6834 5.90237 19.2929 6.29289L9 16.5858L4.70711 12.2929Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </div>
+                        <div class="cabinet-request__application_item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858Z"
+                                    fill="#2281D6" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--  bottom form -->
+
+    <div class="cabinet-resume__bottom-form_wrapper">
+        <div class="cabinet-resume__bottom-form_left-side">
+            <form action="#" class="cabinet-resume__bottom-form_form">
+                <div class="titles-block__form-subscribe_wrapper-input">
+                    <label for="from" class="titles-block__form-subscribe_label">Диапозон дат</label>
+                    <input type="text" class="datepicker-range titles-block__form-subscribe_input calendar" id="from"
+                        placeholder="Выберите дату">
+                </div>
+            </form>
+        </div>
+        <h3 class="cabinet-resume__bottom-form_h3">Сумма</h3>
+        <div class="cabinet-resume__bottom-form_right-side">
+            <div class="cabinet-resume__bottom-form_total">
+                <p>Сумма</p>
+            </div>
+            <div class="cabinet-resume__bottom-form_total">
+                <p>Чел.</p>
+                <p>9</p>
+            </div>
+            <div class="cabinet-resume__bottom-form_total">
+                <p>Кают</p>
+                <p>8</p>
+            </div>
+            <div class="cabinet-resume__bottom-form_total">
+                <p>Нетто,$</p>
+                <p>16550</p>
+            </div>
+            <div class="cabinet-resume__bottom-form_total">
+                <p>Брутто,$</p>
+                <p>70100</p>
+            </div>
+            <div class="cabinet-resume__bottom-form_total">
+                <p>Комисия.$</p>
+                <p>51</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer-cabinet">
+    <div class="footer">
+        <div class="footer__wrapper-categories">
+            <div class="footer__categories">
+                <p class="footer__categories_title">
+                    Личный кабинет
+                </p>
+                <ul>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Резюме агенства</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Все заявки</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Бонусна програма</a></li>
+                    <li><a href="#" target="_blank" class="footer__categories_link">Инструкции</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title">
+                    Контакты
+                </p>
+                <ul>
+                    <li>
+                        <p class="footer__categories_city">Киев:</p>
+                    </li>
+                    <li><a href="tel:+380443643307" class="footer__categories_phone">+ 38 (044) 364 33 07</a></li>
+                    <li><a href="tel:+380673070100" class="footer__categories_phone">+ 38 (067) 307 01 00</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title mobile-display-none">
+                </p>
+                <ul>
+                    <li>
+                        <p class="footer__categories_city">Львов:</p>
+                    </li>
+                    <li><a href="tel:+380322533638" class="footer__categories_phone">+ 38 (032) 253 36 38</a></li>
+                    <li><a href="tel:+380953708979" class="footer__categories_phone">+ 38 (095) 370 89 79</a></li>
+                </ul>
+            </div>
+            <div class="footer__categories">
+                <p class="footer__categories_title mobile-display-none">
+                </p>
+                <ul>
+                    <li>
+                        <p class="footer__categories_city">Почта:</p>
+                    </li>
+                    <li><a href="mailto:booking@inflotcruises.com" class="footer__categories_mail">booking@inflotcruises.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <a href="#"><img src="./assets/img/icons-logo/white-logo.svg" alt="inflot-logo"></a>
+        <p class="footer__bottom_rights">© 2018 Inflot. Все права защищены.</p>
+        <div class="footer__bottom_social-wrapper">
+            <a href="#" target="_blank"><img src="./assets/img/icons-logo/twitter.svg" alt="twitter"></a>
+            <a href="#" target="_blank"><img src="./assets/img/icons-logo/facebook.svg" alt="facebook"></a>
+            <a href="#" target="_blank"><img src="./assets/img/icons-logo/instagram.svg" alt="instagram"></a>
+        </div>
+    </div>
+</footer>
+<!-- JS -->
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://rawgithub.com/dimsemenov/Magnific-Popup/master/dist/jquery.magnific-popup.js?v=0.8.9"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+<script src="./assets/js/datepicker.min.js"></script>
+<script src="./assets/js/scripts.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<!-- end JS -->
+</body>
+
+</html>

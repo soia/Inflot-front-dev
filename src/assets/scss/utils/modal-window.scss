@@ -1,0 +1,138 @@
+.white-popup {
+    position: relative;
+    background-color: $white;
+    max-width: 395px;
+    margin: 0 auto;
+    padding: 0;
+
+    @media screen and (max-width: 767px) { 
+      max-width: 284px;
+    }
+    
+    .mfp-close {
+        color: #2281d6 !important;
+        font-size: 34px;
+        opacity: 1;
+    }
+  }
+
+  .popUp button a {
+    color: $white;
+  }
+
+  .consultation-popUp {
+
+    &__wrapper {
+        padding: 60px 80px;
+        text-align: center;
+
+        @media screen and (max-width: 767px) { 
+          padding: 40px 40px;
+        }
+
+        &-input {
+
+          textarea {
+            resize: vertical;
+            min-height: 110px;
+            padding-top: 15px;
+          }
+        }
+    }
+
+      &__title {
+        color: $blue;
+        font-family: $boldFont;
+        font-size: 32px;
+        line-height: 36px;
+        padding-bottom: 40px;
+
+        @media screen and (max-width: 767px) { 
+          font-size: 28px;
+        }
+      }
+
+      &__input-name, &__input-phone {
+        width: 215px;
+        height: 60px;
+        background-color: #deebf8;
+        border: none;
+        outline: none;
+        font-family: $regularFont;
+        color: $blue;
+        margin-bottom: 35px;
+        padding-left: 15px;
+
+        @media screen and (max-width: 767px) { 
+          width: 178px;
+          font-size: 10px;
+          box-sizing: border-box;
+        }
+
+        &::placeholder {
+            opacity: 0.45;
+            color: $blue;
+            font-family: $regularFont;
+            font-size: 16px;
+        }
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+
+        &:focus::-webkit-input-placeholder { 
+            color:transparent; 
+        }
+
+        &:focus:-moz-placeholder { 
+            color:transparent; 
+        }
+      }
+
+      &__btn{
+        width: 230px;
+
+        @media screen and (max-width: 767px) { 
+          width: 178px;
+          margin-top: 0;
+        }
+      }
+
+      &__wrapper-input {
+        position: relative;
+      }
+  }
+
+
+  
+  .mfp-zoom-in {
+    
+    .mfp-with-anim {
+      opacity: 0;
+      -webkit-transition: all 0.2s ease-in-out; 
+      transition: all 0.2s ease-in-out; 
+      transform: scale(0.8); 
+    }
+  
+    &.mfp-ready {
+      .mfp-with-anim {
+        opacity: 1;
+        transform: scale(1); 
+      }
+      &.mfp-bg {
+        opacity: 0.8;
+      }
+    }
+    
+    &.mfp-removing {
+      
+      .mfp-with-anim {
+        transform: scale(0.8); 
+        opacity: 0;
+      }
+      &.mfp-bg {
+        opacity: 0;
+      }
+    }
+  }

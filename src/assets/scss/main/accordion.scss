@@ -1,0 +1,123 @@
+// interrupting styles UI Accordion
+// "important" because library
+
+.accordion {
+    
+    &__title {
+        display: flex !important;
+        align-items: center;
+        height: 80px;
+        margin: 0 !important;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: $mainBorder !important;
+        outline: none;
+        color: #8bbde9 !important;
+        font-family: $regularFont;
+        font-size: 20px !important;
+        line-height: 20px;
+        transition: all 0.25s;
+
+
+        @media screen and (max-width: 767px) { 
+            font-size: 16px !important;
+        }
+
+        &:hover {
+            color: $blue !important;
+            background-color: $lightGray !important;
+        }
+
+        span {
+            margin: 0 20px 0 135px !important;
+            margin-left: 135px !important;
+
+            @media screen and (max-width: 767px) { 
+                margin-left: 26px !important;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1250px) { 
+                margin-left: 70px !important;
+            }
+        }
+
+        &:after {
+            content: url(../img/icons-logo/chevron-down.svg);
+            position: absolute;
+            top: 50%;
+            right: 185px;
+            transform: translateY(-50%);
+            transition: all 0.25s;
+
+            @media screen and (max-width: 767px) { 
+                display: none;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1250px) { 
+                right: 55px;
+            }
+        }
+    }
+
+    .ui-accordion-header-collapsed::after {
+        transform: rotate(180deg);
+        opacity: 0.5;
+        top: 35%;
+    }
+
+
+    .ui-state-default {
+        background-color: $lightGray !important;
+    }
+
+    .ui-state-active {
+        background-color: #eef3fc !important;
+        border-right: none;
+        color: $blue !important;
+    }
+
+    .ui-icon {
+        background-image: url(../img/icons-logo/plusAccordionOpacity.svg) !important;
+        background-position: center center;
+    }
+    
+    .ui-state-active .ui-icon {
+        background-image: url(../img/icons-logo/minusAccordion.svg) !important;
+        background-position: center center;
+    }
+
+    .ui-state-hover {
+        background-color: #eef3fc !important;
+    }
+
+    .ui-accordion-content {
+        @media screen and (max-width: 767px) { 
+            padding-bottom: 0;
+            border-left: none !important;
+            border-right: none !important;
+            background-color: #f6f9fe !important;
+        }
+    }
+
+    .ui-accordion-content p {
+        color: $blue !important;
+        font-family: $regularFont;
+        font-size: 20px !important;
+        line-height: 20px;
+        margin: 20px 209px 0 150px;
+
+        @media screen and (max-width: 767px) { 
+            margin: 5px 5px 0 5px;
+            font-size: 16px !important;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1250px) { 
+            margin: 20px 50px 0 85px;
+        }
+    }
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 1em 2.2em 2em !important;
+}

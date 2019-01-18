@@ -1,0 +1,72 @@
+.calendar {
+    position: relative;
+
+    @media screen and (max-width: 767px) { 
+        width: calc(100% - 80px);
+    }
+
+    &-input {
+        cursor: pointer;
+        outline: none;
+        text-align: center;
+
+        @media screen and (max-width: 767px) { 
+            width: 100%;
+            border-bottom: $mainBorder;
+        }
+
+        &:focus ~ .calendar-input__arrow {
+            transform: rotate(-135deg);
+            top: 47%;
+        } 
+        
+        &::placeholder {
+            color: $blue;
+            font-family: $regularFont;
+            font-size: 13px;
+        }
+    
+        &:focus::-webkit-input-placeholder { 
+            color:transparent; 
+        }
+    
+        &:focus:-moz-placeholder { 
+            color:transparent; 
+        }
+
+        &:focus.calendar-input__arrow {
+            display: none;
+        }
+    
+        &__arrow {
+            border-bottom: 2px solid $blue;
+            border-right: 2px solid $blue;
+            width: 5px;
+            height: 5px;
+            display: block;
+            transform-origin: 66% 66%;
+            position: absolute;
+            top: 50%;
+            right: 15%;
+            transform: translateY(-50%) rotate(45deg);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}
+
+.datepicker {
+
+    &--day-name {
+        color: $orange !important;
+    }
+
+    &--cell {
+        .-current- {
+            color: $turquoise;
+        }
+    }
+
+    @media screen and (max-width: 767px) { 
+        width: 230px !important;
+    }
+}

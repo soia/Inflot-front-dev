@@ -1,0 +1,189 @@
+.small-slider {
+    @include small-slider;
+    transition: all 0.25s;
+
+    &+*{
+        border-left: $mainBorder;
+    }
+
+    &:hover {
+        background-color: #e2eefa;
+
+        @media screen and (max-width: 767px) { 
+            background-color: $lightGray;
+        }
+    }
+
+    &:hover .small-slider__description p, &:hover .small-slider__cost-date_news p, &:hover .cabins-slider__details {
+        opacity: 1;
+    }
+
+    &:hover .small-slider__cruise-name a, &:hover .small-slider__cruise-name span {
+        opacity: 1;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+
+        &:hover .small-slider__wrapper-img_img {
+            transform: scale3d(1.2,1.2,1.2);
+        }
+    }
+
+    &__wrapper-img {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        max-width: 290px;
+        width: 100%;
+        height: 193px;
+        position: relative;
+
+        @media screen and (max-width: 767px) { 
+            height: 163px !important;
+        }
+
+        &_img {
+            max-width: 290px;
+            width: 100%;
+            height: 193px;
+            position: relative;
+            transition: transform 1.7s cubic-bezier(.19,1,.22,1),opacity 1s ease;
+            transform: scale3d(1.05,1.05,1.05);
+
+            @media screen and (max-width: 767px) { 
+                height: 163px !important;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1250px) {
+                max-width: 237px;
+            }
+        }
+    }
+
+    &__cost-date {
+        @include position-content-small-slider;
+        flex-wrap: wrap;
+
+        &_cost {
+            @include cost-small-slider;
+            padding-right: 15px;
+        }
+
+        &_date {
+            @include date-small-slider;
+        }
+
+        &_news {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                opacity: 0.5;
+                color: $blue;
+                font-family: $boldFont;
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    &__description {
+        @include position-content-small-slider;
+
+        p {
+            opacity: 0.5;
+            color: $blue;
+            font-family: $boldFont;
+            font-size: 24px;
+            font-weight: $normal;
+            line-height: 34px;
+            transition: all 0.25s;
+
+            @media screen and (max-width: 767px) { 
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+
+        &_news {
+            flex-direction: column;
+            height: 100%;
+            margin-bottom: 0;
+
+            @media screen and (max-width: 767px) { 
+                height: auto;
+            }
+
+            h4 {
+                color: $blue;
+                font-family: $boldFont;
+                font-size: 24px;
+                line-height: 34px;
+                margin-bottom: 0;
+
+                @media screen and (max-width: 767px) { 
+                    font-size: 18px;
+                }
+            }
+            
+
+            p {
+                font-size: 16px;
+                line-height: 26px;
+
+                @media screen and (max-width: 767px) { 
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        &_item {
+            margin: 20px 0;
+
+            @media screen and (max-width: 767px) { 
+                max-height: 72px;
+                overflow: hidden;
+                margin: 10px 0;
+            }
+        }
+    }
+
+    &__cruise-name {
+        @include position-content-small-slider;
+        justify-content: flex-start;
+
+        a, span {
+            @include cruise-name-small-slider;
+        }
+    }
+}
+
+.wrapper-small-slider, .wrapper-medium-slider {
+
+    .slick-next {
+        right: 25px;
+    }
+    
+    .slick-prev {
+        left: 15px;
+        z-index: 1;
+    }
+    
+    .slick-prev:before {
+        content: url(../img/icons-logo/arrow-prev-blue.svg);
+    }
+    
+    .slick-next:before {
+        content: url(../img/icons-logo/arrow-next-blue.svg);
+    }
+}
+
+.slick-list, .slick-track {
+    display: flex;
+    align-items: stretch;
+}
