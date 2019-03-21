@@ -158,6 +158,8 @@
         &_price {
             color: $blue;
             font-family: $regularFont;
+            font-size: 16px;
+            line-height: 16px;
 
             @media screen and (max-width: 767px) { 
                 font-size: 14px;
@@ -287,6 +289,8 @@
                         opacity: 0.5;
                         font-family: $regularFont;
                         margin-bottom: 15px;
+                        font-size: 16px;
+                        line-height: 16px;
 
                         @media screen and (max-width: 767px) { 
                             font-size: 14px;
@@ -299,6 +303,7 @@
                         color: $blue;
                         font-family: $boldFont;
                         font-size: 34px;
+                        line-height: 34px;
 
                         @media screen and (max-width: 767px) { 
                             font-size: 24px;
@@ -337,6 +342,8 @@
                     &:first-child {
                         color: $blue;
                         opacity: 0.5;
+                        font-size: 16px;
+                        line-height: 16px;
                         font-family: $regularFont;
                         margin-bottom: 15px;
                     }
@@ -475,9 +482,15 @@
             }
 
             p {
+                &:first-child {
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+
                 &:last-child {
                     line-height: 26px;
                     padding-top: 10px;
+                    font-size: 16px;
                 }
             }
         }
@@ -568,10 +581,14 @@
                 &:first-child {
                     color: $blue;
                     opacity: 0.5;
+                    font-size: 16px;
+                    line-height: 26px;
                 }
 
                 &:last-child {
                     color: $blue;
+                    font-size: 16px;
+                    line-height: 26px;
                 }
             }
         }
@@ -582,6 +599,7 @@
             opacity: 0.5;
             font-family: $regularFont;
             line-height: 26px;
+            font-size: 16px;
             margin: 49px auto 40px;
             max-width: 247px;
             transition: 0.25s;
@@ -654,14 +672,14 @@
     }
 
     .deck {
-        padding: 40px 105px;
+        margin: 40px 105px;
 
         @media screen and (max-width: 767px) { 
-            padding: 40px;
+            margin: 40px;
         }
 
         @media screen and (min-width: 768px) and (max-width: 1250px) { 
-            padding: 40px 80px;
+            margin: 40px 80px;
         }
 
         &__wrapper {
@@ -700,10 +718,23 @@
             }
 
             p {
-                &:first-child, &:last-child { 
+                &:first-child { 
                     color: $blue;
                     font-size: 20px;
                     line-height: 40px;
+
+                    @media screen and (max-width: 767px) { 
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 36px;
+                    }
+                }
+
+                &:not(:first-child) {
+                    color: $blue;
+                    font-size: 20px;
+                    line-height: 40px;
+                    font-family: $regularFont;
 
                     @media screen and (max-width: 767px) { 
                         font-size: 16px;
@@ -716,9 +747,6 @@
                     font-family: $boldFont;
                 }
 
-                &:last-child {
-                    font-family: $regularFont;
-                }
             }
         }
 
@@ -746,18 +774,20 @@
     }
 
     .wrapper-vertical-slider__map {
-        padding: 0 105px 40px 105px;
+        padding: 40px 105px 40px 105px;
 
         @media screen and (max-width: 767px) { 
-            padding: 0 40px 40px 40px;
+            padding: 40px 40px 40px 40px;
         }
 
         @media screen and (min-width: 768px) and (max-width: 1250px) { 
-            padding: 0 80px 40px 80px;
+            padding: 40px 80px 40px 80px;
         }
 
         img {
             width: 100%;
+            max-height: 364px;
+            object-fit: cover;
 
             @media screen and (max-width: 767px) { 
                 width: 100%;

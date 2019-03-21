@@ -16,6 +16,8 @@
             color: $blue;
             font-family: $regularFont;
             font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
 
             @media screen and (max-width: 767px) { 
                 font-size: 14px;

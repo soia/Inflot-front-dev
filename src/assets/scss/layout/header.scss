@@ -614,6 +614,11 @@ header {
             flex-direction: column;
             justify-content: center;
             padding-left: 10px;
+
+            p {
+                font-size: 12px;
+                line-height: 12px;
+            }
         }
     }
 

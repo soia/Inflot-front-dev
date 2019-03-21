@@ -93,6 +93,7 @@
 
     &__description {
         @include position-content-small-slider;
+        width: 100%;
 
         p {
             opacity: 0.5;

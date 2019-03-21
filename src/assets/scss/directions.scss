@@ -576,6 +576,7 @@
 }
 
 .wrapper-directions {
+    display: none;
     border-top: 1px solid #e1e8ef;
     background-color: $lightGray;
     transition: all 0.25s;
@@ -648,12 +649,15 @@
             &_text {
                 color: $blue;
                 font-family: $regularFont;
+                line-height: 16px;
+                font-size: 16px;
             }
     
             &_title {
                 color: $blue;
                 font-family: $boldFont;
                 font-size: 44px;
+                line-height: 44px;
 
                 @media screen and (max-width: 767px) { 
                     font-size: 24px;
@@ -670,14 +674,14 @@
 
     .wrapper-ports-map {
         filter: grayscale(100%);
-        padding: 0 105px 59px;
+        padding: 40px 105px 59px;
 
         @media screen and (max-width: 767px) { 
-            padding: 0 40px 40px;
+            padding: 40px 40px 40px;
         }
 
         @media screen and (min-width: 768px) and (max-width: 1250px) { 
-            padding: 0 80px 40px;
+            padding: 40px 80px 40px;
         }
 
         iframe {

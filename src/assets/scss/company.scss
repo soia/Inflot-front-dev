@@ -154,6 +154,8 @@
         &_text {
             color: $blue;
             font-family: $regularFont;
+            line-height: 16px;
+            font-size: 16px;
 
             @media screen and (max-width: 767px) { 
                 font-size: 14px;
@@ -164,6 +166,7 @@
             color: $blue;
             font-family: $boldFont;
             font-size: 44px;
+            line-height: 44px;
 
             @media screen and (max-width: 767px) { 
                 font-size: 24px;
@@ -318,6 +321,8 @@
             font-family: $regularFont;
             margin-bottom: 5px;
             transition: all 0.3s;
+            font-size: 16px;
+            line-height: 16px;
 
             @media screen and (max-width: 767px) { 
                 font-size: 14px;
@@ -330,6 +335,7 @@
             font-family: $regularFont;
             line-height: 23px;
             transition: all 0.3s;
+            font-size: 16px;
 
             @media screen and (max-width: 767px) { 
                 font-size: 14px;

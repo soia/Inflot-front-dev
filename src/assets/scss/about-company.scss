@@ -98,6 +98,8 @@
                 font-size: 12px;
                 line-height: 14px;
                 letter-spacing: 0.11px;
+                max-width: 130px;
+                overflow: hidden;
             }
 
             &_extansion {
@@ -107,6 +109,8 @@
                 background-color: #8bbde9;
                 top: 38%;
                 left: 35%;
+                font-size: 16px;
+                line-height: 16px;
             }
 
             .slick-next {
@@ -291,6 +295,8 @@
                         font-family: $regularFont;
                         opacity: 0.5;
                         transition: all 0.25s;
+                        font-size: 16px;
+                        line-height: 16px;
 
                         @media screen and (max-width: 767px) { 
                             font-size: 12px;

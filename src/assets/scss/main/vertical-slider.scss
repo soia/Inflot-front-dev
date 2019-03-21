@@ -35,6 +35,7 @@
             transform: translate(-50%, -40%);
             color: $white;
             font-family: $boldFont;
+            font-size: 16px;
         }
     }
 }
@@ -223,6 +224,8 @@
             opacity: 0.5;
             font-family: $regularFont;
             margin-bottom: 5px;
+            font-size: 16px;
+            line-height: 16px;
 
             @media screen and (max-width: 767px) { 
                 font-size: 14px;
@@ -284,15 +287,19 @@
                     color: $blue;
                     font-family: $regularFont;
                     margin-bottom: 8px;
+                    font-size: 16px;
+                    line-height: 16px;
                 }
     
                 &:last-child {
                     color: $blue;
                     font-family: $boldFont;
                     font-size: 44px;
+                    line-height: 44px;
 
                     @media screen and (min-width: 768px) and (max-width: 1250px) { 
                         font-size: 32px;
+                        line-height: 32px;
                     }
                 }
     
@@ -361,12 +368,15 @@
                 color: $blue;
                 opacity: 0.5;
                 font-family: $regularFont;
+                font-size: 16px;
+                line-height: 16px;
             }
 
             &:last-child {
                 color: $blue;
                 font-family: $regularFont;
                 line-height: 30px;
+                font-size: 16px;
             }
         }
 
@@ -374,6 +384,7 @@
             margin-left: 2vw;
             max-width: 394px;
             line-height: 30px;
+            font-size: 16px;
 
             @media screen and (max-width: 767px) { 
                 margin-left: 0;

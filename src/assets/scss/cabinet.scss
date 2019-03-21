@@ -48,6 +48,8 @@
                     font-family: $regularFont;
                     opacity: 0.5;
                     margin-bottom: 8px;
+                    font-size: 16px;
+                    line-height: 16px;
                 }
 
                 &:last-child {
@@ -128,6 +130,17 @@
 
             @media screen and (max-width: 767px) { 
                 font-size: 18px;
+                line-height: 18px;
+            }
+
+            p {
+                font-size: 24px;
+                line-height: 24px;
+
+                @media screen and (max-width: 767px) { 
+                    font-size: 18px;
+                    line-height: 18px;
+                }
             }
         }
 
@@ -138,11 +151,16 @@
         &_phone, &_mail {
 
             p {
+                font-size: 16px;
+                line-height: 16px;
+                
                 &:first-child {
                     color: $blue;
                     font-family: $regularFont;
                     opacity: 0.5;
                     margin-bottom: 10px;
+                    font-size: 16px;
+                    line-height: 16px;
                 }
 
                 a {
@@ -195,12 +213,15 @@
             &_text {
                 color: $blue;
                 font-family: $regularFont;
+                font-size: 16px;
+                line-height: 16px;
             }
     
             &_title {
                 color: $blue;
                 font-family: $boldFont;
                 font-size: 44px;
+                line-height: 44px;
 
                 @media screen and (max-width: 767px) { 
                     font-size: 24px;
@@ -702,6 +723,8 @@
 
             p {
                 width: 100%;
+                font-size: 14px;
+                line-height: 16px;
             }
         }
 
@@ -916,7 +939,10 @@
         }
     
         .titles-block__form-subscribe_wrapper-input {
-            margin-right: 24px;
+
+            &:not(:last-child) {
+                margin-right: 24px;
+            }
 
             @media screen and (max-width: 767px) { 
                 margin-right: 0;
